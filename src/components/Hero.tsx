@@ -154,7 +154,7 @@ const Hero = () => {
 
           {/* Attorney Image (spans 5 columns on desktop) */}
           <div
-            className={`md:col-span-5 hidden md:block transition-all duration-1000 ease-out transform ${
+            className={`md:col-span-5 block transition-all duration-1000 ease-out transform ${
               isVisible
                 ? "opacity-100 translate-x-0"
                 : "opacity-0 translate-x-20"
@@ -166,11 +166,22 @@ const Hero = () => {
               <img
                 src="/lovable-uploads/img-person.png"
                 alt="Professional Attorney"
-                className="relative w-full -ml-20 bottom-2 rounded-lg shadow-2xl object-cover"
+                className="relative w-full mx-auto md:-ml-20 mt-8 md:mt-0 bottom-0 md:bottom-2 rounded-lg shadow-2xl object-cover"
                 style={{ maxHeight: "600px" }}
               />
 
-              <div className="absolute bottom-4 left-1/3 right-8 transform -translate-x-1/2 w-11/12 bg-navy-dark/80 backdrop-blur-sm p-4 rounded-md">
+              <div className="
+                absolute 
+                bottom-4 
+                left-1/2 
+                -translate-x-1/2 
+                w-11/12 
+                bg-navy-dark/80 
+                backdrop-blur-sm 
+                p-4 
+                rounded-md
+                md:left-[30%] md:-translate-x-2/1 md:w-10/12
+              ">
                 <div className="text-gold font-serif text-xl font-bold">
                   Phuket Lawyer Office
                 </div>
