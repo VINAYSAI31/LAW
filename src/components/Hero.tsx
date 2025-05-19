@@ -166,7 +166,7 @@ const Hero = () => {
               <img
                 src="/lovable-uploads/img-person.png"
                 alt="Professional Attorney"
-                className="relative w-full -ml-20 bottom-4 rounded-lg shadow-2xl object-cover"
+                className="relative w-full -ml-20 bottom-2 rounded-lg shadow-2xl object-cover"
                 style={{ maxHeight: "600px" }}
               />
 
