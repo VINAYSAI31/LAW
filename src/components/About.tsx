@@ -1,88 +1,137 @@
-
 import React from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import { Award, Users, Scale, Clock, Globe, Shield } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const About = () => {
   const { t } = useLanguage();
   
+  const achievements = [
+    { icon: <Award className="h-8 w-8" />, number: "20+", label: t("about.achievement1") },
+    { icon: <Users className="h-8 w-8" />, number: "1000+", label: t("about.achievement2") },
+    { icon: <Scale className="h-8 w-8" />, number: "50+", label: t("about.achievement3") },
+    { icon: <Globe className="h-8 w-8" />, number: "3", label: t("about.achievement4") }
+  ];
+
+  const values = [
+    {
+      icon: <Shield className="h-6 w-6" />,
+      title: t("about.value1.title"),
+      description: t("about.value1.description")
+    },
+    {
+      icon: <Scale className="h-6 w-6" />,
+      title: t("about.value2.title"),
+      description: t("about.value2.description")
+    },
+    {
+      icon: <Clock className="h-6 w-6" />,
+      title: t("about.value3.title"),
+      description: t("about.value3.description")
+    }
+  ];
+  
   return (
-    <div className="bg-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl font-serif font-bold text-navy-dark mb-4">
-              {t('about.title')}
-            </h2>
-            <div className="w-20 h-1 bg-gold mb-6"></div>
-            <p className="text-gray-700 mb-6">
-              {t('about.description')}
-            </p>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-center">
-                <div className="h-2 w-2 bg-gold rounded-full mr-3"></div>
-                <span>20+ Years of Experience</span>
-              </li>
-              <li className="flex items-center">
-                <div className="h-2 w-2 bg-gold rounded-full mr-3"></div>
-                <span>Multilingual Legal Team</span>
-              </li>
-              <li className="flex items-center">
-                <div className="h-2 w-2 bg-gold rounded-full mr-3"></div>
-                <span>Specializing in Thai & International Law</span>
-              </li>
-              <li className="flex items-center">
-                <div className="h-2 w-2 bg-gold rounded-full mr-3"></div>
-                <span>Member of International Legal Associations</span>
-              </li>
-            </ul>
-            <Button className="bg-navy hover:bg-navy-light text-white">
-              {t('about.button')}
-            </Button>
-          </div>
+    <div className="relative bg-cream py-20 overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-loyalBlue/10 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        {/* Main content grid */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left side - Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div className="relative">
+              {/* Decorative line */}
+              <div className="absolute -left-8 top-0 w-1 h-32 bg-gradient-to-b from-gold to-loyalBlue"></div>
+              
+              <h2 className="text-4xl font-serif font-bold text-loyalBlue mb-6">
+                {t('about.title')}
+              </h2>
+              
+              <div className="w-24 h-1 bg-gold mb-8"></div>
+              
+              <p className="text-lg text-darkBrown mb-8 leading-relaxed">
+                {t('about.description')}
+              </p>
+              
+              {/* Values section */}
+              <div className="space-y-6 mb-8">
+                {values.map((value, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-start space-x-4"
+                  >
+                    <div className="flex-shrink-0 w-12 h-12 bg-loyalBlue rounded-lg flex items-center justify-center text-gold">
+                      {value.icon}
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-loyalBlue mb-2">{value.title}</h4>
+                      <p className="text-darkBrown">{value.description}</p>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+              
+              <Button className="bg-loyalBlue hover:bg-loyalBlue-dark text-white px-8 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                {t('about.button')}
+              </Button>
+            </div>
+          </motion.div>
           
-          <div className="bg-navy-light rounded-lg p-6 text-white relative">
-            {/* Thai pattern background overlay */}
-            <div className="absolute inset-0 thai-pattern rounded-lg"></div>
-            
-            <div className="relative z-10">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-serif font-bold">Why Choose Us?</h3>
-                <div className="w-16 h-1 bg-gold mx-auto mt-3"></div>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-gold mb-2">20+</div>
-                  <div className="text-sm">Years of Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-gold mb-2">50+</div>
-                  <div className="text-sm">Legal Professionals</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-gold mb-2">1000+</div>
-                  <div className="text-sm">Successful Cases</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-gold mb-2">10+</div>
-                  <div className="text-sm">Practice Areas</div>
-                </div>
-              </div>
-              
-              <div className="mt-8 p-4 bg-navy rounded-lg">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-xl font-bold">Need Legal Advice?</div>
-                    <div className="text-sm text-gray-300">Schedule a free consultation today</div>
-                  </div>
-                  <Button className="bg-gold hover:bg-gold-dark text-navy-dark">
-                    Contact Us
-                  </Button>
+          {/* Right side - Visual elements */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            {/* Main image container */}
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-loyalBlue to-gold rounded-2xl transform rotate-3"></div>
+              <div className="relative bg-white rounded-2xl p-8 shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80"
+                  alt="Legal team" 
+                  className="w-full h-64 object-cover rounded-xl mb-6"
+                />
+                
+                {/* Achievement stats */}
+                <div className="grid grid-cols-2 gap-4">
+                  {achievements.map((achievement, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                      viewport={{ once: true }}
+                      className="text-center p-4 bg-cream rounded-lg border border-gold/20"
+                    >
+                      <div className="text-loyalBlue mb-2 flex justify-center">
+                        {achievement.icon}
+                      </div>
+                      <div className="text-2xl font-bold text-gold mb-1">{achievement.number}</div>
+                      <div className="text-sm text-darkBrown">{achievement.label}</div>
+                    </motion.div>
+                  ))}
                 </div>
               </div>
             </div>
-          </div>
+            
+           
+          </motion.div>
         </div>
       </div>
     </div>

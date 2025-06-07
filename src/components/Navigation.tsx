@@ -96,30 +96,30 @@ const Navigation = () => {
             >
               {t("nav.services")}
             </Link>
-            <Link
+            {/* <Link
               to="/team"
               className={`text-navy-dark hover:text-gold font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-gold after:transform after:origin-bottom-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left after:transition-transform ${
                 isActive("/team") ? "text-gold after:scale-x-100" : ""
               }`}
             >
               {t("nav.team")}
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               to="/news"
               className={`text-navy-dark hover:text-gold font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-gold after:transform after:origin-bottom-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left after:transition-transform ${
                 isActive("/news") ? "text-gold after:scale-x-100" : ""
               }`}
             >
               {t("nav.news")}
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               to="/fees"
               className={`text-navy-dark hover:text-gold font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-gold after:transform after:origin-bottom-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left after:transition-transform ${
                 isActive("/fees") ? "text-gold after:scale-x-100" : ""
               }`}
             >
               {t("nav.fees")}
-            </Link>
+            </Link> */}
             <Link
               to="/contact"
               className={`text-navy-dark hover:text-gold font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-gold after:transform after:origin-bottom-right after:scale-x-0 hover:after:scale-x-100 hover:after:origin-bottom-left after:transition-transform ${

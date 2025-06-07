@@ -58,11 +58,43 @@ export default {
 					light: '#1C2B4A',
 					dark: '#091222',
 				},
-				gold: {
-					DEFAULT: '#C9A75C',
-					light: '#D6BC7F',
-					dark: '#B08E3F',
+				// gold: {
+				// 	DEFAULT: '#C9A75C',
+				// 	light: '#D6BC7F',
+				// 	dark: '#B08E3F',
+				// },
+				// Deep Emerald Green Color Theme
+				emerald: {
+					DEFAULT: '#064E3B', // Deep emerald green
+					light: '#059669',   // Lighter emerald
+					dark: '#022C22',    // Darker emerald
+					darker: '#134E4A',  // Even darker emerald
 				},
+				gold: {
+					DEFAULT: '#D4AF37',  // Classic gold
+					light: '#F1D864',   // Light gold
+					dark: '#B8860B',    // Dark gold
+					darker: '#9A7B0A',  // Darker gold
+				},
+				darkBrown: {
+					DEFAULT: '#8B4513',  // Saddle brown
+					light: '#A0522D',   // Sienna
+					dark: '#654321',    // Dark brown
+					darker: '#5D4037',  // Very dark brown
+				},
+				cream: {
+					DEFAULT: '#F5F5DC',  // Beige/cream
+					light: '#FEFEF2',   // Very light cream
+					dark: '#F0E68C',    // Darker cream
+				},
+				// Legacy colors for backward compatibility
+				loyalBlue: {
+					DEFAULT: '#064E3B', // Map to emerald for compatibility
+					light: '#059669',
+					dark: '#022C22',
+					darker: '#134E4A',
+				},
+					
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
