@@ -17,10 +17,14 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-emerald-dark "></div>
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-overlay "
-          // style={{ backgroundImage: 'url("https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")' }}
-          style={{ backgroundImage: 'url("/lovable-uploads/back-blurr.png")' }}
-        ></div>
+  className="absolute inset-0 bg-cover opacity-10 "
+  style={{
+    backgroundImage: 'url("/lovable-uploads/image.png")',
+    backgroundSize: '1400px',              // Set width of the image (changeable)
+    backgroundPosition: '-200px center',    // X: 40px from left, Y: centered
+  }}
+></div>
+
         <div className="absolute top-0 right-2 w-1/6 h-full bg-rust opacity-90 skew-x-[-15deg] translate-x-10 hidden md:block"></div>
       </div>
 
