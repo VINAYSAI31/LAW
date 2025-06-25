@@ -15,9 +15,9 @@ const Hero = () => {
     <div className="relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-navy-dark opacity-95"></div>
+        <div className="absolute inset-0 bg-emerald-dark "></div>
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-overlay "
+          className="absolute inset-0 bg-cover bg-center opacity-10 mix-blend-overlay "
           // style={{ backgroundImage: 'url("https://images.pexels.com/photos/5668859/pexels-photo-5668859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")' }}
           style={{ backgroundImage: 'url("/lovable-uploads/back-blurr.png")' }}
         ></div>
@@ -185,7 +185,7 @@ const Hero = () => {
                 <div className="text-gold font-serif text-xl font-bold">
                   Phuket Lawyer Office
                 </div>
-                <div className="text-white text-sm"> 5+ Years Experience</div>
+                <div className="text-white text-sm"> 30+ Years Experience</div>
               </div>
             </div>
           </div>

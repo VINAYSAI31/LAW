@@ -41,9 +41,9 @@ const Services = () => {
   ];
 
   return (
-    <div className="bg-navy-dark py-24 relative">
+    <div className=" py-24 relative">
       {/* Background pattern overlay */}
-      <div className="absolute inset-0 thai-pattern opacity-10"></div>
+      {/* <div className="absolute inset-0 thai-pattern opacity-10"></div> */}
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div 

@@ -25,7 +25,8 @@ export const translations = {
     "nav.team": "Our Legal Team",
     "nav.contact": "Contact",
     "nav.news": "News Channel",
-    "nav.fees": "Service Charges",
+   
+    
 
     // Header
     "header.address": "123 Silom Road, Bangkok, Thailand 10500",
@@ -39,7 +40,7 @@ export const translations = {
     "hero.title": "Law Office",
     "hero.subtitle": "Booming noursihment",
     "hero.description":
-      "Our law firm represents clients across Thailand. Providing consultations throughout the kingdom without conditions, we have successfully recovered over $1 billion on behalf of our clients.",
+      "On days when you dont know who to turn to we are here to listen without judgment and stand by your side with fairness.",
 
     // Features
     "features.service": "Highly Personalized Service",
@@ -125,11 +126,12 @@ export const translations = {
       "Two decades of unwavering commitment to justice, excellence, and client success",
     "aboutus.storyTitle": "Our Story of Justice",
     "aboutus.story1":
-      " Founded in 2004 with a simple yet powerful vision: to provide exceptional legal representation that truly makes a difference in our clients' lives. What started as a small practice has grow into one of the region's most respected law firms.",
+      "There was once a time in my life when I stood alone, fighting with no one who understood, no one to help, and it felt like no one truly listened. On that day, I made a promise—if I ever gained enough knowledge, I would stand by those seeking justice. ",
     "aboutus.story2":
-      "Our journey has been marked by landmark cases, innovative legal strategies, and an unwavering commitment to justice.We've represented individuals, families, and corporations across a wide spectrum of legal matters, always with the same dedication to excellence.",
+      "I graduated in law and have taken on small and large cases, some that shook me to the core, and others that rekindled my belief that Justice still exists. For me, every case is not just “work”—it is someone’s life, and I never forget that. This law firm was founded not for power or fame—but to truly help those in distress.",
+
     "aboutus.story3":
-      "Today, we continue to push boundaries, embrace technology, and expand our expertise while maintaining the personal touch and ethical standards that define our practice.",
+      "If you’re looking for someone who not only knows the law but understands your heart—I am here for you. I will listen to your problems with compassion, care, and the warmth of a trusted friend",
     "aboutus.ctaButton": "Schedule Consultation",
 
     // Achievements / Stats
@@ -169,88 +171,107 @@ export const translations = {
 
     //SERVICES PAGE
 
-    "services.1.title": "Civil & Criminal Cases",
+    "services.1.title": "Civil Cases",
     "services.1.subtitle": "Complete Legal Representation",
     "services.1.description":
-      "Expert legal representation for all types of civil and criminal cases. Our experienced attorneys handle court proceedings with dedication and expertise, ensuring your rights are protected throughout the legal process.",
+      "Expert legal representation for all types of civil cases. Our experienced attorneys handle court proceedings with dedication and expertise, ensuring your rights are protected throughout the legal process.",
     "services.1.fullDescription":
-      "We provide comprehensive legal representation in both civil and criminal matters, handling everything from initial consultation to final verdict. Our team has extensive experience in criminal defense, personal injury, contract disputes, and family law. We ensure that every client receives personalized attention and aggressive representation in court.",
+      "We provide comprehensive legal representation in both civil matters, handling everything from initial consultation to final verdict. Our team has extensive experience in criminal defense, personal injury, contract disputes, and family law. We ensure that every client receives personalized attention and aggressive representation in court.",
     "services.1.features": [
-      "Criminal Defense",
-      "Civil Litigation",
-      "Personal Injury",
-      "Family Law",
-      "Contract Disputes",
+      "Damage compensation lawsuits",
+      "Breach of contract",
+      "Inheritance and estate division",
+      "Land disputes, servitudes, rights of possession",
+      "Eviction and demolition cases",
+      "Tort cases (e.g., car accidents, property damage)",
     ],
 
-    "services.2.title": "Enforcement Services",
-    "services.2.subtitle": "Asset Recovery & Debt Collection",
+    "services.2.title": "Criminal Cases",
+    "services.2.subtitle": "Offenses under Criminal Law",
     "services.2.description":
-      "Professional property enforcement services including asset seizure, property freezing, bankruptcy proceedings, and comprehensive debt recovery solutions with proven track record.",
+      "Comprehensive legal representation for clients involved in criminal offenses, ranging from theft and assault to serious crimes like homicide and sexual offenses.",
     "services.2.fullDescription":
-      "Our enforcement division specializes in asset recovery, debt collection, and bankruptcy proceedings. We handle complex cases involving property seizure, asset freezing, and market liquidation. Our team works efficiently to recover debts while maintaining professional relationships and following all legal protocols.",
+      "Our criminal law team provides expert legal defense and prosecution services for a wide range of criminal cases. We handle everything from minor offenses to serious criminal matters including fraud, drug-related crimes, violent offenses, and more. We ensure that your rights are protected throughout the legal process and offer strategic guidance every step of the way.",
     "services.2.features": [
-      "Asset Seizure",
-      "Property Freezing",
-      "Bankruptcy Cases",
-      "Debt Recovery",
-      "Market Liquidation",
+      "Theft, embezzlement, fraud",
+      "Drug offenses",
+      "Assault, homicide",
+      "Defamation",
+      "Child abduction, sexual assault",
+      "Document forgery",
     ],
 
-    "services.3.title": "Contract Legal Examination",
-    "services.3.subtitle": "Contract Review & Drafting",
+    "services.3.title": "Labor Disputes",
+    "services.3.subtitle": "Employer-Employee Legal Issues",
     "services.3.description":
-      "Thorough contract inspection and drafting services. Expert consultation on various contracts, wills, and legal documents to protect your interests and ensure compliance.",
+      "Legal support for resolving workplace conflicts, including unfair dismissals, compensation disputes, and violations of labor rights.",
     "services.3.fullDescription":
-      "We provide meticulous contract review, drafting, and consultation services. Our legal experts examine every clause to identify potential risks and opportunities. Whether you need contract creation, review, or modification, we ensure your agreements are legally sound and protect your interests.",
+      "We specialize in handling labor disputes between employers and employees, offering expert legal assistance in cases such as unfair dismissal, wage or benefit claims, breach of employment contracts, and disputes over labor rights. Our goal is to protect your rights and resolve conflicts efficiently through negotiation or litigation.",
     "services.3.features": [
-      "Contract Review",
-      "Document Drafting",
-      "Will Preparation",
-      "Legal Consultation",
-      "Risk Assessment",
+      "Unfair dismissal",
+      "Compensation claims",
+      "Breach of employment contract",
+      "Welfare and labor rights disputes",
     ],
 
-    "services.4.title": "Legal Consultation & Counsel",
-    "services.4.subtitle": "Strategic Legal Advice",
+    "services.4.title": "Family & Juvenile  Law ",
+    "services.4.subtitle": "Domestic and Family-Related Issues",
     "services.4.description":
-      "Professional consulting services providing expert advice, strategic solutions, and ongoing legal counsel for private companies and individuals across various industries.",
+      "Legal guidance and representation in family-related matters including divorce, child custody, support claims, and marital property disputes.",
     "services.4.fullDescription":
-      "Our consultation services offer comprehensive legal guidance for businesses and individuals. We provide strategic advice on corporate matters, regulatory compliance, risk management, and long-term legal planning. Our team serves as trusted advisors for complex legal decisions.",
+      "We provide compassionate and strategic legal services for individuals dealing with family law matters. Our team handles a wide range of domestic issues such as divorce proceedings, child custody and support claims, marital property division, and child legitimation. We aim to resolve disputes with sensitivity while protecting your legal rights and interests.",
     "services.4.features": [
-      "Corporate Counsel",
-      "Regulatory Compliance",
-      "Risk Management",
-      "Strategic Planning",
-      "Ongoing Support",
+      "Divorce",
+      "Child support claims",
+      "Custody disputes",
+      "Marital property division",
+      "Child legitimation",
     ],
 
-    "services.5.title": "Appeals & Supreme Court",
-    "services.5.subtitle": "High-Level Litigation",
+    "services.5.title": "Inheritance Cases",
+    "services.5.subtitle": "Property & Estate Matters",
     "services.5.description":
-      "Specialized representation in appeals and Supreme Court cases including fraud, defamation, personal crimes, and land-related criminal cases with extensive courtroom experience.",
+      "Legal services involving the estate of deceased persons, including administration, division, objections, and will-related disputes.",
     "services.5.fullDescription":
-      "Our appellate practice handles complex appeals and Supreme Court cases. We have extensive experience in fraud cases, defamation claims, personal crimes, and land disputes. Our attorneys are skilled in appellate brief writing, oral arguments, and navigating higher court procedures.",
+      "We offer expert legal representation in inheritance matters involving estate administration, property division, and disputes over wills. Whether it's appointing estate administrators, contesting estate management, or handling allegations of will forgery, our legal team ensures your rights are upheld throughout the process.",
     "services.5.features": [
-      "Appeal Cases",
-      "Supreme Court",
-      "Fraud Defense",
-      "Defamation Claims",
-      "Land Disputes",
+      "Appointing estate administrators",
+      "Estate division",
+      "Objections to estate management",
+      "Will forgery cases",
     ],
 
-    "services.6.title": "Negotiation & Debt Collection",
-    "services.6.subtitle": "Resolution & Recovery",
+    "services.6.title": "Consumer, Business & Commercial Disputes",
+    "services.6.subtitle": "Trade, Payment & Service Conflicts",
     "services.6.description":
-      "Professional debt negotiation and collection services. Comprehensive solutions for creditor-debtor disputes and outstanding debt recovery with strategic mediation approaches.",
+      "Legal services for resolving disputes involving faulty goods, trade conflicts, defaulted payments, and bounced cheques in both consumer and business contexts.",
     "services.6.fullDescription":
-      "We specialize in debt negotiation, mediation, and collection services. Our team works to resolve creditor-debtor disputes through negotiation and alternative dispute resolution. We focus on achieving favorable outcomes while maintaining professional relationships and following ethical practices.",
+      "Our team provides legal support in consumer protection and business-related disputes. We handle lawsuits against companies for defective goods or poor services, trade disputes, unpaid debts, and financial instrument issues such as bounced cheques. Our goal is to resolve these matters efficiently while protecting our clients’ commercial and personal interests.",
     "services.6.features": [
-      "Debt Negotiation",
-      "Mediation Services",
-      "Collection Strategies",
-      "Dispute Resolution",
-      "Payment Planning",
+      "Lawsuits against companies for faulty goods/services",
+      "Trade disputes",
+      "Defaulted payments",
+      "Bounced cheque cases",
+    ],
+    "services.7.title": "Administrative Law",
+    "services.7.subtitle": "Disputes with Government Agencies",
+    "services.7.description":
+      "Legal services for filing lawsuits against government bodies and challenging administrative decisions such as land expropriation.",
+    "services.7.fullDescription":
+      "We represent individuals and businesses in administrative law cases involving disputes with government agencies. This includes filing lawsuits against public bodies, challenging administrative orders, and protecting rights in cases such as land expropriation or regulatory overreach. Our firm ensures that all proceedings are handled with precision and in accordance with the law.",
+    "services.7.features": [
+      "Lawsuits against government agencies",
+      "Challenging administrative orders (e.g., land expropriation)",
+    ],
+    "services.8.title": "Bankruptcy & Business Rehabilitation",
+    "services.8.subtitle": "Insolvency, Debt Relief & Corporate Recovery",
+    "services.8.description":
+      "Legal services for individuals and businesses facing bankruptcy, including debt restructuring and rehabilitation planning.",
+    "services.8.fullDescription":
+      "We assist clients through bankruptcy proceedings and business rehabilitation processes. Our services include filing for bankruptcy, negotiating debt restructuring plans, and representing clients in rehabilitation cases. We aim to provide sustainable financial recovery strategies while ensuring compliance with legal obligations.",
+    "services.8.features": [
+      "Filing for bankruptcy",
+      "Debt restructuring and rehabilitation negotiation",
     ],
     // Services details
     "services.civil": "Civil & Criminal Cases",
@@ -295,7 +316,7 @@ export const translations = {
     "nav.team": "ทีมงานทนายความ",
     "nav.contact": "ติดต่อเรา",
     "nav.news": "ช่องข่าวสาร",
-    "nav.fees": "ค่าบริการ",
+    "nav.vis": "วิสัยทัศน์",
 
     // Header
     "header.address":
@@ -311,7 +332,7 @@ export const translations = {
     "hero.subtitle": "ทนายความคุณภาพ ซื่อสัตย์ให้ศีลธรรมแก่ประชาชน",
 
     "hero.description":
-      "ปรึกษาทั่วราชอาณาจักรไม่มีเงื่อนไข สำนักงานทนายความภูเก็ต ปรึกษาง่าย รวดเร็ว ทันใจ พร้อมแก้ปัญหาให้คุณในทันที เคยเป็นที่ปรึกษากฎหมายให้กับบริษัท ห้างร้าน องค์กร ปรึกษาคดี รับคดีตั้งแต่ต้นจนจบคดีและรับทั่วราชอาณาจักร",
+      "เนื้อหาในวันที่คุณไม่รู้จะหันหน้าไปหาใครเราคือคนที่ฟังด้วยใจไม่ตัดสินและยืนอยู่ตรงนี้เพื่อช่วยเหลือคุณด้วยความยุติธรรม",
 
     // Features
     "features.service": "บริการที่เป็นส่วนตัวสูง",
@@ -391,11 +412,11 @@ export const translations = {
       "สองทศวรรษแห่งความมุ่งมั่นอย่างไม่ลดละเพื่อความยุติธรรม ความเป็นเลิศ และความสำเร็จของลูกค้า",
     "aboutus.storyTitle": "เรื่องราวความยุติธรรมของเรา",
     "aboutus.story1":
-      "ก่อตั้งขึ้นในปี 2547 ด้วยวิสัยทัศน์ที่เรียบง่ายแต่ทรงพลัง: เพื่อให้บริการด้านกฎหมายที่โดดเด่นซึ่งสร้างความแตกต่างอย่างแท้จริงในชีวิตของลูกค้าของเรา สิ่งที่เริ่มต้นจากสำนักงานกฎหมายขนาดเล็กได้เติบโตจนกลายเป็นสำนักงานกฎหมายที่ได้รับความเคารพมากที่สุดแห่งหนึ่งในภูมิภาค",
+      "ครั้งหนึ่งในชีวิตของฉัน ฉันต้องยืนหยัดเพียงลำพัง โดยไม่มีใครเข้าใจ ไม่มีใครช่วยเหลือ และรู้สึกเหมือนไม่มีใครรับฟังอย่างแท้จริง ในวันนั้น ฉันให้สัญญาว่า หากฉันมีความรู้เพียงพอ ฉันจะยืนเคียงข้างผู้ที่แสวงหาความยุติธรรม",
     "aboutus.story2":
-      "การเดินทางของเราเต็มไปด้วยคดีสำคัญ กลยุทธ์ทางกฎหมายที่สร้างสรรค์ และความมุ่งมั่นอย่างไม่ลดละเพื่อความยุติธรรม เรามอบบริการให้กับบุคคล ครอบครัว และองค์กรต่างๆ ในประเด็นทางกฎหมายที่หลากหลาย โดยทุ่มเทเพื่อความเป็นเลิศเสมอมา",
+      "ฉันจบการศึกษาทางด้านกฎหมายและเคยรับทำคดีเล็กและคดีใหญ่ บางคดีก็สะเทือนใจฉันมาก แต่บางคดีก็ทำให้ฉันกลับมาเชื่อมั่นอีกครั้งว่าความยุติธรรมยังคงมีอยู่ สำหรับฉันแล้ว คดีทุกคดีไม่ใช่แค่ งาน  แต่เป็นชีวิตของคนคนหนึ่ง และฉันไม่เคยลืมเรื่องนี้ สำนักงานกฎหมายแห่งนี้ไม่ได้ก่อตั้งขึ้นเพื่ออำนาจหรือชื่อเสียง แต่ก่อตั้งขึ้นเพื่อช่วยเหลือผู้ที่เดือดร้อนอย่างแท้จริง",
     "aboutus.story3":
-      "ปัจจุบัน เรายังคงขยายขอบเขต ใช้เทคโนโลยี และขยายความเชี่ยวชาญของเราต่อไป ในขณะที่ยังคงรักษาความเป็นส่วนตัวและมาตรฐานทางจริยธรรมที่กำหนดแนวทางปฏิบัติของเรา",
+      "หากคุณกำลังมองหาใครสักคนที่ไม่เพียงแต่รู้กฎหมายแต่ยังเข้าใจหัวใจของคุณอีกด้วย ฉันอยู่ที่นี่เพื่อคุณ ฉันจะรับฟังปัญหาของคุณด้วยความเห็นอกเห็นใจ ความเอาใจใส่ และความอบอุ่นจากเพื่อนที่ไว้ใจได้",
     "aboutus.ctaButton": "กำหนดเวลาการให้คำปรึกษา",
 
     "aboutus.achievement1": "ปีแห่งความเป็นเลิศ",
@@ -434,85 +455,103 @@ export const translations = {
     // --------------------------------------------------------------------------------------------------------------------
     // --------------------------------------------------------------------------------------------------------------------
     //SERVICES PAGE
-    "services.1.title": "คดีแพ่งและอาญา",
+    "services.1.title": "คดีแพ่ง",
     "services.1.subtitle": "การเป็นตัวแทนทางกฎหมายอย่างครอบคลุม",
     "services.1.description":
-      "ตัวแทนทางกฎหมายที่เชี่ยวชาญสำหรับคดีแพ่งและอาญาประเภทต่างๆ ทนายความที่มีประสบการณ์ของเราดำเนินการพิจารณาคดีในศาลด้วยความทุ่มเทและความเชี่ยวชาญ เพื่อให้แน่ใจว่าสิทธิของคุณได้รับการคุ้มครองตลอดกระบวนการทางกฎหมาย",
+      "ตัวแทนทางกฎหมายที่เชี่ยวชาญสำหรับคดีแพ่งทุกประเภท ทนายความที่มีประสบการณ์ของเราดำเนินการพิจารณาคดีในศาลด้วยความทุ่มเทและความเชี่ยวชาญ เพื่อให้แน่ใจว่าสิทธิของคุณได้รับการคุ้มครองตลอดกระบวนการทางกฎหมาย",
     "services.1.fullDescription":
-      "เราให้บริการตัวแทนทางกฎหมายอย่างครอบคลุมทั้งคดีแพ่งและอาญา จัดการทุกอย่างตั้งแต่การปรึกษาหารือเบื้องต้นจนถึงคำตัดสินขั้นสุดท้าย ทีมงานของเรามีประสบการณ์มากมายในการป้องกันคดีอาญา การบาดเจ็บส่วนบุคคล ข้อพิพาทด้านสัญญา และกฎหมายครอบครัว เราให้แน่ใจว่าลูกค้าทุกคนจะได้รับความเอาใจใส่เป็นรายบุคคลและการเป็นตัวแทนที่เข้มแข็งในศาล",
+      "เราให้บริการตัวแทนทางกฎหมายที่ครอบคลุมทั้งในคดีแพ่ง จัดการทุกอย่างตั้งแต่การปรึกษาหารือเบื้องต้นจนถึงคำตัดสินขั้นสุดท้าย ทีมงานของเรามีประสบการณ์มากมายในการป้องกันทางอาญา การบาดเจ็บส่วนบุคคล ข้อพิพาทด้านสัญญา และกฎหมายครอบครัว เราให้แน่ใจว่าลูกค้าทุกคนจะได้รับความเอาใจใส่เป็นรายบุคคลและการเป็นตัวแทนที่เข้มแข็งในศาล",
     "services.1.features": [
-      "การป้องกันคดีอาญา",
-      "การฟ้องร้องคดีแพ่ง",
-      "การบาดเจ็บส่วนบุคคล",
-      "กฎหมายครอบครัว",
-      "ข้อพิพาทด้านสัญญา",
+      "คดีเรียกร้องค่าเสียหาย",
+      "ผิดสัญญา",
+      "การแบ่งมรดกและทรัพย์มรดก",
+      "ข้อพิพาทเรื่องที่ดิน ภาระจำยอม สิทธิในการครอบครอง",
+      "คดีขับไล่และรื้อถอน",
+      "คดีละเมิด (เช่น คดีรถยนต์ อุบัติเหตุ, ความเสียหายต่อทรัพย์สิน)",
     ],
-    "services.2.title": "บริการบังคับใช้กฎหมาย",
-    "services.2.subtitle": "การกู้คืนทรัพย์สินและการเรียกเก็บหนี้",
+    "services.2.title": "คดีอาญา",
+    "services.2.subtitle": "ความผิดตามกฎหมายอาญา",
     "services.2.description":
-      "บริการบังคับใช้กฎหมายทรัพย์สินระดับมืออาชีพ รวมถึงการยึดทรัพย์สิน การอายัดทรัพย์สิน การดำเนินคดีล้มละลาย และโซลูชันการเรียกเก็บหนี้ที่ครอบคลุมพร้อมประวัติที่พิสูจน์ได้",
+      "ตัวแทนทางกฎหมายที่ครอบคลุมสำหรับลูกค้าที่เกี่ยวข้องกับความผิดทางอาญา ตั้งแต่การลักทรัพย์และการทำร้ายร่างกายไปจนถึงอาชญากรรมร้ายแรง เช่น การฆ่าคนตายและการล่วงละเมิดทางเพศ",
     "services.2.fullDescription":
-      "แผนกการบังคับใช้กฎหมายของเรามีความเชี่ยวชาญด้านการเรียกเก็บทรัพย์สิน การเรียกเก็บหนี้ และการดำเนินคดีล้มละลาย เราดูแลคดีที่ซับซ้อนที่เกี่ยวข้องกับการยึดทรัพย์สิน การอายัดทรัพย์สิน และการชำระบัญชีในตลาด ทีมงานของเราทำงานอย่างมีประสิทธิภาพในการเรียกเก็บหนี้ในขณะที่รักษาความสัมพันธ์ในเชิงวิชาชีพและปฏิบัติตามพิธีสารทางกฎหมายทั้งหมด",
+      "ทีมกฎหมายอาญาของเราให้บริการด้านการป้องกันทางกฎหมายและการฟ้องร้องโดยผู้เชี่ยวชาญสำหรับคดีอาญาที่หลากหลาย เราจัดการทุกอย่างตั้งแต่ความผิดเล็กน้อยไปจนถึงคดีอาญาร้ายแรง รวมถึงการฉ้อโกง อาชญากรรมที่เกี่ยวข้องกับยาเสพติด ความผิดรุนแรง และอื่นๆ เราให้แน่ใจว่าสิทธิของคุณได้รับการคุ้มครองตลอดกระบวนการทางกฎหมายและให้คำแนะนำเชิงกลยุทธ์ทุกขั้นตอน",
     "services.2.features": [
-      "การยึดทรัพย์สิน",
-      "การอายัดทรัพย์สิน",
-      "คดีล้มละลาย",
-      "การกู้คืนหนี้",
-      "การชำระบัญชีในตลาด",
+      "การลักทรัพย์ การยักยอก การฉ้อโกง",
+      "ความผิดเกี่ยวกับยาเสพติด",
+      "การทำร้ายร่างกาย การฆ่าคนตาย",
+      "การหมิ่นประมาท",
+      "การลักพาตัวเด็ก การล่วงละเมิดทางเพศ",
+      "เอกสาร การปลอมแปลง",
     ],
-    "services.3.title": "การตรวจสอบสัญญาทางกฎหมาย",
-    "services.3.subtitle": "การตรวจสอบและร่างสัญญา",
+    "services.3.title": "ข้อพิพาทด้านแรงงาน",
+    "services.3.subtitle": "ประเด็นทางกฎหมายระหว่างนายจ้างและลูกจ้าง",
     "services.3.description":
-      "บริการตรวจสอบและร่างสัญญาอย่างละเอียดถี่ถ้วน ให้คำปรึกษากับผู้เชี่ยวชาญเกี่ยวกับสัญญา พินัยกรรม และเอกสารทางกฎหมายต่างๆ เพื่อปกป้องผลประโยชน์ของคุณและรับรองการปฏิบัติตาม",
+      "การสนับสนุนทางกฎหมายเพื่อแก้ไขข้อขัดแย้งในที่ทำงาน รวมถึงการเลิกจ้างโดยไม่เป็นธรรม ข้อโต้แย้งเรื่องค่าชดเชย และการละเมิดสิทธิแรงงาน",
     "services.3.fullDescription":
-      "เราให้บริการตรวจสอบ ร่าง และให้คำปรึกษาสัญญาอย่างละเอียด ผู้เชี่ยวชาญทางกฎหมายของเราตรวจสอบทุกเงื่อนไขเพื่อระบุความเสี่ยงและโอกาสที่อาจเกิดขึ้น ไม่ว่าคุณจะต้องการจัดทำ ตรวจสอบ หรือแก้ไขสัญญา เราก็จะทำให้สัญญาของคุณถูกต้องตามกฎหมายและปกป้องผลประโยชน์ของคุณ",
+      "เราเชี่ยวชาญในการจัดการข้อขัดแย้งด้านแรงงานระหว่างนายจ้างและลูกจ้าง โดยให้ความช่วยเหลือทางกฎหมายจากผู้เชี่ยวชาญในกรณีต่างๆ เช่น การเลิกจ้างโดยไม่เป็นธรรม การเรียกร้องค่าจ้างหรือสวัสดิการ การละเมิดสัญญาจ้างงาน และข้อพิพาทเกี่ยวกับสิทธิแรงงาน เป้าหมายของเราคือการปกป้องสิทธิของคุณและแก้ไขข้อขัดแย้งอย่างมีประสิทธิภาพผ่านการเจรจาหรือการฟ้องร้อง",
     "services.3.features": [
-      "การตรวจสอบสัญญา",
-      "การร่างเอกสาร",
-      "การเตรียมพินัยกรรม",
-      "การให้คำปรึกษากฎหมาย",
-      "การประเมินความเสี่ยง",
+      "การเลิกจ้างโดยไม่เป็นธรรม",
+      "การเรียกร้องค่าชดเชย",
+      "การละเมิดสัญญาจ้างงาน",
+      "ข้อพิพาทด้านสวัสดิการและสิทธิแรงงาน",
     ],
-    "services.4.title": "การให้คำปรึกษาและคำแนะนำทางกฎหมาย",
-    "services.4.subtitle": "คำแนะนำทางกฎหมายเชิงกลยุทธ์",
+    "services.4.title": "กฎหมายครอบครัวและเยาวชน",
+    "services.4.subtitle": "ปัญหาในครอบครัวและครอบครัว",
     "services.4.description":
-      "บริการให้คำปรึกษาโดยผู้เชี่ยวชาญที่ให้คำแนะนำจากผู้เชี่ยวชาญ โซลูชันเชิงกลยุทธ์ และคำแนะนำทางกฎหมายอย่างต่อเนื่องสำหรับบริษัทเอกชนและบุคคลในอุตสาหกรรมต่างๆ",
+      "คำแนะนำทางกฎหมายและการเป็นตัวแทนในประเด็นที่เกี่ยวข้องกับครอบครัว รวมถึงการหย่าร้าง สิทธิในการดูแลบุตร การเรียกร้องค่าอุปการะเลี้ยงดูบุตร และข้อพิพาทเกี่ยวกับทรัพย์สินระหว่างสามีภรรยา",
     "services.4.fullDescription":
-      "บริการให้คำปรึกษาของเรานำเสนอคำแนะนำทางกฎหมายที่ครอบคลุมสำหรับธุรกิจและบุคคล เราให้คำแนะนำเชิงกลยุทธ์เกี่ยวกับเรื่องขององค์กร การปฏิบัติตามกฎระเบียบ การจัดการความเสี่ยง และการวางแผนทางกฎหมายระยะยาว ทีมงานของเราทำหน้าที่เป็นที่ปรึกษาที่เชื่อถือได้สำหรับการตัดสินใจทางกฎหมายที่ซับซ้อน",
+      "เราให้บริการทางกฎหมายที่เห็นอกเห็นใจและมีกลยุทธ์สำหรับบุคคลที่ต้องรับมือกับประเด็นทางกฎหมายครอบครัว ทีมงานของเราดูแลประเด็นภายในประเทศที่หลากหลาย เช่น กระบวนการหย่าร้าง สิทธิในการดูแลบุตรและค่าอุปการะเลี้ยงดูบุตร การแบ่งทรัพย์สินระหว่างสามีภรรยา และการรับรองบุตร เรามุ่งมั่นที่จะแก้ไขข้อพิพาทด้วยความละเอียดอ่อนในขณะที่ปกป้องสิทธิและผลประโยชน์ทางกฎหมายของคุณ",
     "services.4.features": [
-      "ที่ปรึกษาองค์กร",
-      "การปฏิบัติตามกฎระเบียบ",
-      "การจัดการความเสี่ยง",
-      "การวางแผนเชิงกลยุทธ์",
-      "การสนับสนุนอย่างต่อเนื่อง",
+      "การหย่าร้าง",
+      "การเรียกร้องค่าอุปการะเลี้ยงดูบุตร",
+      "ข้อพิพาทเกี่ยวกับการดูแลบุตร",
+      "การแบ่งทรัพย์สินระหว่างสามีภรรยา",
+      "การรับรองบุตร",
     ],
 
-    "services.5.title": "การอุทธรณ์และศาลฎีกา",
-    "services.5.subtitle": "การดำเนินคดีระดับสูง",
+    "services.5.title": "คดีมรดก",
+    "services.5.subtitle": "เรื่องทรัพย์สินและมรดก",
     "services.5.description":
-      "การเป็นตัวแทนเฉพาะทางในคดีอุทธรณ์และคดีศาลฎีกา รวมถึงการฉ้อโกง การหมิ่นประมาท อาชญากรรมส่วนบุคคล และคดีอาญาที่เกี่ยวข้องกับที่ดิน โดยมีประสบการณ์ในศาลสูง",
+      "บริการทางกฎหมายที่เกี่ยวข้องกับมรดกของผู้เสียชีวิต รวมถึงการบริหาร การแบ่งมรดก การคัดค้าน และข้อพิพาทเกี่ยวกับพินัยกรรม",
     "services.5.fullDescription":
-      "ฝ่ายอุทธรณ์ของเรารับพิจารณาคดีอุทธรณ์ที่ซับซ้อนและคดีศาลฎีกา เรามีประสบการณ์มากมายในคดีฉ้อโกง การเรียกร้องค่าเสียหายจากการหมิ่นประมาท อาชญากรรมส่วนบุคคล และข้อพิพาทเรื่องที่ดิน ทนายความของเรามีทักษะในการเขียนคำร้องอุทธรณ์ การโต้แย้งด้วยวาจา และการดำเนินการตามขั้นตอนของศาลชั้นสูง",
+      "เราให้บริการตัวแทนทางกฎหมายที่มีความเชี่ยวชาญในเรื่องมรดกที่เกี่ยวข้องกับการบริหารมรดก การแบ่งทรัพย์สิน และข้อพิพาทเกี่ยวกับพินัยกรรม ไม่ว่าจะเป็นการแต่งตั้งผู้ดูแลมรดก การโต้แย้งการจัดการมรดก หรือการจัดการกับข้อกล่าวหาการปลอมแปลงพินัยกรรม ทีมกฎหมายของเรารับรองว่าสิทธิของคุณจะได้รับการรักษาไว้ตลอดกระบวนการ",
     "services.5.features": [
-      "คดีอุทธรณ์",
-      "ศาลฎีกา",
-      "การป้องกันการฉ้อโกง",
-      "การเรียกร้องค่าเสียหายจากการหมิ่นประมาท",
-      "ข้อพิพาทเรื่องที่ดิน",
+      "การแต่งตั้งผู้ดูแลมรดก",
+      "การแบ่งมรดก",
+      "การคัดค้านการจัดการมรดก",
+      "คดีปลอมแปลงพินัยกรรม",
     ],
-
-    "services.6.title": "การเจรจาและการจัดเก็บหนี้",
-    "services.6.subtitle": "การแก้ไขปัญหาและการกู้คืนหนี้",
+    "services.6.title": "ข้อพิพาทระหว่างผู้บริโภค ธุรกิจ และการค้า",
+    "services.6.subtitle": "ข้อขัดแย้งทางการค้า การชำระเงิน และบริการ",
     "services.6.description":
-      "บริการการเจรจาและการจัดเก็บหนี้ระดับมืออาชีพ โซลูชันที่ครอบคลุมสำหรับข้อพิพาทระหว่างเจ้าหนี้และลูกหนี้และการเรียกเก็บหนี้ค้างชำระด้วยแนวทางการไกล่เกลี่ยเชิงกลยุทธ์",
+      "บริการทางกฎหมายเพื่อแก้ไขข้อพิพาทที่เกี่ยวข้องกับสินค้าชำรุด ข้อขัดแย้งทางการค้า การชำระเงินผิดนัด และเช็คเด้งทั้งในบริบทของผู้บริโภคและธุรกิจ",
     "services.6.fullDescription":
-      "เราเชี่ยวชาญในการเจรจาหนี้ การไกล่เกลี่ย และบริการการจัดเก็บหนี้ ทีมงานของเราทำงานเพื่อแก้ไขข้อพิพาทระหว่างเจ้าหนี้และลูกหนี้ผ่านการเจรจาและการระงับข้อพิพาททางเลือก เราเน้นที่การบรรลุผลลัพธ์ที่ดีในขณะที่รักษาความสัมพันธ์ในเชิงวิชาชีพและปฏิบัติตามหลักปฏิบัติทางจริยธรรม",
+      "ทีมงานของเราให้การสนับสนุนทางกฎหมายในการคุ้มครองผู้บริโภคและข้อพิพาทที่เกี่ยวข้องกับธุรกิจ เราดำเนินการฟ้องร้องบริษัทต่างๆ สำหรับสินค้าชำรุดหรือบริการไม่ดี ข้อขัดแย้งทางการค้า หนี้ที่ยังไม่ได้ชำระ และปัญหาตราสารทางการเงิน เช่น เช็คเด้ง เป้าหมายของเราคือการแก้ไขปัญหาเหล่านี้อย่างมีประสิทธิภาพในขณะที่ปกป้องผลประโยชน์ทางการค้าและส่วนบุคคลของลูกค้าของเรา",
     "services.6.features": [
-      "การเจรจาหนี้",
-      "บริการการไกล่เกลี่ย",
-      "กลยุทธ์การจัดเก็บหนี้",
-      "การแก้ไขข้อพิพาท",
-      "การวางแผนการชำระเงิน",
+      "คดีฟ้องร้องบริษัทต่างๆ สำหรับสินค้า/บริการชำรุด",
+      "ข้อขัดแย้งทางการค้า",
+      "การชำระเงินผิดนัด",
+      "กรณีเช็คเด้ง",
+    ],
+    "services.7.title": "กฎหมายปกครอง",
+    "services.7.subtitle": "ข้อพิพาทกับหน่วยงานของรัฐ",
+    "services.7.description":
+      "บริการทางกฎหมายสำหรับการฟ้องร้องหน่วยงานของรัฐและท้าทายการตัดสินใจทางปกครอง เช่น การเวนคืนที่ดิน",
+    "services.7.fullDescription":
+      "เราเป็นตัวแทนบุคคลและธุรกิจในคดีปกครองที่เกี่ยวข้องกับข้อพิพาทกับหน่วยงานของรัฐ ซึ่งรวมถึงการฟ้องร้องหน่วยงานของรัฐ การท้าทายคำสั่งทางปกครอง และการปกป้องสิทธิในกรณีต่างๆ เช่น การเวนคืนที่ดินหรือการใช้อำนาจเกินขอบเขตของกฎระเบียบ บริษัทของเรารับประกันว่าการดำเนินการทั้งหมดได้รับการดำเนินการอย่างแม่นยำและสอดคล้องกับกฎหมาย",
+    "services.7.features": [
+      "คดีฟ้องร้องหน่วยงานของรัฐ",
+      "การท้าทายคำสั่งทางปกครอง (เช่น การเวนคืนที่ดิน)",
+    ],
+    "services.8.title": "การล้มละลายและการฟื้นฟูธุรกิจ",
+    "services.8.subtitle": "การล้มละลาย การบรรเทาหนี้ และการฟื้นฟูองค์กร",
+    "services.8.description":
+      "บริการทางกฎหมายสำหรับบุคคลและธุรกิจที่เผชิญกับการล้มละลาย รวมถึงการปรับโครงสร้างหนี้และการวางแผนการฟื้นฟู",
+    "services.8.fullDescription":
+      "เราให้ความช่วยเหลือลูกค้าผ่านกระบวนการล้มละลายและกระบวนการฟื้นฟูธุรกิจ บริการของเราได้แก่ การยื่นฟ้องล้มละลาย การเจรจาแผนการปรับโครงสร้างหนี้ และการเป็นตัวแทนลูกค้าในคดีฟื้นฟู เรามุ่งมั่นที่จะนำเสนอแนวทางการฟื้นฟูทางการเงินที่ยั่งยืนในขณะที่รับรองการปฏิบัติตามภาระผูกพันทางกฎหมาย",
+    "services.8.features": [
+      "การยื่นฟ้องล้มละลาย",
+      "การปรับโครงสร้างหนี้และการเจรจาการฟื้นฟู",
     ],
     // Services details
     "services.civil": "รับว่าคดีแพ่ง คดีอาญา",
@@ -556,7 +595,7 @@ export const translations = {
     "nav.team": "律师团队",
     "nav.contact": "联系方式",
     "nav.news": "新闻频道",
-    "nav.fees": "服务费用",
+    "nav.vis": "视觉",
 
     // Header
     "header.address":
@@ -572,7 +611,7 @@ export const translations = {
     "hero.subtitle": "优质律师 诚实道德服务民众",
 
     "hero.description":
-      "全国范围内无条件咨询。普吉律师事务所，便于咨询，快速，即时，随时为您解决问题。曾为企业、商场、公司提供法律咨询。从案件开始到结束全程负责，全国范围内接案。办理工作许可证、签证、税务账户。",
+      "在您不知道向谁求助的日子里......我们会不带任何偏见地倾听您，并站在这里帮助您伸张正义。",
 
     // Features
     "features.service": "高度个性化的服务",
@@ -670,11 +709,11 @@ export const translations = {
       "二十年来，我们始终坚定不移地致力于公正、卓越和客户成功",
     "aboutus.storyTitle": "我们的公正故事",
     "aboutus.story1":
-      "本律所成立于2004年，秉持着一个简单而强大的愿景：提供卓越的法律代理服务，真正改变客户的生活。我们最初只是一家小型律所，如今已发展成为本地区最受尊敬的律所之一。",
+      "我生命中曾有一段时光，我孤身一人，与人抗争，无人理解，无人帮助，感觉无人真正倾听。那一天，我许下承诺——如果我能获得足够的知识，我将与那些寻求正义的人站在一起。",
     "aboutus.story2":
-      "我们的发展历程充满了里程碑式的案例、创新的法律策略以及对公正的坚定承诺。我们代理过个人、家庭和公司，涉及广泛的法律事务，始终秉持着对卓越的追求。",
+      "我毕业于法律专业，接手过大大小小的案件，有些案件深深地震撼了我，有些则让我重新燃起对正义依然存在的信念。对我来说，每个案件都不仅仅是“工作”——而是关乎一个人的生命，我永远不会忘记这一点。这家律师事务所的成立不是为了权力或名望，而是为了真正帮助那些身处困境的人。",
     "aboutus.story3":
-      "如今，我们不断突破界限，拥抱科技，拓展专业知识，同时保持我们执业特有的个人风格和道德标准。",
+      "如果你正在寻找一位不仅懂法律，更懂你内心的人——我随时为你服务。我会用同情、关怀和值得信赖的朋友般的温暖，倾听你的烦恼。",
     "aboutus.ctaButton": "安排咨询",
 
     "aboutus.achievement1": "卓越成就年限",
@@ -706,87 +745,100 @@ export const translations = {
     // --------------------------------------------------------------------------------------------------------------------
 
     //SERVICES PAGE
-    "services.1.title": "民事及刑事案件",
+    "services.1.title": "民事案件",
     "services.1.subtitle": "全面的法律代理",
     "services.1.description":
-      "我们为各类民事和刑事案件提供专业的法律代理服务。我们经验丰富的律师以敬业精神和专业技能处理诉讼程序，确保您的权利在整个法律程序中得到保护。",
+      "我们为各类民事案件提供专业的法律代理服务。我们经验丰富的律师以敬业精神和专业技能处理诉讼程序，确保您的权利在整个法律程序中得到保护。",
     "services.1.fullDescription":
-      "我们提供全面的民事和刑事法律代理服务，从初步咨询到最终判决，全程为您服务。我们的团队在刑事辩护、人身伤害、合同纠纷和家庭法方面拥有丰富的经验。我们确保每位客户都能在法庭上获得个性化的关注和积极的法律代理。",
+      "我们提供全面的民事法律代理服务，从初步咨询到最终判决，全程为您服务。我们的团队在刑事辩护、人身伤害、合同纠纷和家庭法方面拥有丰富的经验。我们确保每位客户都能在法庭上获得个性化的关注和积极的法律代理。",
     "services.1.features": [
-      "刑事辩护",
-      "民事诉讼",
-      "人身伤害",
-      "家庭法",
-      "合同纠纷",
+      "损害赔偿诉讼",
+      "违约",
+      "继承和遗产分割",
+      "土地纠纷、地役权、占有权",
+      "驱逐和拆迁案件",
+      "侵权案件（例如车祸、财产损失）",
     ],
-    "services.2.title": "执行服务",
-    "services.2.subtitle": "资产追回与债务催收",
+    "services.2.title": "刑事案件",
+    "services.2.subtitle": "刑法规定的犯罪",
     "services.2.description":
-      "专业的财产执行服务，包括资产扣押、财产冻结、破产程序以及拥有良好业绩记录的全面债务追回解决方案。",
+      "为涉及刑事犯罪的客户提供全面的法律代理服务，涵盖从盗窃、袭击到杀人、性侵犯等严重犯罪。",
     "services.2.fullDescription":
-      "我们的执行部门专注于资产追回、债务催收和破产程序。我们处理涉及财产扣押、资产冻结和市场清算的复杂案件。我们的团队高效地追回债务，同时保持专业的关系并遵守所有法律协议。",
+      "我们的刑法团队为各种刑事案件提供专业的法律辩护和起诉服务。我们处理从轻微犯罪到严重刑事案件的各种案件，包括欺诈、毒品犯罪、暴力犯罪等等。我们确保您的权利在整个法律程序中得到保护，并在每一步都提供战略指导。",
     "services.2.features": [
-      "资产扣押",
-      "财产冻结",
-      "破产案件",
-      "债务追回",
-      "市场清算",
+      "盗窃、挪用公款、欺诈",
+      "毒品犯罪",
+      "袭击、杀人",
+      "诽谤",
+      "绑架儿童、性侵犯",
+      "文件伪造",
     ],
-    "services.3.title": "合同法律审查",
-    "services.3.subtitle": "合同审查与起草",
+    "services.3.title": "劳动争议",
+    "services.3.subtitle": "劳资法律问题",
     "services.3.description":
-      "全面的合同审查与起草服务。针对各种合同、遗嘱和法律文件提供专家咨询，以保护您的利益并确保合规。",
+      "提供解决职场纠纷的法律支持，包括不公平解雇、赔偿纠纷和侵犯劳工权利的行为。",
     "services.3.fullDescription":
-      "我们提供细致的合同审查、起草和咨询服务。我们的法律专家会仔细审查每一项条款，以识别潜在的风险和机遇。无论您需要创建、审查还是修改合同，我们都确保您的协议合法合理，并保护您的利益。",
+      "我们专注于处理劳资纠纷，在不公平解雇、工资或福利索赔、违反劳动合同以及劳工权利纠纷等案件中提供专业的法律援助。我们的目标是通过谈判或诉讼，有效维护您的权益并解决纠纷。",
     "services.3.features": [
-      "合同审查",
-      "文件起草",
-      "遗嘱准备",
-      "法律咨询",
-      "风险评估",
+      "不公平解雇",
+      "赔偿索赔",
+      "违反劳动合同",
+      "福利和劳工权利纠纷",
     ],
-    "services.4.title": "法律咨询与法律顾问",
-    "services.4.subtitle": "战略法律咨询",
+    "services.4.title": "家庭与青少年法",
+    "services.4.subtitle": "家庭及家庭相关事务",
     "services.4.description":
-      "专业咨询服务，为各行各业的私营企业和个人提供专家建议、战略解决方案和持续法律顾问服务。",
+      "提供家庭相关事务的法律指导和代理服务，包括离婚、子女监护权、抚养费索赔和婚姻财产纠纷。",
     "services.4.fullDescription":
-      "我们的咨询服务为企业和个人提供全面的法律指导。我们就公司事务、监管合规、风险管理和长期法律规划提供战略建议。我们的团队是复杂法律决策的值得信赖的顾问。",
+      "我们为处理家庭法律事务的个人提供富有同情心和策略性的法律服务。我们的团队处理各种家庭事务，例如离婚诉讼、子女监护权和抚养费索赔、婚姻财产分割以及子女合法化。我们致力于在保护您的合法权益的同时，以审慎的态度解决纠纷。",
     "services.4.features": [
-      "企业法律顾问",
-      "监管合规",
-      "风险管理",
-      "战略规划",
-      "持续支持",
+      "离婚",
+      "子女抚养费索赔",
+      "监护权纠纷",
+      "婚姻财产分割",
+      "子女合法化",
     ],
-
-    "services.5.title": "上诉及最高法院",
-    "services.5.subtitle": "高级别诉讼",
+    "services.5.title": "继承案件",
+    "services.5.subtitle": "财产及遗产事宜",
     "services.5.description":
-      "专业代理上诉及最高法院案件，包括欺诈、诽谤、人身犯罪和土地相关刑事案件，并拥有丰富的法庭经验。",
+      "涉及死者遗产的法律服务，包括遗产管理、分割、异议及遗嘱相关纠纷。",
     "services.5.fullDescription":
-      "我们的上诉业务处理复杂的上诉及最高法院案件。我们在欺诈案件、诽谤索赔、人身犯罪和土地纠纷方面拥有丰富的经验。我们的律师擅长撰写上诉书状、进行口头辩论以及应对高等法院程序。",
+      "我们提供专业的遗产管理、财产分割和遗嘱纠纷等继承事务的法律代理服务。无论是指定遗产管理人、对遗产管理提出异议，还是处理遗嘱伪造指控，我们的法律团队都会确保您的权利在整个过程中得到维护。",
     "services.5.features": [
-      "上诉案件",
-      "最高法院",
-      "欺诈辩护",
-      "诽谤索赔",
-      "土地纠纷",
+      "指定遗产管理人",
+      "遗产分割",
+      "对遗产管理提出异议",
+      "遗嘱伪造案件",
     ],
-
-    "services.6.title": "谈判与债务催收",
-    "services.6.subtitle": "解决与追偿",
+    "services.6.title": "消费者、企业及商业纠纷",
+    "services.6.subtitle": "贸易、支付及服务冲突",
     "services.6.description":
-      "专业的债务谈判与催收服务。通过战略调解方法，为债权人-债务人纠纷和未偿债务追偿提供全面的解决方案。",
+      "提供法律服务，解决消费者和企业环境下涉及缺陷商品、贸易冲突、拖欠付款和空头支票的纠纷。",
     "services.6.fullDescription":
-      "我们专注于债务谈判、调解和催收服务。我们的团队致力于通过谈判和替代性争议解决方式解决债权人-债务人纠纷。我们致力于在维护专业关系和遵守道德规范的同时，取得有利的结果。",
+      "我们的团队为消费者保护和商业相关纠纷提供法律支持。我们处理针对公司因商品缺陷或服务质量低劣、贸易纠纷、未偿债务以及空头支票等金融工具问题而提起的诉讼。我们的目标是高效解决这些问题，同时保护客户的商业和个人利益。",
     "services.6.features": [
-      "债务谈判",
-      "调解服务",
-      "催收策略",
-      "争议解决",
-      "付款计划",
+      "针对公司因缺陷商品/服务而提起的诉讼",
+      "贸易纠纷",
+      "拖欠付款",
+      "空头支票案件",
     ],
-
+    "services.7.title": "行政法",
+    "services.7.subtitle": "与政府机构的纠纷",
+    "services.7.description":
+      "针对政府机构提起诉讼以及质疑土地征用等行政决定的法律服务。",
+    "services.7.fullDescription":
+      "我们代理个人和企业处理与政府机构相关的行政法律纠纷案件。这包括针对公共机构提起诉讼、质疑行政命令以及在土地征用或监管过度等情况下维护权利。我们律所确保所有程序都依法精准处理。",
+    "services.7.features": [
+      "针对政府机构的诉讼",
+      "质疑行政命令（例如土地征用）",
+    ],
+    "services.8.title": "破产与企业重整",
+    "services.8.subtitle": "破产、债务减免与企业复苏",
+    "services.8.description":
+      "为面临破产的个人和企业提供法律服务，包括债务重组和重整规划。",
+    "services.8.fullDescription":
+      "我们协助客户完成破产程序和企业重整流程。我们的服务包括申请破产、协商债务重组方案以及代表客户处理重整案件。我们的目标是提供可持续的财务恢复策略，同时确保客户履行法律义务。",
+    "services.8.features": ["申请破产", "债务重组和重整谈判"],
     "services.title.one": "我们的服务",
     "services.title.two": "服务",
     "services.subtitle":

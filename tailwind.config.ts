@@ -22,6 +22,9 @@ export default {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
+				 richGreen: '#0e2e2c',
+                gold: '#d4af37',
+                 cream: '#fdfaf6',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
@@ -64,15 +67,10 @@ export default {
 				// 	dark: '#B08E3F',
 				// },
 				// Deep Emerald Green Color Theme
-				emerald: {
-					DEFAULT: '#064E3B', // Deep emerald green
-					light: '#059669',   // Lighter emerald
-					dark: '#022C22',    // Darker emerald
-					darker: '#134E4A',  // Even darker emerald
-				},
+				
 				gold: {
 					DEFAULT: '#D4AF37',  // Classic gold
-					light: '#F1D864',   // Light gold
+					light: '#f8edb9',   // Light gold
 					dark: '#B8860B',    // Dark gold
 					darker: '#9A7B0A',  // Darker gold
 				},
@@ -83,7 +81,7 @@ export default {
 					darker: '#5D4037',  // Very dark brown
 				},
 				cream: {
-					DEFAULT: '#F5F5DC',  // Beige/cream
+					DEFAULT: '#FFFDD0',  // Beige/cream
 					light: '#FEFEF2',   // Very light cream
 					dark: '#F0E68C',    // Darker cream
 				},

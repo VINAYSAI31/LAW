@@ -5,13 +5,13 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 158 100% 8%;
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 100%;
+    --card: 158 100% 12%;
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 100%;
+    --popover: 158 100% 12%;
     --popover-foreground: 222.2 84% 4.9%;
 
     --primary: 222.2 47.4% 11.2%;
@@ -41,6 +41,13 @@
     --navy-light: 220 70% 23%;
     --gold: 45 90% 60%;
     --gold-dark: 45 80% 50%;
+    --emerald: 158 100% 25%;
+    --emerald-dark: 157 66% 30%;
+    --emerald-light: 3 96% 48%;
+    --gold: 45 90% 60%;
+    --gold-dark: 45 80% 50%;
+    --dark-brown: 25 70% 25%;
+    --cream: 57, 91%, 91%;
   }
 }
 
@@ -52,6 +59,8 @@
   body {
     @apply bg-background text-foreground font-sans;
     scroll-behavior: smooth;
+        background-color: hsl(156, 48%, 12%);
+
   }
   html {
     font-family: 'Inter', system-ui, sans-serif;
@@ -104,6 +113,9 @@
   .text-shadow-gold {
     text-shadow: 0 0 1px gold, 0 0 2px rgba(255, 215, 0, 0.5);
   }
+    /* .bg-darker-emerald {
+    background-color: hsl(157, 84%, 12%);
+  } */
 }
 
 /* Import Google Fonts for multilingual support and professional look */
