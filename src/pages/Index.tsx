@@ -21,7 +21,6 @@ const Index = () => {
       <About />
       <GetAnExpert/>
     
-      <CallToAction />
     </Layout>
   );
 };

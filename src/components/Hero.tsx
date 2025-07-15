@@ -12,9 +12,9 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Dark Overlay */}
-      <div className="absolute inset-0">
+      <div className="absolute  inset-0">
         <img
-          src="/lovable-uploads/.png"
+          src="/lovable-uploads/home.jpg"
           alt={t("hero.backgroundAlt")}
           className="w-full h-full object-cover"
         />

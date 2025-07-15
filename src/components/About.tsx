@@ -49,36 +49,54 @@ const About = () => {
   ];
 
   return (
-    <div className="relative  py-20 overflow-visible">
-      {/* Background decorative elements */}
-      {/* <div className="absolute top-0 left-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-loyalBlue/10 rounded-full blur-3xl"></div> */}
-
+    <div className="relative py-20 overflow-visible" style={{ backgroundColor: "#140d07" }}>
       <div className="container mx-auto px-4 relative z-10">
-        {/* Main content grid */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left side - Content */}
+          
+          {/* ⬅️ Left side - Image & Stats */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            <div className="relative hover:-translate-y-2">
+              
+              
+                <img
+                  src="/lovable-uploads/statue.jpg"
+                  alt="Legal team"
+                  className="w-100px h-100px object-cover rounded-xl mb-6"
+                />
+
+             
+             
+            </div>
+          </motion.div>
+
+          {/* ➡️ Right side - Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <div className="relative">
               {/* Decorative line */}
               <div className="absolute -left-8 top-0 w-1 h-32 bg-gradient-to-b from-gold to-loyalBlue"></div>
 
-              <h2 className="text-4xl font-serif font-bold text-cream mb-6">
+              <h2 className="text-4xl font-serif font-bold text-white mb-6">
                 {t("about.title")}
               </h2>
 
               <div className="w-24 h-1 bg-gold mb-8"></div>
 
-              <p className="text-lg text-cream mb-8 leading-relaxed">
+              <p className="text-lg text-white mb-8 leading-relaxed">
                 {t("about.description")}
               </p>
 
-              {/* Values section */}
+              {/* Values List */}
               <div className="space-y-6 mb-8">
                 {values.map((value, index) => (
                   <motion.div
@@ -93,68 +111,19 @@ const About = () => {
                       {value.icon}
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-cream mb-2">
+                      <h4 className="text-xl font-bold text-white mb-2">
                         {value.title}
                       </h4>
-                      <p className="text-cream">{value.description}</p>
+                      <p className="text-white/90">{value.description}</p>
                     </div>
                   </motion.div>
                 ))}
               </div>
 
-              <Button className="bg-loyalBlue hover:bg-loyalBlue-dark text-white px-8 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                {t("about.button")}
-              </Button>
+             
             </div>
           </motion.div>
 
-          {/* Right side - Visual elements */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            {/* Main image container */}
-            <div className="relative rounded-2xl">
-              {/* Decorative rotated background */}
-              <div className="absolute inset-0 bg-emerald-light rounded-2xl transform rotate-3 z-0"></div>
-
-              {/* Main content on top */}
-              <div className="relative z-10 bg-emerald-dark rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2">
-                <img
-                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80"
-                  alt="Legal team"
-                  className="w-full h-64 object-cover rounded-xl mb-6"
-                />
-
-                {/* Achievement stats */}
-                <div className="grid grid-cols-2 gap-4">
-                  {achievements.map((achievement, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, scale: 0.8 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                      viewport={{ once: true }}
-                      className="text-center p-4 bg-cream rounded-lg border border-gold/20"
-                    >
-                      <div className="text-gold mb-2 flex justify-center">
-                        {achievement.icon}
-                      </div>
-                      <div className="text-2xl font-bold text-gold mb-1">
-                        {achievement.number}
-                      </div>
-                      <div className="text-sm text-gold">
-                        {achievement.label}
-                      </div>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
     </div>
