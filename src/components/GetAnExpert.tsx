@@ -18,13 +18,13 @@ const GetAnExpert = () => {
     <div className="relative bg-[#1e2027] overflow-visible pb-0"> {/* even further reduced bottom padding for compactness */}
       {/* Background Pattern */}
       <div
-        className="absolute inset-0 opacity-40"
+        className="absolute inset-0 opacity-100"
         style={{
           backgroundImage:
             "url('https://harwell-legal.com/wp-content/themes/harwell-legal/assets/images/pattern-cta-section.png')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
-          backgroundPosition: "center",
+          backgroundPosition: "bottom",
         }}
       ></div>
 
