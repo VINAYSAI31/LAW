@@ -13,6 +13,7 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
+import GetAnExpert from "@/components/GetAnExpert";
 
 const ServicesPage = () => {
   const { t } = useLanguage();
@@ -119,6 +120,7 @@ const ServicesPage = () => {
 
   const handleServiceClick = (service) => {
     setSelectedService(service);
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // <-- Add this line
   };
 
   const closeModal = () => {
@@ -127,48 +129,43 @@ const ServicesPage = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald via-emerald-dark to-emerald-darker"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1200&q=80')] bg-cover bg-center opacity-10"></div>
+    {/* Hero Section */}
+    {/* Hero Section */}
+    {/* Hero Section */}
+    <div className="relative h-[400px] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-[url('https://t3.ftcdn.net/jpg/06/23/78/88/360_F_623788874_AkPJl27fwKD8DGW4Eg6R2JSZ5eFIUYl6.jpg')] bg-cover bg-center"></div>
 
-        {/* Animated background elements */}
-        <div className="absolute top-10 left-10 w-32 h-32 bg-gold/20 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute top-1/2 right-10 w-24 h-24 bg-gold/30 rounded-full blur-lg animate-pulse delay-1000"></div>
-        <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-gold/10 rounded-full blur-2xl animate-pulse delay-2000"></div>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/40"></div>
 
-        <div className="relative z-10 container mx-auto px-4 text-center text-cream">
+      {/* Hero Content */}
+      <div className="relative z-10 container mx-auto px-4">
+        <div className="max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
+            className="text-left"
           >
-            <h1 className="text-6xl md:text-8xl font-serif font-bold mb-8">
-              {t("services.title.one")}{" "}
-              <span className="text-cream shine-text">
-                {t("services.title.two")}
-              </span>
+            <h1 className="text-6xl md:text-6xl font-serif font-bold text-white mb-8">
+            Our Services
             </h1>
-            <p className="text-xl md:text-2xl max-w-4xl mx-auto mb-12 text-cream">
-              {t("services.subtitle")}
-            </p>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className="inline-block bg-white/10 backdrop-blur-sm border border-gold/30 rounded-full px-8 py-4"
-            >
-              <span className="text-cream font-medium">
-                {t("services.areas")}
-              </span>
-            </motion.div>
+            <div className="flex items-center space-x-2 mb-18">
+              <span className="text-gold font-medium">Home</span>
+              <span className="text-white/60">/</span>
+              <span className="text-white">Our Services</span>
+            </div>
           </motion.div>
         </div>
       </div>
 
+      
+    </div>
+   
+
       {/* Services Grid */}
-      <div className="py-24 bg-emerald-dark">
+      <div className="py-24 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-900">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -178,7 +175,7 @@ const ServicesPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 onClick={() => handleServiceClick(service)}
-  className="bg-emerald-dark text-cream   p-0 h-full shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2"
+  className="bg-emerald-dark   p-0 h-full shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2"
               >
                 <div className="relative h-full">
                   {/* Background Image */}
@@ -186,7 +183,7 @@ const ServicesPage = () => {
 
 
                   {/* Content Overlay */}
-                  <div className="relative z-10 p-8 h-full min-h-[500px] flex flex-col justify-between text-cream">
+                  <div className="relative z-10 p-8 h-full min-h-[500px] flex flex-col justify-between text-white">
                     {/* Icon and Title */}
                     <div>
                       <div
@@ -195,20 +192,20 @@ const ServicesPage = () => {
                       >
                         {service.icon}
                       </div>
-                      <h3 className="font-serif text-3xl font-bold mb-3 group-hover:text-cream transition-colors duration-300">
+                      <h3 className="font-serif text-3xl font-bold mb-3 group-hover:text-white transition-colors duration-300">
                         {service.title}
                       </h3>
-                      <p className="text-cream text-lg font-medium mb-4">
+                      <p className="text-white text-lg font-medium mb-4">
                         {service.subtitle}
                       </p>
-                      <p className="text-cream/90 leading-relaxed mb-6">
+                      <p className="text-white/90 leading-relaxed mb-6">
                         {service.description}
                       </p>
                     </div>
 
                     {/* CTA */}
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center text-cream font-medium group-hover:text-cream transition-colors duration-300">
+                      <div className="flex items-center text-white font-medium group-hover:text-white transition-colors duration-300">
                         <span className="text-lg">Learn More</span>
                         <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-2" />
                       </div>
@@ -217,7 +214,7 @@ const ServicesPage = () => {
                         className="w-14 h-14 bg-gold/20 rounded-full flex items-center justify-center 
                                       group-hover:bg-gold group-hover:scale-110 transition-all duration-300"
                       >
-                        <ArrowRight className="h-6 w-6 text-cream group-hover:text-emerald transition-colors duration-300" />
+                        <ArrowRight className="h-6 w-6 text-white group-hover:text-emerald transition-colors duration-300" />
                       </div>
                     </div>
                   </div>
@@ -229,45 +226,7 @@ const ServicesPage = () => {
       </div>
 
       {/* Call to Action Section */}
-      <div className="py-24 bg-emerald-dark relative overflow-hidden">
-        <div className="absolute inset-0 thai-pattern opacity-5"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-5xl font-serif font-bold text-cream mb-6">
-              {t("services.cta.title")}
-            </h2>
-            <p className="text-xl text-cream mb-12 max-w-3xl mx-auto">
-              {t("services.cta.desc")}
-            </p>
-
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-              <div className="flex items-center bg-white/10 backdrop-blur-sm border border-gold/30 rounded-full px-8 py-4">
-                <Phone className="h-6 w-6 text-cream mr-3" />
-                <span className="text-cream text-lg">+66 (0) 123-456-789</span>
-              </div>
-
-              <div className="flex items-center bg-white/10 backdrop-blur-sm border border-gold/30 rounded-full px-8 py-4">
-                <Mail className="h-6 w-6 text-cream mr-3" />
-                <span className="text-cream text-lg">info@lawfirm.com</span>
-              </div>
-            </div>
-
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="mt-8 bg-gold hover:bg-gold-dark text-emerald font-bold px-12 py-6 rounded-2xl 
-                         text-xl shadow-2xl transition-all duration-300 transform hover:shadow-3xl"
-            >
-              {t("services.cta.btn")}
-            </motion.button>
-          </motion.div>
-        </div>
-      </div>
+      <GetAnExpert/>
 
       {/* Service Detail Modal */}
       <AnimatePresence>
@@ -277,7 +236,7 @@ const ServicesPage = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeModal}
-            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+            className="absolute top-0 left-0 w-full h-full bg-black/80 backdrop-blur-sm z-50 flex items-start justify-center pt-24"
           >
             <motion.div
               initial={{ scale: 0.8, opacity: 0, y: 50 }}
@@ -295,7 +254,7 @@ const ServicesPage = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-emerald-darker to-transparent"></div>
-                  <div className="absolute bottom-6 left-8 text-cream">
+                  <div className="absolute bottom-6 left-8 text-white">
                     <div
                       className={`w-16 h-16 bg-${selectedService.color} rounded-xl flex items-center justify-center mb-4`}
                     >
@@ -304,14 +263,14 @@ const ServicesPage = () => {
                     <h2 className="text-4xl font-serif font-bold">
                       {selectedService.title}
                     </h2>
-                    <p className="text-cream text-xl">
+                    <p className="text-white text-xl">
                       {selectedService.subtitle}
                     </p>
                   </div>
                   <button
                     onClick={closeModal}
                     className="absolute top-6 right-6 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full 
-                               flex items-center justify-center text-cream hover:bg-white/30 transition-colors"
+                               flex items-center justify-center text-white hover:bg-white/30 transition-colors"
                   >
                     ×
                   </button>
@@ -337,14 +296,14 @@ const ServicesPage = () => {
 
                   <div className="flex gap-4">
                     <button
-                      className="bg-emerald hover:bg-emerald-dark text-cream px-8 py-3 rounded-xl 
+                      className="bg-emerald hover:bg-emerald-dark text-white px-8 py-3 rounded-xl 
                                      font-medium transition-colors"
                     >
                       {t("services.btn1")}
                     </button>
                     <button
                       onClick={closeModal}
-                      className="border-2 border-emerald text-emerald hover:bg-emerald-dark hover:text-cream 
+                      className="border-2 border-emerald text-emerald hover:bg-emerald-dark hover:text-white 
                                px-8 py-3 rounded-xl font-medium transition-all"
                     >
                       {t("services.btn2")}
