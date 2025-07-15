@@ -1,43 +1,59 @@
-import React from 'react';
-import { useLanguage } from '@/contexts/LanguageContext';
-import { Button } from '@/components/ui/button';
-import { Award, Users, Scale, Clock, Globe, Shield } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Button } from "@/components/ui/button";
+import { Award, Users, Scale, Clock, Globe, Shield } from "lucide-react";
+import { motion } from "framer-motion";
 
 const About = () => {
   const { t } = useLanguage();
-  
+
   const achievements = [
-    { icon: <Award className="h-8 w-8" />, number: "20+", label: t("about.achievement1") },
-    { icon: <Users className="h-8 w-8" />, number: "1000+", label: t("about.achievement2") },
-    { icon: <Scale className="h-8 w-8" />, number: "50+", label: t("about.achievement3") },
-    { icon: <Globe className="h-8 w-8" />, number: "3", label: t("about.achievement4") }
+    {
+      icon: <Award className="h-8 w-8" />,
+      number: "20+",
+      label: t("about.achievement1"),
+    },
+    {
+      icon: <Users className="h-8 w-8" />,
+      number: "1000+",
+      label: t("about.achievement2"),
+    },
+    {
+      icon: <Scale className="h-8 w-8" />,
+      number: "50+",
+      label: t("about.achievement3"),
+    },
+    {
+      icon: <Globe className="h-8 w-8" />,
+      number: "3",
+      label: t("about.achievement4"),
+    },
   ];
 
   const values = [
     {
       icon: <Shield className="h-6 w-6" />,
       title: t("about.value1.title"),
-      description: t("about.value1.description")
+      description: t("about.value1.description"),
     },
     {
       icon: <Scale className="h-6 w-6" />,
       title: t("about.value2.title"),
-      description: t("about.value2.description")
+      description: t("about.value2.description"),
     },
     {
       icon: <Clock className="h-6 w-6" />,
       title: t("about.value3.title"),
-      description: t("about.value3.description")
-    }
+      description: t("about.value3.description"),
+    },
   ];
-  
+
   return (
-    <div className="relative  py-20 overflow-hidden">
+    <div className="relative  py-20 overflow-visible">
       {/* Background decorative elements */}
       {/* <div className="absolute top-0 left-0 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-loyalBlue/10 rounded-full blur-3xl"></div> */}
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Main content grid */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -51,17 +67,17 @@ const About = () => {
             <div className="relative">
               {/* Decorative line */}
               <div className="absolute -left-8 top-0 w-1 h-32 bg-gradient-to-b from-gold to-loyalBlue"></div>
-              
+
               <h2 className="text-4xl font-serif font-bold text-cream mb-6">
-                {t('about.title')}
+                {t("about.title")}
               </h2>
-              
+
               <div className="w-24 h-1 bg-gold mb-8"></div>
-              
+
               <p className="text-lg text-cream mb-8 leading-relaxed">
-                {t('about.description')}
+                {t("about.description")}
               </p>
-              
+
               {/* Values section */}
               <div className="space-y-6 mb-8">
                 {values.map((value, index) => (
@@ -77,19 +93,21 @@ const About = () => {
                       {value.icon}
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-cream mb-2">{value.title}</h4>
+                      <h4 className="text-xl font-bold text-cream mb-2">
+                        {value.title}
+                      </h4>
                       <p className="text-cream">{value.description}</p>
                     </div>
                   </motion.div>
                 ))}
               </div>
-              
+
               <Button className="bg-loyalBlue hover:bg-loyalBlue-dark text-white px-8 py-3 text-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                {t('about.button')}
+                {t("about.button")}
               </Button>
             </div>
           </motion.div>
-          
+
           {/* Right side - Visual elements */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -99,42 +117,43 @@ const About = () => {
             className="relative"
           >
             {/* Main image container */}
-           <div className="relative rounded-2xl">
-  {/* Decorative rotated background */}
-  <div className="absolute inset-0 bg-emerald-light rounded-2xl transform rotate-3 z-0"></div>
+            <div className="relative rounded-2xl">
+              {/* Decorative rotated background */}
+              <div className="absolute inset-0 bg-emerald-light rounded-2xl transform rotate-3 z-0"></div>
 
-  {/* Main content on top */}
-  <div className="relative z-10 bg-emerald-dark rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2">
-    <img 
-      src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80"
-      alt="Legal team" 
-      className="w-full h-64 object-cover rounded-xl mb-6"
-    />
+              {/* Main content on top */}
+              <div className="relative z-10 bg-emerald-dark rounded-2xl p-8 shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2">
+                <img
+                  src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80"
+                  alt="Legal team"
+                  className="w-full h-64 object-cover rounded-xl mb-6"
+                />
 
-    {/* Achievement stats */}
-    <div className="grid grid-cols-2 gap-4">
-      {achievements.map((achievement, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-          viewport={{ once: true }}
-          className="text-center p-4 bg-cream rounded-lg border border-gold/20"
-        >
-          <div className="text-gold mb-2 flex justify-center">
-            {achievement.icon}
-          </div>
-          <div className="text-2xl font-bold text-gold mb-1">{achievement.number}</div>
-          <div className="text-sm text-gold">{achievement.label}</div>
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</div>
-
-            
-           
+                {/* Achievement stats */}
+                <div className="grid grid-cols-2 gap-4">
+                  {achievements.map((achievement, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                      viewport={{ once: true }}
+                      className="text-center p-4 bg-cream rounded-lg border border-gold/20"
+                    >
+                      <div className="text-gold mb-2 flex justify-center">
+                        {achievement.icon}
+                      </div>
+                      <div className="text-2xl font-bold text-gold mb-1">
+                        {achievement.number}
+                      </div>
+                      <div className="text-sm text-gold">
+                        {achievement.label}
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

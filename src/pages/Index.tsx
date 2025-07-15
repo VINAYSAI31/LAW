@@ -8,14 +8,18 @@ import YouTubeSection from '@/components/YouTubeSection';
 import OfficeStrengths from '@/components/OfficeStrengths';
 import Testimonials from '@/components/Testimonials';
 import CallToAction from '@/components/CallToAction';
+import LawyerProfile from '@/components/LawyerProfile';
+import GetAnExpert from '@/components/GetAnExpert';
 
 const Index = () => {
   return (
     <Layout>
       <Hero />
-      
+      <LawyerProfile/>
+   
       
       <About />
+      <GetAnExpert/>
     
       <CallToAction />
     </Layout>

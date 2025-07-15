@@ -22,23 +22,17 @@ export const translations = {
     "nav.home": "Home",
     "nav.about": "About Us",
     "nav.services": "Our Services",
-    "nav.team": "Our Legal Team",
     "nav.contact": "Contact",
-    "nav.news": "News Channel",
-   
+    "nav.mission": "Our Mission",
+    "nav.getInTouch": "Get in Touch",
+    "nav.title": "Bamroong Law Office",
     
 
-    // Header
-    "header.address": "123 Silom Road, Bangkok, Thailand 10500",
-    "header.phone": "(+66) 094-806-9123",
-    "header.consultation": "Free Consultation",
-    "header.available": "Available 24/7",
-    "header.email": "bamroonglaw@gmail.com",
-    "header.line": "@bamroonglaw",
+ 
 
     // Hero
-    "hero.title": "Law Office",
-    "hero.subtitle": "Booming noursihment",
+    "hero.title": "Bumrung Rungreung Law Office",
+    "hero.cta": "Our Services",
     "hero.description":
       "On days when you dont know who to turn to we are here to listen without judgment and stand by your side with fairness.",
 
@@ -317,6 +311,9 @@ export const translations = {
     "nav.contact": "ติดต่อเรา",
     "nav.news": "ช่องข่าวสาร",
     "nav.vis": "วิสัยทัศน์",
+    "nav.mission": "เรื่องราวของเรา",
+    "nav.getInTouch": "รับอินทัช",
+    "nav.title":"บำรุง รุ่งเรือง",
 
     // Header
     "header.address":
@@ -329,8 +326,7 @@ export const translations = {
 
     // Hero
     "hero.title": "สำนักงานกฎหมาย บำรุงโภชนา",
-    "hero.subtitle": "ทนายความคุณภาพ ซื่อสัตย์ให้ศีลธรรมแก่ประชาชน",
-
+     "hero.cta": "บริการของเรา",
     "hero.description":
       "เนื้อหาในวันที่คุณไม่รู้จะหันหน้าไปหาใครเราคือคนที่ฟังด้วยใจไม่ตัดสินและยืนอยู่ตรงนี้เพื่อช่วยเหลือคุณด้วยความยุติธรรม",
 
@@ -596,19 +592,22 @@ export const translations = {
     "nav.contact": "联系方式",
     "nav.news": "新闻频道",
     "nav.vis": "视觉",
+    "nav.mission": "我们的使命",
+    "nav.getInTouch": "联系我们",
+    "nav.title":"布姆伦·伦格伦",
 
-    // Header
-    "header.address":
-      "泰国普吉岛3/1 Ban Hiang 7巷, Ban Hiang路, 3村, Thepkrasattri区, Thalang, 普吉府",
-    "header.phone": "094-806-9123",
-    "header.consultation": "免费咨询",
-    "header.available": "24/7全天候服务",
-    "header.email": "bamroonglaw@gmail.com",
-    "header.line": "@bamroonglaw",
+      // Header
+      "header.address":
+        "泰国普吉岛3/1 Ban Hiang 7巷, Ban Hiang路, 3村, Thepkrasattri区, Thalang, 普吉府",
+      "header.phone": "094-806-9123",
+      "header.consultation": "免费咨询",
+      "header.available": "24/7全天候服务",
+      "header.email": "bamroonglaw@gmail.com",
+      "header.line": "@bamroonglaw",
 
     // Hero
     "hero.title": "律师事务所 兴盛养育",
-    "hero.subtitle": "优质律师 诚实道德服务民众",
+    "hero.cta":"我们的服务",
 
     "hero.description":
       "在您不知道向谁求助的日子里......我们会不带任何偏见地倾听您，并站在这里帮助您伸张正义。",

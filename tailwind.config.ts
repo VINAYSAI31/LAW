@@ -110,8 +110,7 @@ export default {
 				},
 			},
 			fontFamily: {
-				sans: ['Noto Sans Thai', 'Noto Sans SC', 'system-ui', 'sans-serif'],
-				serif: ['Playfair Display', 'serif'],
+				cinzel: ['"Cinzel"', "serif"],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

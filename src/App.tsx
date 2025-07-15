@@ -6,14 +6,15 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Index from "./pages/Index";
-import About from "./pages/About";
-import Services from "./pages/Services";
+import About from "./pages/AboutUs";
+import Services from "./pages/ServicesPage";
 import Team from "./pages/Team";
 import News from "./pages/News";
 import Fees from "./pages/Fees";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import VisionMission from "./pages/VisionMission";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <LanguageSwitcher />
         </BrowserRouter>
       </TooltipProvider>
     </LanguageProvider>

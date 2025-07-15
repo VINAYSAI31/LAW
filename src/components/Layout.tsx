@@ -42,7 +42,7 @@ const Layout = ({ children }: LayoutProps) => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      {/* <Header /> */}
       <Navigation />
       <AnimatePresence mode="wait">
         <motion.main
