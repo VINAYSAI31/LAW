@@ -92,9 +92,8 @@ const Navigation = () => {
               {[
                 { label: t("nav.home"), path: "/" },
                 { label: t("nav.about"), path: "/about" },
-                { label: t("nav.practiceArea"), path: "/services" },
-                { label: t("nav.news"), path: "/news" },
-                { label: t("nav.job"), path: "/job" },
+                { label: t("nav.services"), path: "/services" },
+                { label: t("nav.mission"), path: "/mission" },
                 { label: t("nav.contact"), path: "/contact" },
               ].map((item) => (
                 <Link
