@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className="min-h-screen bg-darker-emerald">
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-gray-900">
         {/* Header Section */}
         <div className="bg-emerald-darker/50 backdrop-blur-sm border-b border-gold/20 py-16">
           <div className="container mx-auto px-4">
@@ -40,10 +40,10 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               className="text-center"
             >
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gold rounded-full mb-6">
+              {/* <div className="inline-flex items-center justify-center w-20 h-20 bg-gold rounded-full mb-6">
                 <MessageSquare className="h-10 w-10 text-emerald-darker" />
-              </div>
-              <h1 className="text-5xl font-serif font-bold text-white mb-4">
+              </div> */}
+              <h1 className="text-5xl font-serif font-bold text-white mb-10 mt-20">
                 Contact Our Legal Team
               </h1>
               <p className="text-cream max-w-2xl mx-auto text-lg">
@@ -62,7 +62,7 @@ const Contact = () => {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="bg-card/50 backdrop-blur-sm rounded-2xl shadow-2xl border border-border p-8"
+              className=" backdrop-blur-sm rounded-2xl shadow-2xl border border-border p-8"
             >
               <div className="mb-8">
                 <h2 className="text-3xl font-serif font-bold text-white mb-4">
@@ -84,7 +84,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="Enter your full name"
-                      className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                      className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
                     />
                   </div>
                   <div>
@@ -98,7 +98,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="your.email@example.com"
-                      className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                      className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
                     />
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       placeholder="+66 XX XXX XXXX"
-                      className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                      className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
                     />
                   </div>
                   <div>
@@ -129,7 +129,7 @@ const Contact = () => {
                       value={formData.lineId}
                       onChange={handleInputChange}
                       placeholder="Your LINE ID"
-                      className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                      className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
                     />
                   </div>
                 </div>
@@ -144,7 +144,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     placeholder="Brief description of your legal matter"
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                    className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
                   />
                 </div>
 
@@ -158,7 +158,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     rows={6}
                     placeholder="Please describe your legal issue or question in detail..."
-                    className="w-full px-4 py-3 bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground resize-none"
+                    className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground resize-none"
                     required
                   />
                 </div>
@@ -190,7 +190,7 @@ const Contact = () => {
               transition={{ delay: 0.4 }}
               className="space-y-8"
             >
-              <div className="bg-card/50 backdrop-blur-sm rounded-2xl shadow-2xl border border-border p-8">
+              <div className="bg/50 backdrop-blur-sm rounded-2xl shadow-2xl border border-border p-8">
                 <h3 className="text-2xl font-serif font-bold text-white mb-6">
                   Get in Touch
                 </h3>
