@@ -10,6 +10,7 @@ import Testimonials from '@/components/Testimonials';
 import CallToAction from '@/components/CallToAction';
 import LawyerProfile from '@/components/LawyerProfile';
 import GetAnExpert from '@/components/GetAnExpert';
+import Mission from '@/components/Mission';
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
    
       <About />
       <Services/>
+      <Mission/>  
       <GetAnExpert/>
     
     </Layout>

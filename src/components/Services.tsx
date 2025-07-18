@@ -167,7 +167,12 @@ const Services = () => {
           ))}
         </div>
       </div>
+      <div className="w-full flex justify-center mt-20" style={{ backgroundColor: "#0B1F3A" }}>
+        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
+      </div>
     </div>
+    
+    
   );
 };
 
