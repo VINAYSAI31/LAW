@@ -50,11 +50,14 @@ const Navigation = () => {
             <Link
               key={item.path}
               to={item.path}
-              className={`text-white hover:text-gold transition-colors font-medium uppercase ${
+              className={`relative group text-white hover:text-gold transition-colors font-medium uppercase ${
                 isActive(item.path) ? "text-gold" : ""
               }`}
-            >
-              {item.label}
+              >
+                <span className="after:content-[''] after:block after:h-[2px] after:bg-gold after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">
+                  {item.label}
+                </span>
+              
             </Link>
           ))}
         </div>

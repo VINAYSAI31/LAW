@@ -89,7 +89,7 @@ const VisionMission = () => {
       </div>
 
       {/* Our Strengths Section */}
-      <div className="py-24 bg-cream">
+      <div className="py-24 " style={{ backgroundColor: "#0B1F3A" }}>
         <div className="max-w-5xl mx-auto space-y-8">
           {/* Heading block with yellow border line */}
           <motion.div
@@ -99,7 +99,10 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="border-l-4 border-gold pl-6"
           >
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-black">
+            <h2 className="text-3xl md:text-4xl font-bold " style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}>
               Because justice should not belong to only a few.
             </h2>
           </motion.div>
@@ -110,7 +113,10 @@ const VisionMission = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-3xl font-semibold text-darkBrown"
+            className="text-2xl md:text-3xl font-semibold text-darkBrown"style={{
+              fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+              color: "#BFA75C",
+            }}
           >
             We make the law truly reliable.
           </motion.p>
@@ -120,12 +126,15 @@ const VisionMission = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
-            className="text-xl md:text-2xl font-light italic text-cream"
+            className="text-xl md:text-3xl font-light italic"style={{
+              fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+              color: "#BFA75C",
+            }}
           >
             We do this job because we want to stand by those who have no voice.
           </motion.p>
         </div>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -133,10 +142,14 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl md:text-6xl font-serif font-bold text-emerald mb-6">
-              Our Strengths
+            <h2 className="text-5xl md:text-6xl font-serif font-bold text-emerald mb-6 py-16" 
+style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}>
+              OUR STRENGHTS
             </h2>
-            <div className="w-24 h-1 bg-gold mx-auto"></div>
+            <div className="w-60 h-1 bg-gold mx-auto "></div>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -152,23 +165,30 @@ const VisionMission = () => {
                 <div className="relative h-full">
                   {/* Background gradient */}
                   <div
-                    className={`absolute inset-0 bg-gradient-to-br from-${strength.color} to-${strength.color}-dark rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-300`}
+                    className={`absolute inset-0  transform  group-hover:rotate-2 transition-transform duration-300`}
                   ></div>
 
                   {/* Content card */}
-                  <div className="relative bg-white rounded-3xl p-8 shadow-2xl transform group-hover:-translate-y-2 transition-all duration-300 h-full">
+                  <div className="relative bg-white  p-8 shadow-2xl transform group-hover:-translate-y-2 transition-all duration-300 h-full bg-white/10 ">
                     <div className="text-center">
                       <div
-                        className={`w-20 h-20 bg-${strength.color} rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                        className={`w-20 h-20 bg-${strength.color}    flex items-center justify-center mb-6 mx-auto shadow-lg group-hover:scale-110 transition-transform duration-300`}
                       >
                         <strength.icon className="h-10 w-10 text-white" />
                       </div>
 
-                      <h3 className="text-2xl font-serif font-bold text-emerald mb-4 group-hover:text-gold transition-colors duration-300">
+                      <h3 className="text-2xl font-serif font-bold text-emerald mb-4 group-hover:text-gold transition-colors duration-300"
+style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}>
                         {strength.title}
                       </h3>
 
-                      <p className="text-darkBrown leading-relaxed text-lg">
+                      <p className="text-darkBrown leading-relaxed text-lg" style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#BFA75C",
+                }}>
                         {strength.description}
                       </p>
                     </div>
@@ -181,7 +201,7 @@ const VisionMission = () => {
       </div>
 
       {/* Mission Statement Section */}
-      <div className="py-24 bg-emerald relative overflow-hidden">
+      <div className="py-24 relative overflow-hidden" style={{ backgroundColor: "#0B1F3A" }}>
         <div className="absolute inset-0 thai-pattern opacity-5"></div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -192,25 +212,31 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="max-w-6xl mx-auto"
           >
-            <div className="bg-white/10 backdrop-blur-sm border border-gold/30 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="bg-white/10 backdrop-blur-sm border border-gold/30  overflow-hidden shadow-2xl">
               {/* Header */}
-              <div className="bg-gradient-to-r from-gold to-gold-dark p-8 text-center">
+              {/* <div className="bg-gradient-to-r from-gold to-gold-dark p-8 text-center">
                 <h3 className="text-4xl md:text-5xl font-serif font-bold text-emerald mb-4">
                   Our Foundation
                 </h3>
                 <div className="w-16 h-1 bg-emerald mx-auto"></div>
-              </div>
+              </div> */}
 
               {/* Content */}
               <div className="p-8 md:p-12 text-white">
                 <div className="text-center mb-12">
-                  <p className="text-2xl md:text-3xl font-serif leading-relaxed mb-8 text-cream">
+                  <p className="text-2xl md:text-3xl font-serif leading-relaxed mb-8 text-cream" style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}>
                     The Law Office of Bamroong Rungruang was founded with a
                     sincere mission:
                   </p>
 
-                  <div className="bg-white/10 backdrop-blur-sm border border-gold/30 rounded-2xl p-8 mb-12">
-                    <p className="text-3xl md:text-4xl font-serif font-bold text-gold leading-relaxed">
+                  <div className="bg-white/10 backdrop-blur-sm border border-gold/30    p-8 mb-12">
+                    <p className="text-3xl md:text-4xl font-serif font-bold text-gold leading-relaxed" style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#BFA75C",
+                }}>
                       To make the law an accessible support, not a barrier,
                       especially for ordinary people.
                     </p>
@@ -226,16 +252,22 @@ const VisionMission = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.6, delay: index * 0.2 }}
                       viewport={{ once: true }}
-                      className="flex items-start space-x-4 bg-white/5 rounded-xl p-6 border border-white/10"
+                      className="flex items-start space-x-4 bg-white/5     p-6 border border-white/10"
                     >
-                      <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-12 h-12 bg-gold  flex items-center justify-center flex-shrink-0">
                         <value.icon className="h-6 w-6 text-emerald" />
                       </div>
                       <div>
-                        <h4 className="text-xl font-bold text-gold mb-2">
+                        <h4 className="text-2xl font-bold text-gold mb-2" style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}>
                           {value.title}
                         </h4>
-                        <p className="text-cream leading-relaxed">
+                        <p className="text-xl leading-relaxed" style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#BFA75C",
+                }}>
                           {value.description}
                         </p>
                       </div>
@@ -251,7 +283,10 @@ const VisionMission = () => {
                   viewport={{ once: true }}
                   className="text-center pt-8 border-t border-gold/30"
                 >
-                  <p className="text-2xl md:text-3xl text-gold font-serif italic leading-relaxed">
+                  <p className="text-2xl md:text-3xl text-gold  leading-relaxed" style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#BFA75C",
+                }}>
                     Every case we take, we handle as if it were our own, because
                     true justice starts from understanding others' pain.
                   </p>

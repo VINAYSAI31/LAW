@@ -43,10 +43,16 @@ const Contact = () => {
               {/* <div className="inline-flex items-center justify-center w-20 h-20 bg-gold rounded-full mb-6">
                 <MessageSquare className="h-10 w-10 text-emerald-darker" />
               </div> */}
-              <h1 className="text-5xl font-serif font-bold text-white mb-10 mt-20">
+              <h1 className="text-5xl font-serif font-bold text-white mb-10 mt-20" style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}>
                 Contact Our Legal Team
               </h1>
-              <p className="text-cream max-w-2xl mx-auto text-lg">
+              <p className="text-cream max-w-2xl mx-auto text-2xl"style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#BFA75C",
+                }}>
                 Get professional legal assistance. Send us your inquiry and our experienced attorneys will respond promptly.
               </p>
             </motion.div>
@@ -65,7 +71,10 @@ const Contact = () => {
               className=" backdrop-blur-sm rounded-2xl shadow-2xl border border-border p-8"
             >
               <div className="mb-8">
-                <h2 className="text-3xl font-serif font-bold text-white mb-4">
+                <h2 className="text-3xl font-serif font-bold text-white mb-4" style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}>
                   Send Us a Message
                 </h2>
                 <div className="w-16 h-1 bg-gold"></div>
@@ -74,7 +83,12 @@ const Contact = () => {
               <form  className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-cream mb-2">
+                    <label className="block text-xl font-medium text-cream mb-2"
+                      style={{
+                        fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                        color: "#BFA75C",
+                      }}
+                    >
                       <User className="inline h-4 w-4 mr-1" />
                       Your Name
                     </label>
@@ -88,7 +102,12 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-cream mb-2">
+                    <label className="block text-xl font-medium text-cream mb-2"
+                      style={{
+                        fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                        color: "#BFA75C",
+                      }}
+                    >
                       <Mail className="inline h-4 w-4 mr-1" />
                       Email Address
                     </label>
@@ -105,7 +124,12 @@ const Contact = () => {
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-cream mb-2">
+                    <label className="block text-xl font-medium text-cream mb-2"
+                      style={{
+                        fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                        color: "#BFA75C",
+                      }}
+                    >
                       <Phone className="inline h-4 w-4 mr-1" />
                       Phone Number
                     </label>
@@ -119,7 +143,12 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-cream mb-2">
+                    <label className="block text-xl font-medium text-cream mb-2"
+                      style={{
+                        fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                        color: "#BFA75C",
+                      }}
+                    >
                       <MessageCircle className="inline h-4 w-4 mr-1" />
                       LINE ID
                     </label>
@@ -135,7 +164,12 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-cream mb-2">
+                  <label className="block text-xl font-medium text-cream mb-2"
+                    style={{
+                      fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                      color: "#BFA75C",
+                    }}
+                  >
                     Subject
                   </label>
                   <input
@@ -149,7 +183,12 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-cream mb-2">
+                  <label className="block text-xl font-medium text-cream mb-2"
+                    style={{
+                      fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                      color: "#BFA75C",
+                    }}
+                  >
                     Message *
                   </label>
                   <textarea
@@ -190,8 +229,13 @@ const Contact = () => {
               transition={{ delay: 0.4 }}
               className="space-y-8"
             >
-              <div className="bg/50 backdrop-blur-sm rounded-2xl shadow-2xl border border-border p-8">
-                <h3 className="text-2xl font-serif font-bold text-white mb-6">
+              <div className="bg/50 backdrop-blur-sm rounded-2xl text-xl shadow-2xl border border-border p-8">
+                <h3 className="text-2xl font-serif font-bold text-white mb-6"
+                  style={{
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#F5F5F5",
+                  }}
+                >
                   Get in Touch
                 </h3>
                 
@@ -201,8 +245,18 @@ const Contact = () => {
                       <MapPin className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white">Office Address</h4>
-                      <p className="text-cream leading-relaxed">
+                      <h4 className="font-semibold text-white"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#F5F5F5",
+                        }}
+                      >Office Address</h4>
+                      <p className="text-cream leading-relaxed"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#BFA75C",
+                        }}
+                      >
                         123 Legal District, Bangkok<br />
                         Thailand 10110
                       </p>
@@ -214,8 +268,18 @@ const Contact = () => {
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white">Phone</h4>
-                      <p className="text-cream">+66 2 XXX XXXX</p>
+                      <h4 className="font-semibold text-white"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#F5F5F5",
+                        }}
+                      >Phone</h4>
+                      <p className="text-cream"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#BFA75C",
+                        }}
+                      >+66 2 XXX XXXX</p>
                     </div>
                   </div>
 
@@ -224,8 +288,18 @@ const Contact = () => {
                       <Mail className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white">Email</h4>
-                      <p className="text-cream">info@bamroonglaw.com</p>
+                      <h4 className="font-semibold text-white"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#F5F5F5",
+                        }}
+                      >Email</h4>
+                      <p className="text-cream"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#BFA75C",
+                        }}
+                      >info@bamroonglaw.com</p>
                     </div>
                   </div>
 
@@ -234,8 +308,18 @@ const Contact = () => {
                       <Clock className="h-6 w-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white">Office Hours</h4>
-                      <p className="text-cream">
+                      <h4 className="font-semibold text-white"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#F5F5F5",
+                        }}
+                      >Office Hours</h4>
+                      <p className="text-cream"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#BFA75C",
+                        }}
+                      >
                         Monday - Friday: 9:00 AM - 6:00 PM<br />
                         Saturday: 9:00 AM - 1:00 PM<br />
                         Sunday: Closed
@@ -246,11 +330,26 @@ const Contact = () => {
               </div>
 
               <div className="bg-emerald/20 backdrop-blur-sm rounded-2xl border border-emerald/30 p-8">
-                <h4 className="text-xl font-bold text-white mb-4">Free Consultation</h4>
-                <p className="text-cream leading-relaxed mb-4">
+                <h4 className="text-xl font-bold text-white mb-4"
+                  style={{
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#F5F5F5",
+                  }}
+                >Free Consultation</h4>
+                <p className="text-cream leading-relaxed mb-4"
+                  style={{
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#BFA75C",
+                  }}
+                >
                   We offer free initial consultations to help you understand your legal options before making any commitments.
                 </p>
-                <div className="text-gold font-semibold">
+                <div className="text-gold font-semibold"
+                  style={{
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#BFA75C",
+                  }}
+                >
                   No obligation • Confidential • Professional advice
                 </div>
               </div>

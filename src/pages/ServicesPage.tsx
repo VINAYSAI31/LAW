@@ -41,7 +41,7 @@ const ServicesPage = () => {
       features: t("services.2.features") as unknown as string[],
       icon: <Shield className="h-12 w-12" />,
       image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
+        "https://t3.ftcdn.net/jpg/06/23/78/88/360_F_623788874_AkPJl27fwKD8DGW4Eg6R2JSZ5eFIUYl6.jpg",
       color: "gold",
     },
     {
@@ -120,7 +120,7 @@ const ServicesPage = () => {
 
   const handleServiceClick = (service) => {
     setSelectedService(service);
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // <-- Add this line
+    window.scrollTo({ top: 0, behavior: "smooth" }); // <-- Add this line
   };
 
   const closeModal = () => {
@@ -129,46 +129,46 @@ const ServicesPage = () => {
 
   return (
     <Layout>
-    {/* Hero Section */}
-    {/* Hero Section */}
-    {/* Hero Section */}
-    <div className="relative h-[400px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-[url('https://t3.ftcdn.net/jpg/06/23/78/88/360_F_623788874_AkPJl27fwKD8DGW4Eg6R2JSZ5eFIUYl6.jpg')] bg-cover bg-center"></div>
+      {/* Hero Section */}
+      {/* Hero Section */}
+      {/* Hero Section */}
+      <div className="relative h-[400px] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 bg-[url('https://t3.ftcdn.net/jpg/06/23/78/88/360_F_623788874_AkPJl27fwKD8DGW4Eg6R2JSZ5eFIUYl6.jpg')] bg-cover bg-center"></div>
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/40"></div>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/40"></div>
 
-      {/* Hero Content */}
-      <div className="relative z-10 container mx-auto px-4">
-        <div className="max-w-4xl">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-left"
-          >
-            <h1 className="text-6xl md:text-6xl font-serif font-bold text-white mb-8" style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#F5F5F5",
-              }}>
-            Our Services
-            </h1>
-            <div className="flex items-center space-x-2 mb-18">
-              <span className="text-gold font-medium">Home</span>
-              <span className="text-white/60">/</span>
-              <span className="text-white">Our Services</span>
-            </div>
-          </motion.div>
+        {/* Hero Content */}
+        <div className="relative z-10 container mx-auto px-4">
+          <div className="max-w-4xl">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="text-left"
+            >
+              <h1
+                className="text-6xl md:text-6xl font-serif font-bold text-white mb-8"
+                style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}
+              >
+                Our Services
+              </h1>
+              <div className="flex items-center space-x-2 mb-18">
+                <span className="text-gold font-medium">Home</span>
+                <span className="text-white/60">/</span>
+                <span className="text-white">Our Services</span>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
 
-      
-    </div>
-   
-
       {/* Services Grid */}
-      <div className="py-24 " style={{ backgroundColor: "#0B1F3A" }}>
+      <div className="py-24 text-xl" style={{ backgroundColor: "#0B1F3A" }}>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -178,12 +178,11 @@ const ServicesPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 onClick={() => handleServiceClick(service)}
-  className="   p-0 h-full shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2" style={{ backgroundColor: "#101820" }}
+                className="   p-0 h-90 shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2 bg-white/10"
+                
               >
                 <div className="relative h-full">
                   {/* Background Image */}
-                  
-
 
                   {/* Content Overlay */}
                   <div className="relative z-10 p-8 h-full min-h-[500px] flex flex-col justify-between text-white">
@@ -195,24 +194,31 @@ const ServicesPage = () => {
                       >
                         {service.icon}
                       </div>
-                      <h3 className="font-serif text-3xl font-bold mb-3 group-hover:text-white transition-colors duration-300"    
-                      style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#F5F5F5",
-              }}>
+                      <h3
+                        className="font-serif text-3xl font-bold mb-3 group-hover:text-white transition-colors duration-300"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#F5F5F5",
+                        }}
+                      >
                         {service.title}
                       </h3>
-                      <p className="text-white text-lg font-medium mb-4" 
-                      style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
-              }}>
+                      <p
+                        className="text-white text-lg font-medium mb-4"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#BFA75C",
+                        }}
+                      >
                         {service.subtitle}
                       </p>
-                      <p className="text-white/90 leading-relaxed mb-6" style={{
-                fontFamily: "'Open Sans', Lato", // or "'Cormorant Garamond', serif"
-                color: "#CCCCCC",
-              }} >
+                      <p
+                        className="text-white/90 leading-relaxed mb-6"
+                        style={{
+                          fontFamily: "'Open Sans', Lato", // or "'Cormorant Garamond', serif"
+                          color: "#CCCCCC",
+                        }}
+                      >
                         {service.description}
                       </p>
                     </div>
@@ -240,7 +246,7 @@ const ServicesPage = () => {
       </div>
 
       {/* Call to Action Section */}
-      <GetAnExpert/>
+      <GetAnExpert />
 
       {/* Service Detail Modal */}
       <AnimatePresence>

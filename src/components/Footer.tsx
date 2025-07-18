@@ -8,33 +8,54 @@ const Footer = () => {
   const { t } = useLanguage();
   
   return (
-    <footer className="bg-navy-dark text-white">
+    <footer className="bg-navy-dark text-white text-xl">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-serif font-bold mb-4 text-gold">
+            <h3 className="text-xl font-serif font-bold mb-4 text-gold" style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#F5F5F5",
+  }}  >
               {t('hero.title')}
             </h3>
-            <p className="mb-6 text-gray-300">
-              {t('hero.subtitle')}
-            </p>
-            <div className="space-y-3">
+            
+            <div className="space-y-3 text-xl" >
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-3 text-gold mt-1" />
-                <span className="text-sm">{t('footer.address')}</span>
+                <span className="text-xl text-cream"
+                  style={{
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#BFA75C",
+                  }}
+                >{t('footer.address')}</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-gold" />
-                <span>{t('footer.phone')}</span>
+                <span className="text-white"
+                  style={{
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#BFA75C",
+                  }}
+                >{t('footer.phone')}</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-gold" />
-                <span>{t('footer.email')}</span>
+                <span className="text-white"
+                  style={{
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#BFA75C",
+                  }}
+                >{t('footer.email')}</span>
               </div>
               <div className="flex items-center">
                 <MessageCircle className="h-5 w-5 mr-3 text-gold" />
-                <span>LINE: {t('footer.line')}</span>
+                <span className="text-white"
+                  style={{
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#BFA75C",
+                  }}
+                >LINE: {t('footer.line')}</span>
               </div>
             </div>
           </div>
@@ -60,21 +81,8 @@ const Footer = () => {
                   {t('nav.services')}
                 </Link>
               </li>
-              <li>
-                <Link to="/team" className="hover:text-gold transition-colors">
-                  {t('nav.team')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/news" className="hover:text-gold transition-colors">
-                  {t('nav.news')}
-                </Link>
-              </li>
-              <li>
-                <Link to="/fees" className="hover:text-gold transition-colors">
-                  {t('nav.fees')}
-                </Link>
-              </li>
+           
+              
               <li>
                 <Link to="/contact" className="hover:text-gold transition-colors">
                   {t('nav.contact')}
@@ -89,7 +97,12 @@ const Footer = () => {
               {t('nav.contact')}
             </h3>
             <p className="mb-4 text-gray-300">
-              {t('cta.description')}
+              <span className="text-cream"
+                style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}
+              >{t('cta.description')}</span>
             </p>
             <Link 
               to="/contact" 

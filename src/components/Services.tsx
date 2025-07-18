@@ -125,7 +125,7 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -6 }}
-              className="flex flex-col bg-[#fdf7ee] shadow-xl border border-black/10 transition-all duration-300"
+              className="flex flex-col bg-[#fdf7ee] shadow-xl border border-black/10 transition-all duration-300 bg-white/10"
               style={{ borderRadius: 0 }}
             >
               <img
@@ -139,9 +139,18 @@ const Services = () => {
                   {service.icon}
                 </div>
 
-                <h3 className="text-xl font-serif font-bold mb-2">{service.title}</h3>
-                <h4 className="text-md font-semibold mb-2 text-[#4D301B]">{service.subtitle}</h4>
-                <p className="text-gray-800 flex-grow">{service.description}</p>
+                <h3 className="text-xl font-serif font-bold mb-2"   style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#F5F5F5",
+  }}>{service.title}</h3>
+                <h4 className="text-md font-semibold mb-2 text-[#4D301B]"   style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#BFA75C",
+  }}>{service.subtitle}</h4>
+                <p className="text-gray-800 flex-grow"   style={{
+    fontFamily: "'Open Sans', Lato", // or "'Cormorant Garamond', serif"
+    color: "#CCCCCC",
+  }}>{service.description}</p>
 
                 <button
                   onClick={() => navigate(`/services`)}
