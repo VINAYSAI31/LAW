@@ -4,7 +4,7 @@ import { GraduationCap, Briefcase, Scale, Award } from "lucide-react";
 
 const LawyerProfile = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-900 text-white relative overflow-hidden">
+    <section className="py-20  text-white relative overflow-hidden "style={{ backgroundColor: "#0B1F3A" }}>
       {/* Decorative elements */}
 
       <div className="container mx-auto px-4 relative z-10">
@@ -27,13 +27,16 @@ const LawyerProfile = () => {
                 viewport={{ once: true }}
               >
                 <Scale className="h-8 w-8 text-gold" />
-                <span className="text-gold font-semibold tracking-wider uppercase text-sm">
+                <span className="text-gold font-semibold tracking-wider uppercase text-xl">
                   About Me
                 </span>
               </motion.div>
 
               <motion.h2
-                className="text-4xl lg:text-5xl font-serif font-bold text-gold"
+                className="text-4xl lg:text-5xl font-serif font-bold text-gold"style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -43,7 +46,10 @@ const LawyerProfile = () => {
               </motion.h2>
 
               <motion.div
-                className="h-1 w-24 bg-gold"
+                className="h-1 w-24 bg-gold "style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#BFA75C",
+                }}
                 initial={{ opacity: 0, scaleX: 0 }}
                 whileInView={{ opacity: 1, scaleX: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -61,7 +67,10 @@ const LawyerProfile = () => {
             > */}
             <div className="flex items-center space-x-3 mb-3">
               <Award className="h-6 w-6 text-gold" />
-              <span className="text-xl font-semibold">
+              <span className="text-xl font-semibold" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#BFA75C",
+              }}>
                 More than 30 years of experience in law and litigation
               </span>
             </div>
@@ -75,16 +84,22 @@ const LawyerProfile = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center space-x-3 mb-2">
+              <div className="flex items-center space-x-3 mb-2 text-2xl">
                 <Briefcase className="h-6 w-6 text-gold" />
-                <span className="text-lg font-semibold text-gold">
+                <span className="text-lg "style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}>
                   Position
                 </span>
               </div>
-              <p className="text-gray-300 ml-9">
+              <p className="text-gray-300 ml-9 text-xl" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#BFA75C",
+              }}>
                 Lawyer, Lawyers Council of Thailand
               </p>
-              <p className="text-gray-300 ml-9">
+              <p className="text-gray-300 ml-9 text-xl">
                 Consulting - Volunteer lawyer
               </p>
             </motion.div>
@@ -104,27 +119,45 @@ const LawyerProfile = () => {
                 </span>
               </div>
 
-              <div className="ml-9 space-y-4">
+              <div className="ml-9 space-y-4 text-xl">
                 <div className="border-l-2 border-gold/30 pl-6 py-2">
-                  <h4 className="font-semibold text-white">
+                  <h4 className="font-semibold " style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}>
                     Bachelor's Degree
                   </h4>
-                  <p className="text-gray-300">
+                  <p className="text-gray-300" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#BFA75C",
+              }}>
                     Bachelor of Law, Sukhothai Thammathirat Open University
                   </p>
                 </div>
 
                 <div className="border-l-2 border-gold/30 pl-6 py-2">
-                  <h4 className="font-semibold text-white">Master's Degree</h4>
-                  <p className="text-gray-300">
+                  <h4 className="font-semibold text-white" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}>Master's Degree</h4>
+                  <p className="text-gray-300" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#BFA75C",
+              }}>
                     Political Science, Major in Political Communication, Krirk
                     University
                   </p>
                 </div>
 
                 <div className="border-l-2 border-gold/30 pl-6 py-2">
-                  <h4 className="font-semibold text-white">Ph.D.</h4>
-                  <p className="text-gray-300">
+                  <h4 className="font-semibold text-white" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}>Ph.D.</h4>
+                  <p className="text-gray-300" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#BFA75C",
+              }}>
                     Honorary Doctorate in Political Science, Politics and
                     Governance, LADC Institute
                   </p>
@@ -160,7 +193,12 @@ const LawyerProfile = () => {
           </motion.div>
         </div>
       </div>
+        {/* Custom Horizontal Line */}
+        <div className="w-full mt-20 flex justify-center" style={{ backgroundColor: "#0B1F3A" }}>
+        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
+      </div>
     </section>
+    
   );
 };
 

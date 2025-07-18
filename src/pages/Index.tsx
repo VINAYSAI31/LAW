@@ -17,8 +17,8 @@ const Index = () => {
       <Hero />
       <LawyerProfile/>
    
-      
       <About />
+      <Services/>
       <GetAnExpert/>
     
     </Layout>

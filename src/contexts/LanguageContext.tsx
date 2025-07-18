@@ -44,7 +44,7 @@ export const translations = {
     // Services
 
     // About
-    "about.title": "About Our Firm",
+    "about.title": "ABOUT OUR FIRM",
     "about.description":
       "With over 20 years of experience, our firm has established itself as a leader in Thai and international law. Our multilingual team provides expert legal counsel to clients from around the world.",
     "about.button": "Learn More",
@@ -56,15 +56,15 @@ export const translations = {
     "about.achievement4": "Languages Supported",
 
     // aboutValues
-    "about.value1.title": "Integrity",
+    "about.value1.title": "INTEGRITY",
     "about.value1.description":
       "Upholding the highest ethical standards in all our legal practices",
 
-    "about.value2.title": "Excellence",
+    "about.value2.title": "EXCELLENCE",
     "about.value2.description":
       "Delivering exceptional legal services with precision and expertise",
 
-    "about.value3.title": "Reliability",
+    "about.value3.title": "RELIABILITY",
     "about.value3.description":
       "Always available when you need us most, with timely responses",
 
@@ -114,7 +114,7 @@ export const translations = {
 
     //ABOUT US PAGE
 
-    "aboutus.title.one": "About ",
+    "aboutus.title.one": "ABOUT ",
     "aboutus.title.two": "Our Firm",
     "aboutus.subtitle":
       "Two decades of unwavering commitment to justice, excellence, and client success",

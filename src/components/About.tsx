@@ -49,7 +49,7 @@ const About = () => {
   ];
 
   return (
-    <div className="relative py-20 overflow-visible" style={{ backgroundColor: "#140d07" }}>
+    <div className="relative py-10 overflow-visible text-xl" style={{ backgroundColor: "#0B1F3A" }}>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
@@ -86,13 +86,19 @@ const About = () => {
               {/* Decorative line */}
               <div className="absolute -left-8 top-0 w-1 h-32 bg-gradient-to-b from-gold to-loyalBlue"></div>
 
-              <h2 className="text-4xl font-serif font-bold text-white mb-6">
+              <h2 className="text-4xl font-serif font-bold text-white mb-6" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}>
                 {t("about.title")}
               </h2>
 
               <div className="w-24 h-1 bg-gold mb-8"></div>
 
-              <p className="text-lg text-white mb-8 leading-relaxed">
+              <p className="text-lg text-white mb-8 leading-relaxed"style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#BFA75C",
+              }}>
                 {t("about.description")}
               </p>
 
@@ -111,10 +117,16 @@ const About = () => {
                       {value.icon}
                     </div>
                     <div>
-                      <h4 className="text-xl font-bold text-white mb-2">
+                      <h4 className="text-xl font-bold text-white mb-2" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}>
                         {value.title}
                       </h4>
-                      <p className="text-white/90">{value.description}</p>
+                      <p className="text-white/90" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#BFA75C",
+              }}>{value.description}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -126,7 +138,12 @@ const About = () => {
 
         </div>
       </div>
+{/* Custom Horizontal Line */}
+<div className="w-full mt-20 flex justify-center" style={{ backgroundColor: "#0B1F3A" }}>
+        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
+      </div>
     </div>
+    
   );
 };
 

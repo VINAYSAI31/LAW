@@ -90,7 +90,10 @@ const AboutPage = () => {
               transition={{ duration: 1 }}
               className="text-left"
             >
-              <h1 className="text-6xl md:text-6xl font-serif font-bold text-white mb-8">
+              <h1 className="text-6xl md:text-6xl font-serif font-bold text-white mb-8" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}>
                 About Us
               </h1>
               <div className="flex items-center space-x-2 mb-18">
@@ -101,12 +104,13 @@ const AboutPage = () => {
             </motion.div>
           </div>
         </div>
-
-        
       </div>
 
       {/* Mission Statement Section */}
-      <div className="pt-[160px] pb-24 bg-gray-50 ">
+      <div
+        className="pt-[160px] pb-24  "
+        style={{ backgroundColor: "#0B1F3A" }}
+      >
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -121,7 +125,6 @@ const AboutPage = () => {
                 alt="Legal consultation"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
-              
             </motion.div>
 
             <motion.div
@@ -131,26 +134,42 @@ const AboutPage = () => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="border-l-4 border-gold pl-8">
+              <div className="border-l-4 border-gold pl-8" style={{
+                  color: "#BFA75C",
+                  fontFamily: "'Open Sans', 'Lato', sans-serif",
+                }}>
                 <blockquote className="text-2xl md:text-3xl font-serif text-emerald leading-relaxed mb-8">
                   "On the day you don't know who to turn to... We are the ones
                   who listen with our hearts without judgment and stand here to
                   help you with justice."
                 </blockquote>
-                </div>
-                <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-                  <p>{t("aboutus.story1")}</p>
-                  <p>{t("aboutus.story2")}</p>
-                  <p>{t("aboutus.story3")}</p>
-                </div>
-              
+              </div>
+              <div
+                className="space-y-6 text-lg leading-relaxed"
+                style={{
+                  color: "#CCCCCC",
+                  fontFamily: "'Open Sans', 'Lato', sans-serif",
+                }}
+              >
+                <p>{t("aboutus.story1")}</p>
+                <p>{t("aboutus.story2")}</p>
+                <p>{t("aboutus.story3")}</p>
+              </div>
             </motion.div>
           </div>
         </div>
       </div>
 
+      {/* Custom Horizontal Line */}
+      <div className="w-full flex justify-center" style={{ backgroundColor: "#0B1F3A" }}>
+        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
+      </div>
+
       {/* Core Values Section - Completely Redesigned */}
-      <div className="py-24 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-900 relative overflow-hidden">
+      <div
+        className="py-24  relative overflow-hidden"
+        style={{ backgroundColor: "#0B1F3A" }}
+      >
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div
@@ -170,9 +189,16 @@ const AboutPage = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl font-serif font-bold text-white mb-6">
-              Our Core Values
+            <h2
+              className="text-5xl font-bold mb-6"
+              style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}
+            >
+              CIVIL CASES
             </h2>
+
             <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
             <p className="text-2xl text-white/80 max-w-3xl mx-auto">
               The principles that guide every decision, every case, and every
@@ -188,7 +214,8 @@ const AboutPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
                 viewport={{ once: true }}
-                className="group relative"
+                className="group relative "
+                style={{ backgroundColor: "#0B1F3A" }}
               >
                 <div
                   className="relative bg-white/10 backdrop-blur-sm border border-white/20  p-8 h-full 
@@ -206,10 +233,18 @@ const AboutPage = () => {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-2xl font-serif font-bold text-white mb-4 group-hover:text-gold transition-colors duration-300">
+                  <h3 className="text-3xl font-serif font-bold text-white mb-4 group-hover:text-gold transition-colors duration-300" 
+                  style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#BFA75C",
+              }}>
                     {value.title}
                   </h3>
-                  <p className="text-white/80 leading-relaxed group-hover:text-white transition-colors duration-300">
+                  <p className="text-white/80 text-1xl leading-relaxed group-hover:text-white transition-colors duration-300"
+                  style={{
+                fontFamily: "'Open Sans', Lato", // or "'Cormorant Garamond', serif"
+                color: "#CCCCCC",
+              }} >
                     {value.description}
                   </p>
 

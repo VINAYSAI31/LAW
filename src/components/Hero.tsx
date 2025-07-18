@@ -26,7 +26,10 @@ const Hero = () => {
         <h1
           className={`text-white text-4xl sm:text-5xl lg:text-6xl font-serif font-bold mb-6 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          }`}style={{
+            fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+            color: "#F5F5F5",
+          }}
         >
           {t("hero.title")}
         </h1>
@@ -36,7 +39,10 @@ const Hero = () => {
         <p
           className={`text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 transition-all duration-1000 delay-300 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
+          }`}style={{
+            fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+            color: "#BFA75C",
+          }}
         >
           {t("hero.description")}
         </p>

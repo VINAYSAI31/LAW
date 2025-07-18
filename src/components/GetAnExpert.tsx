@@ -15,7 +15,7 @@ const GetAnExpert = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="relative bg-[#1e2027] overflow-visible pb-0"> {/* even further reduced bottom padding for compactness */}
+    <div className="relative  overflow-visible pb-0" style={{ backgroundColor: "#0B1F3A" }}> {/* even further reduced bottom padding for compactness */}
       {/* Background Pattern */}
       <div
         className="absolute inset-0 opacity-100"

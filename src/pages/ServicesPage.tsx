@@ -148,7 +148,10 @@ const ServicesPage = () => {
             transition={{ duration: 1 }}
             className="text-left"
           >
-            <h1 className="text-6xl md:text-6xl font-serif font-bold text-white mb-8">
+            <h1 className="text-6xl md:text-6xl font-serif font-bold text-white mb-8" style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}>
             Our Services
             </h1>
             <div className="flex items-center space-x-2 mb-18">
@@ -165,7 +168,7 @@ const ServicesPage = () => {
    
 
       {/* Services Grid */}
-      <div className="py-24 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-900">
+      <div className="py-24 " style={{ backgroundColor: "#0B1F3A" }}>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -175,7 +178,7 @@ const ServicesPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 onClick={() => handleServiceClick(service)}
-  className="bg-emerald-dark   p-0 h-full shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2"
+  className="   p-0 h-full shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2" style={{ backgroundColor: "#101820" }}
               >
                 <div className="relative h-full">
                   {/* Background Image */}
@@ -192,13 +195,24 @@ const ServicesPage = () => {
                       >
                         {service.icon}
                       </div>
-                      <h3 className="font-serif text-3xl font-bold mb-3 group-hover:text-white transition-colors duration-300">
+                      <h3 className="font-serif text-3xl font-bold mb-3 group-hover:text-white transition-colors duration-300"    
+                      style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#F5F5F5",
+              }}>
                         {service.title}
                       </h3>
-                      <p className="text-white text-lg font-medium mb-4">
+                      <p className="text-white text-lg font-medium mb-4" 
+                      style={{
+                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                color: "#BFA75C",
+              }}>
                         {service.subtitle}
                       </p>
-                      <p className="text-white/90 leading-relaxed mb-6">
+                      <p className="text-white/90 leading-relaxed mb-6" style={{
+                fontFamily: "'Open Sans', Lato", // or "'Cormorant Garamond', serif"
+                color: "#CCCCCC",
+              }} >
                         {service.description}
                       </p>
                     </div>
