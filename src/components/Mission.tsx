@@ -79,7 +79,7 @@ const Mission = () => {
             viewport={{ once: true }}
           >
             <Link
-              to="/vision-mission"
+              to="/mission"
               className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
               style={{
                 fontFamily: "'Playfair Display', serif",
