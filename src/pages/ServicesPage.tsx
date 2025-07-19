@@ -14,10 +14,12 @@ import {
   Mail,
 } from "lucide-react";
 import GetAnExpert from "@/components/GetAnExpert";
+import { useNavigate, Link } from "react-router-dom";
 
 const ServicesPage = () => {
   const { t } = useLanguage();
   const [selectedService, setSelectedService] = useState(null);
+  const navigate = useNavigate();
 
   const services = [
     {
@@ -158,8 +160,8 @@ const ServicesPage = () => {
                 Our Services
               </h1>
               <div className="flex items-center space-x-2 mb-18">
-                <span className="text-gold font-medium">Home</span>
-                <span className="text-white/60">/</span>
+              <Link to="/" className="text-gold font-medium">Home</Link>
+              <span className="text-white/60">/</span>
                 <span className="text-white">Our Services</span>
               </div>
             </motion.div>
@@ -225,17 +227,25 @@ const ServicesPage = () => {
 
                     {/* CTA */}
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center text-white font-medium group-hover:text-white transition-colors duration-300">
-                        <span className="text-lg">Learn More</span>
-                        <ArrowRight className="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-2" />
-                      </div>
-
-                      <div
-                        className="w-14 h-14 bg-gold/20 rounded-full flex items-center justify-center 
-                                      group-hover:bg-gold group-hover:scale-110 transition-all duration-300"
+                      <Link
+                        to="/services"
+                        className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
+                        style={{
+                          fontFamily: "'Playfair Display', serif",
+                          color: "#BFA75C",
+                          fontWeight: 700,
+                          letterSpacing: "0.1em",
+                          textTransform: "uppercase",
+                          fontSize: "1.1rem",
+                        }}
                       >
-                        <ArrowRight className="h-6 w-6 text-white group-hover:text-emerald transition-colors duration-300" />
-                      </div>
+                        Explore More
+                        <span className="ml-2 transition-transform group-hover:translate-x-1">
+                          <ArrowRight className="h-5 w-5" style={{ color: "#BFA75C" }} />
+                        </span>
+                      </Link>
+
+                      
                     </div>
                   </div>
                 </div>
@@ -263,7 +273,7 @@ const ServicesPage = () => {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.8, opacity: 0, y: 50 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+              className=" max-w-4xl w-full max-h-[90vh] overflow-y-auto"style={{ backgroundColor: "#0B1F3A" }}
             >
               <div className="relative">
                 {/* Header with image */}
@@ -271,7 +281,10 @@ const ServicesPage = () => {
                   <img
                     src={selectedService.image}
                     alt={selectedService.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover"  style={{
+                      fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                      color: "#F5F5F5",
+                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-emerald-darker to-transparent"></div>
                   <div className="absolute bottom-6 left-8 text-white">
@@ -280,10 +293,16 @@ const ServicesPage = () => {
                     >
                       {selectedService.icon}
                     </div>
-                    <h2 className="text-4xl font-serif font-bold">
+                    <h2 className="text-4xl font-serif font-bold"   style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#F5F5F5",
+  }}>
                       {selectedService.title}
                     </h2>
-                    <p className="text-white text-xl">
+                    <p className="text-white text-xl"   style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#BFA75C",
+  }}>
                       {selectedService.subtitle}
                     </p>
                   </div>
@@ -298,35 +317,66 @@ const ServicesPage = () => {
 
                 {/* Content */}
                 <div className="p-8">
-                  <p className="text-lg text-darkBrown leading-relaxed mb-8">
+                  <p className="text-lg text-darkBrown leading-relaxed mb-8"   style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#F5F5F5",
+  }}>
                     {selectedService.fullDescription}
                   </p>
 
-                  <h3 className="text-2xl font-serif font-bold text-emerald mb-6">
+                  <h3 className="text-2xl font-serif font-bold text-emerald mb-6"   style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#F5F5F5",
+  }}>
                     {t("services.feature")}
                   </h3>
-                  <div className="grid md:grid-cols-2 gap-4 mb-8">
+                  <div className="grid md:grid-cols-2 gap-4 mb-8"   style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#BFA75C",
+  }}>
                     {selectedService.features.map((feature, index) => (
                       <div key={index} className="flex items-center">
                         <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
-                        <span className="text-darkBrown">{feature}</span>
+                        <span className="text-xl"  style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#BFA75C",
+  }}>{feature}</span>
                       </div>
                     ))}
                   </div>
 
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 justify-between mt-8">
                     <button
-                      className="bg-emerald hover:bg-emerald-dark text-white px-8 py-3 rounded-xl 
-                                     font-medium transition-colors"
+                      className="group relative inline-flex items-center text-lg font-medium transition-colors border-2 border-gold  px-8 py-3 shadow-lg"
+                      style={{
+                        fontFamily: "'Open Sans', 'Lato', sans-serif",
+                        color: "#CCCCCC",
+                        fontWeight: 500,
+                        letterSpacing: "0.05em",
+                        background: "rgba(11, 31, 58, 0.9)",
+                        backdropFilter: "blur(6px)",
+                      }}
+                      onClick={() => navigate('/contact')}
                     >
-                      {t("services.btn1")}
+                      <span className="after:content-[''] after:block after:h-[2px] after:bg-gold after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">
+                        {t("services.btn1")}
+                      </span>
                     </button>
                     <button
                       onClick={closeModal}
-                      className="border-2 border-emerald text-emerald hover:bg-emerald-dark hover:text-white 
-                               px-8 py-3 rounded-xl font-medium transition-all"
+                      className="group inline-flex items-center gap-2 font-serif uppercase transition-colors text-lg border-none bg-transparent p-0 shadow-none"
+                      style={{
+                        fontFamily: "'Playfair Display', serif",
+                        color: "#BFA75C",
+                        fontWeight: 700,
+                        letterSpacing: "0.1em",
+                        textTransform: "uppercase",
+                      }}
                     >
                       {t("services.btn2")}
+                      <span className="ml-1 transition-transform group-hover:translate-x-1">
+                        <svg width="18" height="18" fill="none" stroke="#BFA75C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                      </span>
                     </button>
                   </div>
                 </div>

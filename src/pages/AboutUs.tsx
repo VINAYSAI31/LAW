@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import GetAnExpert from "@/components/GetAnExpert";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   const { t } = useLanguage();
@@ -97,7 +98,7 @@ const AboutPage = () => {
                 About Us
               </h1>
               <div className="flex items-center space-x-2 mb-18">
-                <span className="text-gold font-medium">Home</span>
+                <Link to="/" className="text-gold font-medium">Home</Link>
                 <span className="text-white/60">/</span>
                 <span className="text-white">About Us</span>
               </div>

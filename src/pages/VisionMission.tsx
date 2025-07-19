@@ -3,6 +3,8 @@ import Layout from "@/components/Layout";
 import { motion } from "framer-motion";
 import { Heart, Shield, Users, Scale, Target, Compass } from "lucide-react";
 import GetAnExpert from "@/components/GetAnExpert";
+import { useNavigate, Link } from "react-router-dom";
+
 
 const VisionMission = () => {
   const strengths = [
@@ -79,8 +81,8 @@ const VisionMission = () => {
                 Mission and Vision
               </h1>
               <div className="flex items-center space-x-2 mb-18">
-                <span className="text-gold font-medium">Home</span>
-                <span className="text-white/60">/</span>
+              <Link to="/" className="text-gold font-medium">Home</Link>
+              <span className="text-white/60">/</span>
                 <span className="text-white">Our Mission</span>
               </div>
             </motion.div>

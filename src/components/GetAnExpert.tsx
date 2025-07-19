@@ -3,6 +3,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Award, Users, Scale, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const stats = [
   { icon: <Award className="h-8 w-8" />, number: "10", label: "Years of Business" },
@@ -70,21 +72,38 @@ const GetAnExpert = () => {
             className="text-white"
           >
             <div className="w-16 h-1 bg-gold mb-6 mt-64"></div>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8"   style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#F5F5F5",
+  }}>
               Get a Legal Expert
             </h2>
-            <p className="text-lg text-cream mb-8 leading-relaxed">
+            <p className="text-lg text-cream mb-8 leading-relaxed"   style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#CCCCCC",
+  }}>
               You are planning to establish your business in a foreign country
               and struggle with local laws, trying to bypass pitfalls and
               potential risks? We know the situation all too well.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-gold hover:bg-gold-dark text-emerald-darker font-semibold px-8 py-3 text-lg">
-                CONSULT NOW
-              </Button>
-              <Button className="bg-transparent border-2 border-gold hover:bg-gold/10 text-gold hover:text-white px-8 py-3 text-lg">
-                CONTACT US
-              </Button>
+              <Link
+                to="/contact"
+                className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
+                style={{
+                  fontFamily: "'Playfair Display', serif",
+                  color: "#BFA75C",
+                  fontWeight: 700,
+                  letterSpacing: "0.1em",
+                  textTransform: "uppercase",
+                  fontSize: "1.1rem",
+                }}
+              >
+                Contact Now
+                <span className="ml-2 transition-transform group-hover:translate-x-1">
+                  <ArrowRight className="h-5 w-5" style={{ color: "#BFA75C" }} />
+                </span>
+              </Link>
             </div>
           </motion.div>
 

@@ -56,8 +56,11 @@ const Hero = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <button className="border border-gold text-gold px-6 py-3 text-lg font-semibold rounded hover:bg-gold hover:text-black transition">
-            {t("hero.cta")}
+          <button className="border border-gold text-gold px-6 py-3 text-lg font-semibold rounded hover:bg-gold/40 hover:text-black transition"  style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#BFA75C",
+  }} >
+            GET STARTED
           </button>
         </div>
       </div>

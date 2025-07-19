@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const { t } = useLanguage();
@@ -167,6 +168,32 @@ const Services = () => {
           ))}
         </div>
       </div>
+      {/* Explore Button */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        viewport={{ once: true }}
+        className="flex justify-center mt-16"
+      >
+        <Link
+          to="/services"
+          className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
+          style={{
+            fontFamily: "'Playfair Display', serif",
+            color: "#BFA75C",
+            fontWeight: 700,
+            letterSpacing: "0.1em",
+            textTransform: "uppercase",
+            fontSize: "1.1rem",
+          }}
+        >
+          Explore More
+          <span className="ml-2 transition-transform group-hover:translate-x-1">
+            <ArrowRight className="h-5 w-5" style={{ color: "#BFA75C" }} />
+          </span>
+        </Link>
+      </motion.div>
       <div className="w-full flex justify-center mt-20" style={{ backgroundColor: "#0B1F3A" }}>
         <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
       </div>

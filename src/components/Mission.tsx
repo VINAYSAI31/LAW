@@ -80,10 +80,20 @@ const Mission = () => {
           >
             <Link
               to="/vision-mission"
-              className="group inline-flex items-center bg-white/10 hover:bg-emerald-900 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
+              style={{
+                fontFamily: "'Playfair Display', serif",
+                color: "#BFA75C",
+                fontWeight: 700,
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                fontSize: "1.1rem",
+              }}
             >
-              Explore Our Vision
-              <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              Explore More
+              <span className="ml-2 transition-transform group-hover:translate-x-1">
+                <ArrowRight className="h-5 w-5" style={{ color: "#BFA75C" }} />
+              </span>
             </Link>
           </motion.div>
         </motion.div>

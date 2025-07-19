@@ -32,14 +32,25 @@ const Navigation = () => {
             alt="Harwell Logo"
             className="h-10 w-auto"
           />
-          <div className="text-white font-bold text-xl font-serif tracking-wide">
-  {t("nav.title")}
-</div>
-
+          <div
+            className="text-white font-bold text-xl font-serif tracking-wide"
+            style={{
+              fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+              color: "#F5F5F5",
+            }}
+          >
+            {t("nav.title")}
+          </div>
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-10">
+        <div
+          className="hidden md:flex items-center space-x-10 text-xl"
+          style={{
+            fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+            color: "#F5F5F5",
+          }}
+        >
           {[
             { label: t("nav.home"), path: "/" },
             { label: t("nav.about"), path: "/about" },
@@ -53,11 +64,10 @@ const Navigation = () => {
               className={`relative group text-white hover:text-gold transition-colors font-medium uppercase ${
                 isActive(item.path) ? "text-gold" : ""
               }`}
-              >
-                <span className="after:content-[''] after:block after:h-[2px] after:bg-gold after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">
-                  {item.label}
-                </span>
-              
+            >
+              <span className="after:content-[''] after:block after:h-[2px] after:bg-gold after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">
+                {item.label}
+              </span>
             </Link>
           ))}
         </div>
@@ -66,9 +76,31 @@ const Navigation = () => {
         <div className="hidden md:block">
           <Link
             to="/contact"
-            className="border border-gold text-gold px-4 py-2 rounded hover:bg-gold hover:text-black font-medium uppercase transition"
+            className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              color: "#BFA75C",
+              fontWeight: 700,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              fontSize: "1.1rem",
+            }}
           >
             {t("nav.getInTouch")}
+            <span className="ml-2 transition-transform group-hover:translate-x-1">
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="#BFA75C"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </span>
           </Link>
         </div>
 
