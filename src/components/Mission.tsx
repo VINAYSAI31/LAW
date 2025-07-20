@@ -2,12 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Mission = () => {
+  const { t } = useLanguage();
   return (
     <section className="p-0 m-0 border-none md-10 relative overflow-hidden" style={{ backgroundColor: "#030915" }}>
-   
-
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -28,24 +28,20 @@ const Mission = () => {
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                 color: "#daac24",
               }}>
-            OUR MISSON
-          </h2>
-          <div className="w-24 h-1 bg-gold mx-auto mb-6"></div>
-
+              {t('mission.missionHeading')}
+            </h2>
+            <div className="w-24 h-1 bg-gold mx-auto mb-6"></div>
             <h3 className="text-3xl md:text-4xl font-bold  mb-8"   style={{
-    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#f5c15c",
-  }}>
-              Because justice should not belong to{' '}
-              only a few
+              fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+              color: "#f5c15c",
+            }}>
+              {t('mission.missionText')}
             </h3>
-            
-            
             <p className="text-2xl md:text-3xl text-emerald-800 font-medium mb-6"   style={{
-    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#f5c15c",
-  }}>
-              We make the law truly reliable.
+              fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+              color: "#f5c15c",
+            }}>
+              {t('mission.missionSubText')}
             </p>
           </motion.div>
 
@@ -58,10 +54,10 @@ const Mission = () => {
             className="bg-white/5 backdrop-blur-sm p-8 md:p-12 shadow-2xl border border-emerald-100 mb-12"
           >
             <p className="text-xl md:text-3xl text-gray-700  leading-relaxed "   style={{
-    fontFamily: "'Lato', serif", // or "'Cormorant Garamond', serif"
-    color: "#f5c15c",
-  }}>
-              We do this job because we want to stand by those who have no voice.
+              fontFamily: "'Lato', serif", // or "'Cormorant Garamond', serif"
+              color: "#f5c15c",
+            }}>
+              {t('mission.visionText')}
             </p>
           </motion.div>
 
@@ -84,7 +80,7 @@ const Mission = () => {
                 fontSize: "1.1rem",
               }}
             >
-              Explore More
+              {t('mission.button')}
               <span className="ml-2 transition-transform group-hover:translate-x-1">
                 <ArrowRight className="h-5 w-5" style={{ color: "#f5c15c" }} />
               </span>

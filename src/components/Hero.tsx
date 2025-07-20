@@ -39,14 +39,26 @@ const Hero = () => {
        
 
         <p
-          className={`text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 transition-all duration-1000 delay-300 ${
+          className={`text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-2 transition-all duration-1000 delay-300 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}style={{
+          }`}
+          style={{
             fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
             color: "#f5c15c",
           }}
         >
-          {t("hero.description")}
+          {t("hero.description1")}
+        </p>
+        <p
+          className={`text-gray-300 text-base sm:text-lg max-w-2xl mx-auto mb-8 transition-all duration-1000 delay-400 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+          }`}
+          style={{
+            fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+            color: "#f5c15c",
+          }}
+        >
+          {t("hero.description2")}
         </p>
 
         {/* Feature List */}
@@ -64,7 +76,7 @@ const Hero = () => {
   }} 
     onClick={() => navigate('/contact')}
   >
-            GET STARTED
+            {t("hero.button")}
           </button>
         </div>
       </div>

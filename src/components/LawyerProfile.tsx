@@ -1,10 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { GraduationCap, Briefcase, Scale, Award } from "lucide-react";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const LawyerProfile = () => {
+  const { t } = useLanguage();
   return (
-    <section className="py-20  text-white relative overflow-hidden "style={{ backgroundColor: "#030915" }}>
+    <section className="py-20  text-white relative overflow-hidden " style={{ backgroundColor: "#030915" }}>
       {/* Decorative elements */}
 
       <div className="container mx-auto px-4 relative z-10">
@@ -28,7 +30,7 @@ const LawyerProfile = () => {
               >
                 <Scale className="h-8 w-8 text-gold" />
                 <span className="text-gold font-semibold tracking-wider uppercase text-xl">
-                  About Me
+                  {t("profile.section")}
                 </span>
               </motion.div>
 
@@ -42,11 +44,12 @@ const LawyerProfile = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                 BAMRUNG RUNGREUANG
+                {t("profile.name")}
               </motion.h2>
 
               <motion.div
-                className="h-1 w-24 bg-gold "style={{
+                className="h-1 w-24 bg-gold "
+                style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                   color: "#f5c15c ",
                 }}
@@ -71,14 +74,12 @@ const LawyerProfile = () => {
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                 color: "#f5c15c ",
               }}>
-                More than 30 years of experience in law and litigation
+                {t("profile.experience")}
               </span>
             </div>
-            {/* </motion.div> */}
 
             {/* Position */}
             <motion.div
-              //   className="bg-gradient-to-r from-white/5 to-transparent p-6 rounded-lg"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -86,21 +87,21 @@ const LawyerProfile = () => {
             >
               <div className="flex items-center space-x-3 mb-2 text-2xl">
                 <Briefcase className="h-6 w-6 text-gold" />
-                <span className="text-lg "style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#F5F5F5",
-              }}>
-                  Position
+                <span className="text-lg " style={{
+                  fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                  color: "#F5F5F5",
+                }}>
+                  {t("profile.position")}
                 </span>
               </div>
               <p className="text-gray-300 ml-9 text-xl" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                 color: "#f5c15c ",
               }}>
-                Lawyer, Lawyers Council of Thailand
+                {t("profile.title")}
               </p>
               <p className="text-gray-300 ml-9 text-xl">
-                Consulting - Volunteer lawyer
+                {t("profile.consulting")}
               </p>
             </motion.div>
 
@@ -115,51 +116,49 @@ const LawyerProfile = () => {
               <div className="flex items-center space-x-3">
                 <GraduationCap className="h-6 w-6 text-gold" />
                 <span className="text-xl font-semibold text-gold">
-                  Education
+                  {t("profile.education")}
                 </span>
               </div>
 
               <div className="ml-9 space-y-4 text-xl">
                 <div className="border-l-2 border-gold/30 pl-6 py-2">
                   <h4 className="font-semibold " style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#F5F5F5",
-              }}>
-                    Bachelor's Degree
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#F5F5F5",
+                  }}>
+                    {t("profile.education.bachelor")}
                   </h4>
                   <p className="text-gray-300" style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#f5c15c ",
-              }}>
-                    Bachelor of Law, Sukhothai Thammathirat Open University
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#f5c15c ",
+                  }}>
+                    {t("profile.education.bachelor.detail")}
                   </p>
                 </div>
 
                 <div className="border-l-2 border-gold/30 pl-6 py-2">
                   <h4 className="font-semibold text-white" style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#F5F5F5",
-              }}>Master's Degree</h4>
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#F5F5F5",
+                  }}>{t("profile.education.master")}</h4>
                   <p className="text-gray-300" style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#f5c15c ",
-              }}>
-                    Political Science, Major in Political Communication, Krirk
-                    University
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#f5c15c ",
+                  }}>
+                    {t("profile.education.master.detail")}
                   </p>
                 </div>
 
                 <div className="border-l-2 border-gold/30 pl-6 py-2">
                   <h4 className="font-semibold text-white" style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#F5F5F5",
-              }}>Ph.D.</h4>
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#F5F5F5",
+                  }}>{t("profile.education.phd")}</h4>
                   <p className="text-gray-300" style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#f5c15c ",
-              }}>
-                    Honorary Doctorate in Political Science, Politics and
-                    Governance, LADC Institute
+                    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                    color: "#f5c15c ",
+                  }}>
+                    {t("profile.education.phd.detail")}
                   </p>
                 </div>
               </div>
@@ -193,12 +192,11 @@ const LawyerProfile = () => {
           </motion.div>
         </div>
       </div>
-        {/* Custom Horizontal Line */}
-        <div className="w-full mt-20 flex justify-center" style={{ backgroundColor: "#030915" }}>
+      {/* Custom Horizontal Line */}
+      <div className="w-full mt-20 flex justify-center" style={{ backgroundColor: "#030915" }}>
         <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#f5c15c ", borderRadius: "2px", margin: "0 auto" }} />
       </div>
     </section>
-    
   );
 };
 

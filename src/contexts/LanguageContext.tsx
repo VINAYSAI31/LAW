@@ -16,9 +16,14 @@ const LanguageContext = createContext<LanguageContextType>({
   t: (key: string) => key,
 });
 
+// ===============================
+// ENGLISH TRANSLATIONS
+// ===============================
 export const translations = {
   en: {
-    // Navigation
+    // ===============================
+    // NAVIGATION
+    // ===============================
     "nav.home": "Home",
     "nav.about": "About Us",
     "nav.services": "Our Services",
@@ -26,28 +31,32 @@ export const translations = {
     "nav.mission": "Our Mission",
     "nav.getInTouch": "Get in Touch",
     "nav.title": "Bamroong Law Office",
-    
 
- 
-
-    // Hero
+    // ===============================
+    // HERO SECTION
+    // ===============================
     "hero.title": "Bumrung Rungreung Law Office",
     "hero.cta": "Our Services",
-    "hero.description":
-      "On days when you dont know who to turn to we are here to listen without judgment and stand by your side with fairness.",
+    "hero.button": "Get Started",
+    "hero.description1": "When you feel like there's no one to turn to…",
+    "hero.description2":
+      "We are here to listen without judgment and stand by your side with fairness and integrity.",
 
-    // Features
+    // ===============================
+    // FEATURES SECTION
+    // ===============================
     "features.service": "Highly Personalized Service",
     "features.record": "Proven Track Record of Success",
     "features.rated": "Top Rated Trial Attorneys",
 
-    // Services
-
-    // About
+    // ===============================
+    // ABOUT US PAGE
+    // ===============================
     "about.title": "ABOUT OUR FIRM",
     "about.description":
       "With over 20 years of experience, our firm has established itself as a leader in Thai and international law. Our multilingual team provides expert legal counsel to clients from around the world.",
     "about.button": "Learn More",
+    "about.button.explore": "Explore More",
 
     // aboutAchievements
     "about.achievement1": "Years Experience",
@@ -67,17 +76,6 @@ export const translations = {
     "about.value3.title": "RELIABILITY",
     "about.value3.description":
       "Always available when you need us most, with timely responses",
-
-    // --------------------------------------------------------------------------------------------------------------------
-
-    // Team
-    "team.title": "Meet Our Expert Attorneys",
-    "team.description":
-      "Our team of experienced lawyers is dedicated to providing personalized legal services to meet your specific needs.",
-    // --------------------------------------------------------------------------------------------------------------------
-
-    // Testimonials
-    "testimonials.title": "What Our Clients Say",
 
     // Call to action
     "cta.title": "Need Legal Assistance?",
@@ -122,10 +120,10 @@ export const translations = {
     "aboutus.story1":
       "There was once a time in my life when I stood alone, fighting with no one who understood, no one to help, and it felt like no one truly listened. On that day, I made a promise—if I ever gained enough knowledge, I would stand by those seeking justice. ",
     "aboutus.story2":
-      "I graduated in law and have taken on small and large cases, some that shook me to the core, and others that rekindled my belief that Justice still exists. For me, every case is not just “work”—it is someone’s life, and I never forget that. This law firm was founded not for power or fame—but to truly help those in distress.",
+      "I graduated in law and have taken on small and large cases, some that shook me to the core, and others that rekindled my belief that Justice still exists. For me, every case is not just 'work'—it is someone's life, and I never forget that. This law firm was founded not for power or fame—but to truly help those in distress.",
 
     "aboutus.story3":
-      "If you’re looking for someone who not only knows the law but understands your heart—I am here for you. I will listen to your problems with compassion, care, and the warmth of a trusted friend",
+      "If you're looking for someone who not only knows the law but understands your heart—I am here for you. I will listen to your problems with compassion, care, and the warmth of a trusted friend",
     "aboutus.ctaButton": "Schedule Consultation",
 
     // Achievements / Stats
@@ -160,6 +158,25 @@ export const translations = {
       "Let our experienced team guide you through your legal challenges with expertise and dedication.",
     "aboutus.ctaBtn1": "Get Free Consultation",
     "aboutus.ctaBtn2": "View Our Services",
+    "about.breadcrumb.home": "Home",
+    "about.breadcrumb.current": "About Us",
+    "about.introduction":
+      "On the day you don't know who to turn to... We are the ones who listen with our hearts without judgment and stand here to help you with justice.",
+    "about.coreValues.heading": "Core Values",
+    "about.coreValues.intro":
+      "The principles that guide every decision, every case, and every client interaction",
+    "about.coreValues.value1.title": "Integrity",
+    "about.coreValues.value1.description":
+      "Upholding the highest ethical standards in all our legal practices.",
+    "about.coreValues.value2.title": "Excellence",
+    "about.coreValues.value2.description":
+      "Delivering exceptional legal services with precision and expertise.",
+    "about.coreValues.value3.title": "Compassion",
+    "about.coreValues.value3.description":
+      "Approaching every case with empathy and genuine care.",
+    "about.coreValues.value4.title": "Results",
+    "about.coreValues.value4.description":
+      "Achieving outcomes that protect our clients' interests.",
     // --------------------------------------------------------------------------------------------------------------------
     // --------------------------------------------------------------------------------------------------------------------
 
@@ -240,7 +257,7 @@ export const translations = {
     "services.6.description":
       "Legal services for resolving disputes involving faulty goods, trade conflicts, defaulted payments, and bounced cheques in both consumer and business contexts.",
     "services.6.fullDescription":
-      "Our team provides legal support in consumer protection and business-related disputes. We handle lawsuits against companies for defective goods or poor services, trade disputes, unpaid debts, and financial instrument issues such as bounced cheques. Our goal is to resolve these matters efficiently while protecting our clients’ commercial and personal interests.",
+      "Our team provides legal support in consumer protection and business-related disputes. We handle lawsuits against companies for defective goods or poor services, trade disputes, unpaid debts, and financial instrument issues such as bounced cheques. Our goal is to resolve these matters efficiently while protecting our clients' commercial and personal interests.",
     "services.6.features": [
       "Lawsuits against companies for faulty goods/services",
       "Trade disputes",
@@ -300,10 +317,134 @@ export const translations = {
     "services.feature": "Key Features",
     "services.btn1": "Get Free Consultation",
     "services.btn2": " Back to Services",
+
+    // Lawyer Profile
+    "profile.section": "About Me",
+    "profile.name": "BAMRUNG RUNGREUANG",
+    "profile.title": "Lawyer, Lawyers Council of Thailand",
+    "profile.position": "Position",
+    "profile.experience":
+      "With over 30 years of legal experience, I am a licensed attorney with the Lawyers Council of Thailand, offering services including legal consultation and appointed defense.",
+    "profile.consulting": "Consulting - Volunteer lawyer",
+    "profile.education": "Education",
+    "profile.education.bachelor": "Bachelor's Degree",
+    "profile.education.bachelor.detail":
+      "Bachelor of Law, Sukhothai Thammathirat Open University",
+    "profile.education.master": "Master's Degree",
+    "profile.education.master.detail":
+      "Political Science, Major in Political Communication, Krirk University",
+    "profile.education.phd": "Ph.D.",
+    "profile.education.phd.detail":
+      "Honorary Doctorate in Political Science, Politics and Governance, LADC Institute",
+    "services.heading": "OUR SERVICES",
+    "services.button.explore": "Explore More",
+
+    // Mission & Vision
+    "mission.title": "Our Mission & Vision",
+    "mission.missionHeading": "OUR MISSION",
+    "mission.missionText": "Because justice should not belong to only a few",
+    "mission.missionSubText": "We make the law truly reliable.",
+    "mission.visionHeading": "Our Vision",
+    "mission.visionText":
+      "We do this job because we want to stand by those who have no voice.",
+    "mission.button": "Explore More",
+
+    // Get an Expert
+    "getExpert.title": "Get a Legal Expert",
+    "getExpert.description":
+      "You are planning to establish your business in a foreign country and struggle with local laws, trying to bypass pitfalls and potential risks? We know the situation all too well.",
+    "getExpert.button.contact": "Contact Now",
+    "getExpert.stats.years": "Years of Business",
+    "getExpert.stats.works": "Completed Works",
+    "getExpert.stats.customers": "Valuable Customers",
+    "getExpert.stats.team": "Team Members",
+
+    // Mission & Vision (EN)
+    "missionVision.title": "Our Mission & Vision",
+    "missionVision.missionHeading": "OUR MISSION",
+    "missionVision.missionText":
+      "Because justice should not belong to only a few.",
+    "missionVision.missionSubText": "We make the law truly reliable.",
+    "missionVision.visionHeading": "Our Vision",
+    "missionVision.visionText":
+      "We do this job because we want to stand by those who have no voice.",
+    "missionVision.button": "Explore More",
+    // Mission & Vision (EN)
+    "missionVision.strengthsHeading": "OUR STRENGTHS",
+    "missionVision.strength1.title": "Genuine understanding",
+    "missionVision.strength1.description":
+      "We listen with heart, not just to find legal solutions, but to truly understand.",
+    "missionVision.strength2.title": "Honesty and integrity",
+    "missionVision.strength2.description":
+      "We believe everyone deserves protection—whether they have a voice in society or not.",
+    "missionVision.strength3.title": "Affordable and fair pricing",
+    "missionVision.strength3.description":
+      "We keep our services affordable, because hardship does not discriminate.",
+    "missionVision.foundation":
+      "The Law Office of Bamroong Rungruang was founded with a sincere mission:",
+    "missionVision.foundationGoal":
+      "To make the law an accessible support, not a barrier, especially for ordinary people.",
+    "missionVision.value1.title": "Equal Protection",
+    "missionVision.value1.description":
+      "We believe everyone deserves protection—whether they have a voice in society or not.",
+    "missionVision.value2.title": "Empathetic Service",
+    "missionVision.value2.description":
+      "We listen with heart, not just to find legal solutions, but to truly understand.",
+    "missionVision.value3.title": "Accessible Pricing",
+    "missionVision.value3.description":
+      "We keep our services affordable, because hardship does not discriminate.",
+    "missionVision.value4.title": "Free Consultations",
+    "missionVision.value4.description":
+      "We offer free initial consultations—to help you see your options before committing.",
+    "missionVision.finalStatement":
+      "Every case we take, we handle as if it were our own, because true justice starts from understanding others' pain.",
+    // Contact Page (EN)
+    "contact.title": "Contact Our Legal Team",
+    "contact.description":
+      "Get professional legal assistance. Send us your inquiry and our experienced attorneys will respond promptly.",
+    "contact.form.nameLabel": "Your Name",
+    "contact.form.namePlaceholder": "Enter your full name",
+    "contact.form.emailLabel": "Email Address",
+    "contact.form.emailPlaceholder": "your.email@example.com",
+    "contact.form.phoneLabel": "Phone Number",
+    "contact.form.phonePlaceholder": "+66 XX XXX XXXX",
+    "contact.form.lineLabel": "LINE ID",
+    "contact.form.linePlaceholder": "Your LINE ID",
+    "contact.form.subjectLabel": "Subject",
+    "contact.form.subjectPlaceholder": "Brief description of your legal matter",
+    "contact.form.messageLabel": "Message *",
+    "contact.form.messagePlaceholder":
+      "Please describe your legal issue or question in detail...",
+    "contact.button.send": "Send Message",
+    "contact.button.sending": "Sending Message...",
+    "contact.info.heading": "Get in Touch",
+    "contact.info.addressLabel": "Office Address",
+    "contact.info.phoneLabel": "Phone",
+    "contact.info.emailLabel": "Email",
+    "contact.info.hoursLabel": "Office Hours",
+    "contact.info.consultationHeading": "Free Consultation",
+    "contact.info.consultationText":
+      "We offer free initial consultations to help you understand your legal options before making any commitments.",
+    "contact.info.consultationNote":
+      "No obligation • Confidential • Professional advice",
+    // Contact Page (EN)
+    "contact.info.addressValue": "123 Legal District, Bangkok\nThailand 10110",
+    "contact.info.phoneValue": "+66 2 XXX XXXX",
+    "contact.info.emailValue": "info@bamroonglaw.com",
+    "contact.info.hoursValue":
+      "Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 9:00 AM - 1:00 PM\nSunday: Closed",
+    // Contact Page (EN)
+    "contact.info.lineLabel": "LINE ID",
+    "contact.info.lineValue": "@bamroonglaw",
   },
 
+  // ===============================
+  // THAI TRANSLATIONS
+  // ===============================
   th: {
-    // Navigation
+    // ===============================
+    // NAVIGATION
+    // ===============================
     "nav.home": "หน้าแรก",
     "nav.about": "เกี่ยวกับเรา",
     "nav.services": "บริการของเรา",
@@ -313,9 +454,11 @@ export const translations = {
     "nav.vis": "วิสัยทัศน์",
     "nav.mission": "เรื่องราวของเรา",
     "nav.getInTouch": "รับอินทัช",
-    "nav.title":"บำรุง รุ่งเรือง",
+    "nav.title": "บำรุง รุ่งเรือง",
 
-    // Header
+    // ===============================
+    // HEADER
+    // ===============================
     "header.address":
       "3/1 ซอยบ้านเหรียง 7 ถนนบ้านเหรียง หมู่ 3 ตำบลเทพกระษัตรี อำเภอถลาง จังหวัดภูเก็ต",
     "header.phone": "094-806-9123",
@@ -324,93 +467,67 @@ export const translations = {
     "header.email": "bamroonglaw@gmail.com",
     "header.line": "@bamroonglaw",
 
-    // Hero
+    // ===============================
+    // HERO SECTION
+    // ===============================
     "hero.title": "สำนักงานกฎหมาย บำรุงโภชนา",
-     "hero.cta": "บริการของเรา",
-    "hero.description":
-      "เนื้อหาในวันที่คุณไม่รู้จะหันหน้าไปหาใครเราคือคนที่ฟังด้วยใจไม่ตัดสินและยืนอยู่ตรงนี้เพื่อช่วยเหลือคุณด้วยความยุติธรรม",
+    "hero.cta": "บริการของเรา",
+    "hero.button": "เริ่มต้น",
+    "hero.description1": "เมื่อคุณรู้สึกว่าไม่มีใครให้หันไปหา...",
+    "hero.description2":
+      "เราพร้อมรับฟังโดยไม่ตัดสิน และยืนเคียงข้างคุณด้วยความยุติธรรมและความซื่อสัตย์",
 
-    // Features
+    // ===============================
+    // FEATURES SECTION
+    // ===============================
     "features.service": "บริการที่เป็นส่วนตัวสูง",
     "features.record": "ประวัติความสำเร็จที่พิสูจน์แล้ว",
     "features.rated": "ทนายความที่ได้รับการจัดอันดับสูงสุด",
 
-    // Services
-
-    // About
-    "about.title": "เกี่ยวกับสำนักงานของเรา",
+    // ===============================
+    // ABOUT US PAGE
+    // ===============================
     "about.description":
-      "สำนักงานทนายความภูเก็ต จัดตั้งขึ้นเพื่อช่วยเหลือผู้ที่ได้รับเดือดร้อนในทางกฎหมายโดยให้บริการทางกฎหมายทุกประเภท ซึ่งมุ่งหวังให้ผู้ที่ต้องการความช่วยเหลือทางกฎหมายได้รับความเป็นธรรมอย่างเท่าเทียมกัน",
-    "about.button": "เรียนรู้เพิ่มเติม",
-    // Achievements
-    "about.achievement1": "ประสบการณ์หลายปี",
-    "about.achievement2": "กรณีที่ประสบความสำเร็จ",
-    "about.achievement3": "ผู้เชี่ยวชาญด้านกฎหมาย",
-    "about.achievement4": "ภาษาที่รองรับ",
-
-    // Values
+      "ด้วยประสบการณ์กว่า 20 ปี บริษัทของเราได้สร้างชื่อเสียงในฐานะผู้นำด้านกฎหมายไทยและกฎหมายระหว่างประเทศ ทีมงานที่พูดได้หลายภาษาของเราพร้อมให้คำปรึกษากฎหมายอย่างเชี่ยวชาญแก่ลูกค้าจากทั่วโลก",
+    "about.button": "Learn More",
     "about.value1.title": "ความซื่อสัตย์",
     "about.value1.description":
       "ยึดมั่นในมาตรฐานจริยธรรมสูงสุดในแนวทางปฏิบัติทางกฎหมายทั้งหมดของเรา",
-
     "about.value2.title": "ความเป็นเลิศ",
     "about.value2.description":
       "การให้บริการทางกฎหมายที่เหนือระดับด้วยความแม่นยำและความเชี่ยวชาญ",
-
     "about.value3.title": "ความน่าเชื่อถือ",
     "about.value3.description":
       "พร้อมให้บริการเสมอเมื่อคุณต้องการเรามากที่สุด พร้อมตอบกลับอย่างทันท่วงที",
+    "about.button.explore": "สำรวจเพิ่มเติม",
+    "about.title": "เกี่ยวกับสำนักงานของเรา",
+    "about.breadcrumb.home": "หน้าแรก",
+    "about.breadcrumb.current": "เกี่ยวกับเรา",
+    "about.introduction":
+      "ในวันที่คุณไม่รู้จะหันหน้าไปหาใคร... เราคือคนที่ฟังด้วยใจไม่ตัดสินและยืนอยู่ตรงนี้เพื่อช่วยเหลือคุณด้วยความยุติธรรม",
+    "about.coreValues.heading": "ค่านิยมหลัก",
+    "about.coreValues.intro":
+      "หลักการที่เป็นแนวทางในการตัดสินใจทุกครั้ง ทุกคดี และทุกการดูแลลูกค้า",
+    "about.coreValues.value1.title": "ความซื่อสัตย์",
+    "about.coreValues.value1.description":
+      "ยึดมั่นในมาตรฐานจริยธรรมสูงสุดในทุกการปฏิบัติงานทางกฎหมายของเรา",
+    "about.coreValues.value2.title": "ความเป็นเลิศ",
+    "about.coreValues.value2.description":
+      "ให้บริการทางกฎหมายที่ยอดเยี่ยมด้วยความแม่นยำและความเชี่ยวชาญ",
+    "about.coreValues.value3.title": "ความเห็นอกเห็นใจ",
+    "about.coreValues.value3.description":
+      "ดูแลทุกคดีด้วยความเห็นอกเห็นใจและเอาใจใส่อย่างแท้จริง",
+    "about.coreValues.value4.title": "ผลลัพธ์",
+    "about.coreValues.value4.description":
+      "บรรลุผลลัพธ์ที่ปกป้องผลประโยชน์ของลูกค้า",
 
-    // Team
-    "team.title": "พบทีมทนายความผู้เชี่ยวชาญของเรา",
-    "team.description":
-      "ทีมทนายความที่มีประสบการณ์ของเราทุ่มเทในการให้บริการทางกฎหมายที่เหมาะสมกับความต้องการเฉพาะของคุณ",
-
-    // Testimonials
-    "testimonials.title": "ลูกค้าของเราพูดอย่างไร",
-
-    // Call to action
-    "cta.title": "ต้องการความช่วยเหลือทางกฎหมาย?",
-    "cta.description":
-      "ติดต่อเราวันนี้เพื่อรับคำปรึกษาฟรีกับทนายความที่มีประสบการณ์ของเรา",
-    "cta.button": "ติดต่อเราตอนนี้",
-
-    // Footer
-    "footer.rights": "สงวนลิขสิทธิ์",
-    "footer.privacy": "นโยบายความเป็นส่วนตัว",
-    "footer.terms": "เงื่อนไขการให้บริการ",
-    "footer.address":
-      "3/1 ซอยบ้านเหรียง 7 ถนนบ้านเหรียง หมู่ 3 ตำบลเทพกระษัตรี อำเภอถลาง จังหวัดภูเก็ต",
-    "footer.phone": "094-806-9123",
-    "footer.email": "bamroonglaw@gmail.com",
-    "footer.line": "@bamroonglaw",
-    "footer.copyright": "ลิขสิทธิ์ 2568 © www.bamroonglaw.com",
-
-    // Office strengths
-    "strengths.title": "จุดแข็งของสำนักงาน",
-    "strengths.description":
-      "สำนักงานทนายความภูเก็ต จัดตั้งขึ้นเพื่อช่วยเหลือผู้ที่ได้รับเดือดร้อนในทางกฎหมายโดยให้บริการทางกฎหมายทุกประเภท ซึ่งมุ่งหวังให้ผู้ที่ต้องการความช่วยเหลือทางกฎหมายได้รับความเป็นธรรมอย่างเท่าเทียมกันโดยสำนักงานทนายความ บำรุงโภชนา จัดตั้งในเขตพื้นที่จังหวัดภูเก็ต หรืออาจเรียกว่าทนายความภูเก็ต",
-
-    // Services details
-
-    // YouTube section
-    "youtube.title": "วิดีโอล่าสุด",
-    "youtube.subscribers": "ผู้ติดตาม",
-    "youtube.videos": "วิดีโอ",
-    "youtube.views": "ยอดเข้าชม",
-    // --------------------------------------------------------------------------------------------------------------------
-    // --------------------------------------------------------------------------------------------------------------------
-
-    //ABOUT US PAGE
-    "aboutus.title.one": "เกี่ยวกับ ",
-    "aboutus.title.two": "บริษัทของเรา",
     "aboutus.subtitle":
       "สองทศวรรษแห่งความมุ่งมั่นอย่างไม่ลดละเพื่อความยุติธรรม ความเป็นเลิศ และความสำเร็จของลูกค้า",
     "aboutus.storyTitle": "เรื่องราวความยุติธรรมของเรา",
     "aboutus.story1":
       "ครั้งหนึ่งในชีวิตของฉัน ฉันต้องยืนหยัดเพียงลำพัง โดยไม่มีใครเข้าใจ ไม่มีใครช่วยเหลือ และรู้สึกเหมือนไม่มีใครรับฟังอย่างแท้จริง ในวันนั้น ฉันให้สัญญาว่า หากฉันมีความรู้เพียงพอ ฉันจะยืนเคียงข้างผู้ที่แสวงหาความยุติธรรม",
     "aboutus.story2":
-      "ฉันจบการศึกษาทางด้านกฎหมายและเคยรับทำคดีเล็กและคดีใหญ่ บางคดีก็สะเทือนใจฉันมาก แต่บางคดีก็ทำให้ฉันกลับมาเชื่อมั่นอีกครั้งว่าความยุติธรรมยังคงมีอยู่ สำหรับฉันแล้ว คดีทุกคดีไม่ใช่แค่ งาน  แต่เป็นชีวิตของคนคนหนึ่ง และฉันไม่เคยลืมเรื่องนี้ สำนักงานกฎหมายแห่งนี้ไม่ได้ก่อตั้งขึ้นเพื่ออำนาจหรือชื่อเสียง แต่ก่อตั้งขึ้นเพื่อช่วยเหลือผู้ที่เดือดร้อนอย่างแท้จริง",
+      "ฉันจบการศึกษาทางด้านกฎหมายและเคยรับทำคดีเล็กและคดีใหญ่ บางคดีก็สะเทือนใจฉันมาก แต่บางคดีก็ทำให้ฉันกลับมาเชื่อมั่นอีกครั้งว่าความยุติธรรมยังคงมีอยู่ สำหรับฉันแล้ว คดีทุกคดีไม่ใช่แค่ 'งาน'  แต่เป็นชีวิตของคนคนหนึ่ง และฉันไม่เคยลืมเรื่องนี้ สำนักงานกฎหมายแห่งนี้ไม่ได้ก่อตั้งขึ้นเพื่ออำนาจหรือชื่อเสียง แต่ก่อตั้งขึ้นเพื่อช่วยเหลือผู้ที่เดือดร้อนอย่างแท้จริง",
     "aboutus.story3":
       "หากคุณกำลังมองหาใครสักคนที่ไม่เพียงแต่รู้กฎหมายแต่ยังเข้าใจหัวใจของคุณอีกด้วย ฉันอยู่ที่นี่เพื่อคุณ ฉันจะรับฟังปัญหาของคุณด้วยความเห็นอกเห็นใจ ความเอาใจใส่ และความอบอุ่นจากเพื่อนที่ไว้ใจได้",
     "aboutus.ctaButton": "กำหนดเวลาการให้คำปรึกษา",
@@ -433,11 +550,10 @@ export const translations = {
 
     "aboutus.value3.title": "ความเห็นอกเห็นใจ",
     "aboutus.value3.description":
-      "ดำเนินการทุกกรณีด้วยความเห็นอกเห็นใจและเอาใจใส่อย่างแท้จริง",
+      "ดูแลทุกคดีด้วยความเห็นอกเห็นใจและเอาใจใส่อย่างแท้จริง",
 
     "aboutus.value4.title": "ผลลัพธ์",
-    "aboutus.value4.description":
-      "การบรรลุผลลัพธ์ที่ปกป้องผลประโยชน์ของลูกค้าของเรา",
+    "aboutus.value4.description": "บรรลุผลลัพธ์ที่ปกป้องผลประโยชน์ของลูกค้า",
 
     // CTA
     "aboutus.ctaTitle": "พร้อมที่จะ ร่วมงานกับเราไหม?",
@@ -450,7 +566,9 @@ export const translations = {
     "aboutus.ctaBtn2": "ดูบริการของเรา",
     // --------------------------------------------------------------------------------------------------------------------
     // --------------------------------------------------------------------------------------------------------------------
+
     //SERVICES PAGE
+
     "services.1.title": "คดีแพ่ง",
     "services.1.subtitle": "การเป็นตัวแทนทางกฎหมายอย่างครอบคลุม",
     "services.1.description":
@@ -568,6 +686,7 @@ export const translations = {
     "services.negotiation": "รับเจรจา ไกล่เกลี่ย หนี้/ทวงหนี้",
     "services.negotiation.description":
       "รับเจรจาหนี้ แก้ปัญหาของลูกหนี้ ติดตาม ตาม เร่งรัด หนี้ค้างชำระ",
+
     "services.title.one": "ของเรา",
     "services.title.two": "บริการ",
     "services.subtitle":
@@ -581,10 +700,132 @@ export const translations = {
     "services.feature": "คุณสมบัติหลัก",
     "services.btn1": "รับคำปรึกษาฟรี",
     "services.btn2": " กลับไปที่บริการ",
+
+    // Lawyer Profile
+    "profile.section": "เกี่ยวกับฉัน",
+    "profile.name": "บำรุง รุ่งเรือง",
+    "profile.title": "ทนายความ, สภาทนายความแห่งประเทศไทย",
+    "profile.position": "ตำแหน่ง",
+    "profile.experience":
+      "ด้วยประสบการณ์ทางกฎหมายมากกว่า 30 ปี ข้าพเจ้าเป็นทนายความที่ได้รับใบอนุญาตจากสภาทนายความแห่งประเทศไทย ให้บริการทั้งการปรึกษากฎหมายและการแต่งตั้งเป็นทนายความแก้ต่าง",
+    "profile.consulting": "ที่ปรึกษา - ทนายอาสา",
+    "profile.education": "การศึกษา",
+    "profile.education.bachelor": "ปริญญาตรี",
+    "profile.education.bachelor.detail":
+      "นิติศาสตรบัณฑิต มหาวิทยาลัยสุโขทัยธรรมาธิราช",
+    "profile.education.master": "ปริญญาโท",
+    "profile.education.master.detail":
+      "รัฐศาสตร์ สาขาการสื่อสารการเมือง มหาวิทยาลัยเกริก",
+    "profile.education.phd": "ปริญญาเอกกิตติมศักดิ์",
+    "profile.education.phd.detail": "รัฐศาสตร์การเมืองและการปกครอง สถาบัน LADC",
+    "services.heading": "บริการของเรา",
+    "services.button.explore": "สำรวจเพิ่มเติม",
+
+    // Mission & Vision
+    "mission.title": "พันธกิจและวิสัยทัศน์ของเรา",
+    "mission.missionHeading": "พันธกิจของเรา",
+    "mission.missionText": "เพราะความยุติธรรมไม่ควรเป็นของคนเพียงไม่กี่คน",
+    "mission.missionSubText": "เราทำให้กฎหมายเป็นที่พึ่งได้อย่างแท้จริง",
+    "mission.visionHeading": "วิสัยทัศน์ของเรา",
+    "mission.visionText":
+      "เราทำงานนี้เพราะต้องการยืนหยัดเคียงข้างผู้ที่ไม่มีเสียงในสังคม",
+    "mission.button": "สำรวจเพิ่มเติม",
+
+    // Get an Expert
+    "getExpert.title": "ขอคำปรึกษาจากผู้เชี่ยวชาญด้านกฎหมาย",
+    "getExpert.description":
+      "คุณกำลังวางแผนจะเริ่มต้นธุรกิจในต่างประเทศและประสบปัญหากับกฎหมายท้องถิ่น ต้องการหลีกเลี่ยงความเสี่ยงและอุปสรรคใช่หรือไม่? เราเข้าใจสถานการณ์นี้เป็นอย่างดี",
+    "getExpert.button.contact": "ติดต่อทันที",
+    "getExpert.stats.years": "ปีแห่งการดำเนินธุรกิจ",
+    "getExpert.stats.works": "ผลงานที่สำเร็จ",
+    "getExpert.stats.customers": "ลูกค้าที่มีคุณค่า",
+    "getExpert.stats.team": "สมาชิกในทีม",
+
+    // Mission & Vision (TH)
+    "missionVision.title": "พันธกิจและวิสัยทัศน์ของเรา",
+    "missionVision.missionHeading": "พันธกิจของเรา",
+    "missionVision.missionText":
+      "เพราะความยุติธรรมไม่ควรเป็นของคนเพียงไม่กี่คน",
+    "missionVision.missionSubText": "เราทำให้กฎหมายเป็นที่พึ่งได้อย่างแท้จริง",
+    "missionVision.visionHeading": "วิสัยทัศน์ของเรา",
+    "missionVision.visionText":
+      "เราทำงานนี้เพราะต้องการยืนหยัดเคียงข้างผู้ที่ไม่มีเสียงในสังคม",
+    "missionVision.button": "สำรวจเพิ่มเติม",
+    "missionVision.strengthsHeading": "จุดแข็งของเรา",
+    "missionVision.strength1.title": "ความเข้าใจอย่างแท้จริง",
+    "missionVision.strength1.description":
+      "เรารับฟังด้วยหัวใจ ไม่ใช่แค่เพื่อหาทางออกทางกฎหมาย แต่เพื่อเข้าใจอย่างแท้จริง",
+    "missionVision.strength2.title": "ความซื่อสัตย์และความจริงใจ",
+    "missionVision.strength2.description":
+      "เรามีความเชื่อว่าทุกคนสมควรได้รับการคุ้มครอง ไม่ว่าจะมีเสียงในสังคมหรือไม่ก็ตาม",
+    "missionVision.strength3.title": "ราคาที่เข้าถึงได้",
+    "missionVision.strength3.description":
+      "เราคิดค่าบริการอย่างเป็นธรรม เพราะความลำบากไม่เลือกคน",
+    "missionVision.foundation":
+      "สำนักงานกฎหมายบำรุง รุ่งเรือง ก่อตั้งขึ้นด้วยพันธกิจที่จริงใจ:",
+    "missionVision.foundationGoal":
+      "เพื่อให้กฎหมายเป็นที่พึ่งที่เข้าถึงได้ ไม่ใช่อุปสรรค โดยเฉพาะสำหรับคนธรรมดา",
+    "missionVision.value1.title": "การคุ้มครองอย่างเท่าเทียม",
+    "missionVision.value1.description":
+      "เรามีความเชื่อว่าทุกคนสมควรได้รับการคุ้มครอง ไม่ว่าจะมีเสียงในสังคมหรือไม่ก็ตาม",
+    "missionVision.value2.title": "บริการด้วยความเห็นอกเห็นใจ",
+    "missionVision.value2.description":
+      "เรารับฟังด้วยหัวใจ ไม่ใช่แค่เพื่อหาทางออกทางกฎหมาย แต่เพื่อเข้าใจอย่างแท้จริง",
+    "missionVision.value3.title": "ราคาที่เข้าถึงได้",
+    "missionVision.value3.description":
+      "เราคิดค่าบริการอย่างเป็นธรรม เพราะความลำบากไม่เลือกคน",
+    "missionVision.value4.title": "ปรึกษาฟรีครั้งแรก",
+    "missionVision.value4.description":
+      "เรายินดีให้คำปรึกษาเบื้องต้นฟรี เพื่อให้คุณเห็นทางเลือกก่อนตัดสินใจ",
+    "missionVision.finalStatement":
+      "ทุกคดีที่เรารับ เราดูแลเหมือนเป็นเรื่องของเราเอง เพราะความยุติธรรมที่แท้จริงเริ่มต้นจากการเข้าใจความเจ็บปวดของผู้อื่น",
+    // Contact Page (TH)
+    "contact.title": "ติดต่อทีมกฎหมายของเรา",
+    "contact.description":
+      "รับคำปรึกษาทางกฎหมายจากผู้เชี่ยวชาญ ส่งคำถามของคุณมาได้เลย ทนายความของเราจะตอบกลับอย่างรวดเร็ว",
+    "contact.form.nameLabel": "ชื่อของคุณ",
+    "contact.form.namePlaceholder": "กรอกชื่อ-นามสกุลของคุณ",
+    "contact.form.emailLabel": "อีเมล",
+    "contact.form.emailPlaceholder": "your.email@example.com",
+    "contact.form.phoneLabel": "เบอร์โทรศัพท์",
+    "contact.form.phonePlaceholder": "+66 XX XXX XXXX",
+    "contact.form.lineLabel": "LINE ID",
+    "contact.form.linePlaceholder": "LINE ID ของคุณ",
+    "contact.form.subjectLabel": "หัวข้อเรื่อง",
+    "contact.form.subjectPlaceholder": "อธิบายปัญหาทางกฎหมายโดยย่อ",
+    "contact.form.messageLabel": "ข้อความ *",
+    "contact.form.messagePlaceholder":
+      "โปรดอธิบายปัญหาหรือคำถามทางกฎหมายของคุณอย่างละเอียด...",
+    "contact.button.send": "ส่งข้อความ",
+    "contact.button.sending": "กำลังส่งข้อความ...",
+    "contact.info.heading": "ติดต่อเรา",
+    "contact.info.addressLabel": "ที่อยู่สำนักงาน",
+    "contact.info.phoneLabel": "โทรศัพท์",
+    "contact.info.emailLabel": "อีเมล",
+    "contact.info.hoursLabel": "เวลาทำการ",
+    "contact.info.consultationHeading": "ปรึกษาฟรี",
+    "contact.info.consultationText":
+      "เรายินดีให้คำปรึกษาเบื้องต้นฟรี เพื่อให้คุณเข้าใจทางเลือกทางกฎหมายก่อนตัดสินใจใด ๆ",
+    "contact.info.consultationNote":
+      "ไม่มีข้อผูกมัด • เป็นความลับ • ให้คำแนะนำอย่างมืออาชีพ",
+    // Contact Page (TH)
+    "contact.info.addressValue": "123 เขตกฎหมาย กรุงเทพฯ\nประเทศไทย 10110",
+    "contact.info.phoneValue": "+66 2 XXX XXXX",
+    "contact.info.emailValue": "info@bamroonglaw.com",
+    "contact.info.hoursValue":
+      "จันทร์ - ศุกร์: 9:00 - 18:00 น.\nเสาร์: 9:00 - 13:00 น.\nอาทิตย์: ปิดทำการ",
+    // Contact Page (TH)
+    "contact.info.lineLabel": "LINE ID",
+    "contact.info.lineValue": "@bamroonglaw",
   },
 
+  // ===============================
+  // CHINESE TRANSLATIONS
+  // ===============================
   zh: {
-    // Navigation
+    // ===============================
+    // NAVIGATION
+    // ===============================
     "nav.home": "首页",
     "nav.about": "关于我们",
     "nav.services": "我们的服务",
@@ -594,23 +835,23 @@ export const translations = {
     "nav.vis": "视觉",
     "nav.mission": "我们的使命",
     "nav.getInTouch": "联系我们",
-    "nav.title":"布姆伦·伦格伦",
+    "nav.title": "布姆伦·伦格伦",
 
-      // Header
-      "header.address":
-        "泰国普吉岛3/1 Ban Hiang 7巷, Ban Hiang路, 3村, Thepkrasattri区, Thalang, 普吉府",
-      "header.phone": "094-806-9123",
-      "header.consultation": "免费咨询",
-      "header.available": "24/7全天候服务",
-      "header.email": "bamroonglaw@gmail.com",
-      "header.line": "@bamroonglaw",
+    // Header
+    "header.address":
+      "泰国普吉岛3/1 Ban Hiang 7巷, Ban Hiang路, 3村, Thepkrasattri区, Thalang, 普吉府",
+    "header.phone": "094-806-9123",
+    "header.consultation": "免费咨询",
+    "header.available": "24/7全天候服务",
+    "header.email": "bamroonglaw@gmail.com",
+    "header.line": "@bamroonglaw",
 
     // Hero
     "hero.title": "律师事务所 兴盛养育",
-    "hero.cta":"我们的服务",
-
-    "hero.description":
-      "在您不知道向谁求助的日子里......我们会不带任何偏见地倾听您，并站在这里帮助您伸张正义。",
+    "hero.cta": "我们的服务",
+    "hero.button": "立即开始",
+    "hero.description1": "当你觉得无处可依时……",
+    "hero.description2": "我们会无偏见地倾听，并以公正和诚信陪伴在你身边。",
 
     // Features
     "features.service": "高度个性化的服务",
@@ -631,6 +872,7 @@ export const translations = {
     "about.description":
       "普吉律师事务所成立旨在为那些在法律上遇到困难的人提供各类法律服务，目标是让所有需要法律帮助的人都能获得平等的公正待遇。",
     "about.button": "了解更多",
+    "about.button.explore": "探索更多",
     // Achievements
     "about.achievement1": "多年经验",
     "about.achievement2": "成功案例",
@@ -702,6 +944,24 @@ export const translations = {
     // --------------------------------------------------------------------------------------------------------------------
 
     //ABOUT US PAGE
+    "about.title": "About Us",
+    "about.breadcrumb.home": "首页",
+    "about.breadcrumb.current": "关于我们",
+    "about.introduction":
+      "在你不知道向谁求助的日子里……我们会用心倾听，不带偏见，站在这里帮助你伸张正义。",
+    "about.coreValues.heading": "核心价值观",
+    "about.coreValues.intro":
+      "指导我们每一次决策、每一个案件、每一次客户互动的原则",
+    "about.coreValues.value1.title": "诚信",
+    "about.coreValues.value1.description":
+      "在我们所有法律实践中秉持最高的道德标准。",
+    "about.coreValues.value2.title": "卓越",
+    "about.coreValues.value2.description":
+      "以精准和专业的态度提供卓越的法律服务。",
+    "about.coreValues.value3.title": "同理心",
+    "about.coreValues.value3.description": "以同理心和真诚关怀处理每一个案件。",
+    "about.coreValues.value4.title": "成果",
+    "about.coreValues.value4.description": "实现保护客户利益的成果。",
     "aboutus.title.one": "关于我们",
     "aboutus.title.two": "我们的律所",
     "aboutus.subtitle":
@@ -710,7 +970,7 @@ export const translations = {
     "aboutus.story1":
       "我生命中曾有一段时光，我孤身一人，与人抗争，无人理解，无人帮助，感觉无人真正倾听。那一天，我许下承诺——如果我能获得足够的知识，我将与那些寻求正义的人站在一起。",
     "aboutus.story2":
-      "我毕业于法律专业，接手过大大小小的案件，有些案件深深地震撼了我，有些则让我重新燃起对正义依然存在的信念。对我来说，每个案件都不仅仅是“工作”——而是关乎一个人的生命，我永远不会忘记这一点。这家律师事务所的成立不是为了权力或名望，而是为了真正帮助那些身处困境的人。",
+      "我毕业于法律专业，接手过大大小小的案件，有些案件深深地震撼了我，有些则让我重新燃起对正义依然存在的信念。对我来说，每个案件都不仅仅是'工作'——而是关乎一个人的生命，我永远不会忘记这一点。这家律师事务所的成立不是为了权力或名望，而是为了真正帮助那些身处困境的人。",
     "aboutus.story3":
       "如果你正在寻找一位不仅懂法律，更懂你内心的人——我随时为你服务。我会用同情、关怀和值得信赖的朋友般的温暖，倾听你的烦恼。",
     "aboutus.ctaButton": "安排咨询",
@@ -722,23 +982,24 @@ export const translations = {
 
     "aboutus.values.title": "我们的核心价值观",
     "aboutus.values.subtitle": "二十年来始终如一地致力于正义、卓越和客户成功",
-    "aboutus.value1.title": "诚信",
-    "aboutus.value1.description": "在我们所有的法律实践中秉持最高的道德标准",
+    "aboutus.value1.title": "Integrity",
+    "aboutus.value1.description":
+      "Upholding the highest ethical standards in all our legal practices.",
+    "aboutus.value2.title": "Excellence",
+    "aboutus.value2.description":
+      "Delivering exceptional legal services with precision and expertise.",
+    "aboutus.value3.title": "Compassion",
+    "aboutus.value3.description":
+      "Approaching every case with empathy and genuine care.",
+    "aboutus.value4.title": "Results",
+    "aboutus.value4.description":
+      "Achieving outcomes that protect our clients' interests.",
 
-    "aboutus.value2.title": "卓越",
-    "aboutus.value2.description": "以精准和专业的态度提供卓越的法律服务",
-
-    "aboutus.value3.title": "同理心",
-    "aboutus.value3.description": "以同理心和真诚关怀处理每一个案件",
-
-    "aboutus.value4.title": "成果",
-    "aboutus.value4.description": "实现保护客户利益的成果",
-
-    "aboutus.ctaTitle": "准备好与我们合作了吗？",
+    "aboutus.ctaTitle": "Ready to Work With Us?",
     "aboutus.ctaDesc":
-      "让我们经验丰富的团队以专业知识和敬业精神指导您应对法律挑战。",
-    "aboutus.ctaBtn1": "获取免费咨询",
-    "aboutus.ctaBtn2": "查看我们的服务",
+      "Let our experienced team guide you through your legal challenges with expertise and dedication.",
+    "aboutus.ctaBtn1": "Get Free Consultation",
+    "aboutus.ctaBtn2": "View Our Services",
 
     // --------------------------------------------------------------------------------------------------------------------
     // --------------------------------------------------------------------------------------------------------------------
@@ -850,6 +1111,117 @@ export const translations = {
     "services.feature": "主要特点",
     "services.btn1": "获取免费咨询",
     "services.btn2": "返回服务",
+
+    // Lawyer Profile
+    "profile.section": "关于我",
+    "profile.name": "巴姆隆 荣瑞昂",
+    "profile.title": "律师，泰国律师协会",
+    "profile.position": "职位",
+    "profile.experience":
+      "拥有30余年法律经验，我是泰国律师协会的注册律师，提供法律咨询及指定辩护等服务。",
+    "profile.consulting": "咨询 - 志愿律师",
+    "profile.education": "教育背景",
+    "profile.education.bachelor": "学士学位",
+    "profile.education.bachelor.detail": "法学学士，素可泰开放大学",
+    "profile.education.master": "硕士学位",
+    "profile.education.master.detail": "政治学（政治传播专业），格乐大学",
+    "profile.education.phd": "博士学位（荣誉）",
+    "profile.education.phd.detail": "政治学博士（政治与治理），LADC学院",
+    "services.heading": "我们的服务",
+    "services.button.explore": "探索更多",
+
+    // Mission & Vision
+    "mission.title": "我们的使命与愿景",
+    "mission.missionHeading": "我们的使命",
+    "mission.missionText": "因为正义不应只属于少数人",
+    "mission.missionSubText": "我们让法律真正值得信赖。",
+    "mission.visionHeading": "我们的愿景",
+    "mission.visionText":
+      "我们做这份工作，是因为我们想要站在那些没有发声权利的人身边。",
+    "mission.button": "探索更多",
+
+    // Get an Expert
+    "getExpert.title": "联系法律专家",
+    "getExpert.description":
+      "您计划在海外开展业务，却因当地法律而苦恼，想要规避风险和陷阱？我们非常了解您的处境。",
+    "getExpert.button.contact": "立即联系",
+    "getExpert.stats.years": "年业务经验",
+    "getExpert.stats.works": "完成的项目",
+    "getExpert.stats.customers": "尊贵客户",
+    "getExpert.stats.team": "团队成员",
+
+    // Mission & Vision (ZH)
+    "missionVision.title": "我们的使命与愿景",
+    "missionVision.missionHeading": "我们的使命",
+    "missionVision.missionText": "因为正义不应只属于少数人。",
+    "missionVision.missionSubText": "我们让法律真正值得信赖。",
+    "missionVision.visionHeading": "我们的愿景",
+    "missionVision.visionText":
+      "我们做这份工作，是因为我们想要站在那些没有发声权利的人身边。",
+    "missionVision.button": "探索更多",
+    "missionVision.strengthsHeading": "我们的优势",
+    "missionVision.strength1.title": "真正的理解",
+    "missionVision.strength1.description":
+      "我们用心倾听，不只是为了解决法律问题，更是为了真正理解。",
+    "missionVision.strength2.title": "诚信与正直",
+    "missionVision.strength2.description":
+      "我们相信每个人都应得到保护，无论他们在社会上是否有发声权。",
+    "missionVision.strength3.title": "合理且公平的价格",
+    "missionVision.strength3.description":
+      "我们保持服务价格合理，因为困境不会选择人。",
+    "missionVision.foundation": "Bamroong Rungruang律师事务所成立的初心：",
+    "missionVision.foundationGoal":
+      "让法律成为每个人都能依靠的支持，而不是障碍，尤其是对普通人。",
+    "missionVision.value1.title": "平等保护",
+    "missionVision.value1.description":
+      "我们相信每个人都应得到保护，无论他们在社会上是否有发声权。",
+    "missionVision.value2.title": "同理心服务",
+    "missionVision.value2.description":
+      "我们用心倾听，不只是为了解决法律问题，更是为了真正理解。",
+    "missionVision.value3.title": "可负担的价格",
+    "missionVision.value3.description":
+      "我们保持服务价格合理，因为困境不会选择人。",
+    "missionVision.value4.title": "免费咨询",
+    "missionVision.value4.description":
+      "我们提供首次免费咨询，让您在做决定前了解所有选项。",
+    "missionVision.finalStatement":
+      "每一个我们接手的案件，我们都像对待自己的事情一样用心，因为真正的正义始于理解他人的痛苦。",
+    // Contact Page (ZH)
+    "contact.title": "联系我们的法律团队",
+    "contact.description":
+      "获得专业法律协助。请发送您的咨询，我们的资深律师会尽快回复您。",
+    "contact.form.nameLabel": "您的姓名",
+    "contact.form.namePlaceholder": "请输入您的全名",
+    "contact.form.emailLabel": "电子邮箱",
+    "contact.form.emailPlaceholder": "your.email@example.com",
+    "contact.form.phoneLabel": "电话号码",
+    "contact.form.phonePlaceholder": "+66 XX XXX XXXX",
+    "contact.form.lineLabel": "LINE ID",
+    "contact.form.linePlaceholder": "您的 LINE ID",
+    "contact.form.subjectLabel": "主题",
+    "contact.form.subjectPlaceholder": "简要描述您的法律问题",
+    "contact.form.messageLabel": "留言 *",
+    "contact.form.messagePlaceholder": "请详细描述您的法律问题或疑问...",
+    "contact.button.send": "发送信息",
+    "contact.button.sending": "正在发送...",
+    "contact.info.heading": "联系我们",
+    "contact.info.addressLabel": "办公地址",
+    "contact.info.phoneLabel": "电话",
+    "contact.info.emailLabel": "邮箱",
+    "contact.info.hoursLabel": "办公时间",
+    "contact.info.consultationHeading": "免费咨询",
+    "contact.info.consultationText":
+      "我们提供首次免费咨询，帮助您在做出任何决定前了解法律选项。",
+    "contact.info.consultationNote": "无义务 • 保密 • 专业建议",
+    // Contact Page (ZH)
+    "contact.info.addressValue": "泰国曼谷法律区123号\n泰国 10110",
+    "contact.info.phoneValue": "+66 2 XXX XXXX",
+    "contact.info.emailValue": "info@bamroonglaw.com",
+    "contact.info.hoursValue":
+      "周一至周五: 9:00-18:00\n周六: 9:00-13:00\n周日: 休息",
+    // Contact Page (ZH)
+    "contact.info.lineLabel": "LINE ID",
+    "contact.info.lineValue": "@bamroonglaw",
   },
 };
 

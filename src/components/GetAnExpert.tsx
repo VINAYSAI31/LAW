@@ -6,15 +6,15 @@ import { Award, Users, Scale, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
-const stats = [
-  { icon: <Award className="h-8 w-8" />, number: "10", label: "Years of Business" },
-  { icon: <Users className="h-8 w-8" />, number: "10000", label: "Completed Works" },
-  { icon: <Scale className="h-8 w-8" />, number: "1000", label: "Valuable Customers" },
-  { icon: <Globe className="h-8 w-8" />, number: "20", label: "Team Members" },
-];
-
 const GetAnExpert = () => {
   const { t } = useLanguage();
+
+  const stats = [
+    { icon: <Award className="h-8 w-8" />, number: "10", label: t("getExpert.stats.years") },
+    { icon: <Users className="h-8 w-8" />, number: "10000", label: t("getExpert.stats.works") },
+    { icon: <Scale className="h-8 w-8" />, number: "1000", label: t("getExpert.stats.customers") },
+    { icon: <Globe className="h-8 w-8" />, number: "20", label: t("getExpert.stats.team") },
+  ];
 
   return (
     <div className="relative  overflow-visible pb-0" style={{ backgroundColor: "#030915" }}> {/* even further reduced bottom padding for compactness */}
@@ -88,15 +88,13 @@ const GetAnExpert = () => {
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
     color: "#F5F5F5",
   }}>
-              Get a Legal Expert
+              {t('getExpert.title')}
             </h2>
             <p className="text-lg text-cream mb-8 leading-relaxed"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
     color: "#CCCCCC",
   }}>
-              You are planning to establish your business in a foreign country
-              and struggle with local laws, trying to bypass pitfalls and
-              potential risks? We know the situation all too well.
+              {t('getExpert.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -111,7 +109,7 @@ const GetAnExpert = () => {
                   fontSize: "1.1rem",
                 }}
               >
-                Contact Now
+                {t('getExpert.button.contact')}
                 <span className="ml-2 transition-transform group-hover:translate-x-1">
                   <ArrowRight className="h-5 w-5" style={{ color: "#e2b21f" }} />
                 </span>

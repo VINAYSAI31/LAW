@@ -106,7 +106,7 @@ const Services = () => {
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                 color: "#f5c15c",
               }}>
-            OUR SERVICES
+            {t('services.heading')}
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-white/80 text-2xl" style={{
@@ -188,7 +188,7 @@ const Services = () => {
             fontSize: "1.1rem",
           }}
         >
-          Explore More
+          {t('services.button.explore')}
           <span className="ml-2 transition-transform group-hover:translate-x-1">
             <ArrowRight className="h-5 w-5" style={{ color: "#BFA75C" }} />
           </span>

@@ -46,26 +46,26 @@ const AboutPage = () => {
   const values = [
     {
       icon: <Shield className="h-12 w-12" />,
-      title: t("aboutus.value1.title"),
-      description: t("aboutus.value1.description"),
+      title: t("about.coreValues.value1.title"),
+      description: t("about.coreValues.value1.description"),
       color: "bg-darker-emerald",
     },
     {
       icon: <Star className="h-12 w-12" />,
-      title: t("aboutus.value2.title"),
-      description: t("aboutus.value2.description"),
+      title: t("about.coreValues.value2.title"),
+      description: t("about.coreValues.value2.description"),
       color: "bg-gold",
     },
     {
       icon: <Heart className="h-12 w-12" />,
-      title: t("aboutus.value3.title"),
-      description: t("aboutus.value3.description"),
+      title: t("about.coreValues.value3.title"),
+      description: t("about.coreValues.value3.description"),
       color: "bg-darkBrown",
     },
     {
       icon: <Target className="h-12 w-12" />,
-      title: t("aboutus.value4.title"),
-      description: t("aboutus.value4.description"),
+      title: t("about.coreValues.value4.title"),
+      description: t("about.coreValues.value4.description"),
       color: "bg-emerald-dark",
     },
   ];
@@ -73,15 +73,11 @@ const AboutPage = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      {/* Hero Section */}
-      {/* Hero Section */}
       <div className="relative h-[400px] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 bg-[url('https://t3.ftcdn.net/jpg/06/23/78/88/360_F_623788874_AkPJl27fwKD8DGW4Eg6R2JSZ5eFIUYl6.jpg')] bg-cover bg-center"></div>
-
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/40"></div>
-
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-4xl">
@@ -95,12 +91,12 @@ const AboutPage = () => {
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                 color: "#F5F5F5",
               }}>
-                About Us
+                {t("about.title")}
               </h1>
               <div className="flex items-center space-x-2 mb-18">
-                <Link to="/" className="text-gold font-medium">Home</Link>
+                <Link to="/" className="text-gold font-medium">{t("about.breadcrumb.home")}</Link>
                 <span className="text-white/60">/</span>
-                <span className="text-white">About Us</span>
+                <span className="text-white">{t("about.breadcrumb.current")}</span>
               </div>
             </motion.div>
           </div>
@@ -140,9 +136,7 @@ const AboutPage = () => {
                   fontFamily: "'Open Sans', 'Lato', sans-serif",
                 }}>
                 <blockquote className="text-2xl md:text-3xl font-serif text-emerald leading-relaxed mb-8">
-                  "On the day you don't know who to turn to... We are the ones
-                  who listen with our hearts without judgment and stand here to
-                  help you with justice."
+                  {t("about.introduction")}
                 </blockquote>
               </div>
               <div
@@ -197,13 +191,12 @@ const AboutPage = () => {
                 color: "#F5F5F5",
               }}
             >
-              CIVIL CASES
+              {t("about.coreValues.heading")}
             </h2>
 
             <div className="w-24 h-1 bg-gold mx-auto mb-8"></div>
             <p className="text-2xl text-white/80 max-w-3xl mx-auto">
-              The principles that guide every decision, every case, and every
-              client interaction
+              {t("about.coreValues.intro")}
             </p>
           </motion.div>
 
@@ -219,38 +212,31 @@ const AboutPage = () => {
                 style={{ backgroundColor: "#030915" }}
               >
                 <div
-                  className="relative bg-white/4 shadow-[0_40px_60px_rgba(0,0,0,0.9)]  transition-transform duration-300 hover:-translate-y-2 backdrop-blur-sm border border-white/20  p-8 h-full 
-                                transition-all duration-500 transform hover:-translate-y-4
-                               hover:bg-white/3 hover:border-gold/30"
-                >
-                  {/* Icon Container */}
-                  <div
-                    className={`w-20 h-20 ${value.color} rounded-2xl flex items-center justify-center 
+                  className={`w-20 h-20 ${value.color} rounded-2xl flex items-center justify-center 
                                   text-white mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300
                                   relative overflow-hidden`}
-                  >
-                    <div className="absolute inset-0 bg-white/4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="relative z-10">{value.icon}</div>
-                  </div>
-
-                  {/* Content */}
-                  <h3 className="text-3xl font-serif font-bold text-white mb-4 group-hover:text-gold transition-colors duration-300" 
-                  style={{
-                fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
-              }}>
-                    {value.title}
-                  </h3>
-                  <p className="text-white/80 text-1xl leading-relaxed group-hover:text-white transition-colors duration-300"
-                  style={{
-                fontFamily: "'Open Sans', Lato", // or "'Cormorant Garamond', serif"
-                color: "#CCCCCC",
-              }} >
-                    {value.description}
-                  </p>
-
-                  {/* Decorative Element */}
+                >
+                  <div className="absolute inset-0 bg-white/4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="relative z-10">{value.icon}</div>
                 </div>
+
+                {/* Content */}
+                <h3 className="text-3xl font-serif font-bold text-white mb-4 group-hover:text-gold transition-colors duration-300" 
+                style={{
+              fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+              color: "#BFA75C",
+            }}>
+                  {value.title}
+                </h3>
+                <p className="text-white/80 text-1xl leading-relaxed group-hover:text-white transition-colors duration-300"
+                style={{
+              fontFamily: "'Open Sans', Lato", // or "'Cormorant Garamond', serif"
+              color: "#CCCCCC",
+            }} >
+                  {value.description}
+                </p>
+
+                {/* Decorative Element */}
               </motion.div>
             ))}
           </div>

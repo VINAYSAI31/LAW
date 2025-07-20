@@ -27,8 +27,6 @@ const Contact = () => {
     }));
   };
 
-
-
   return (
     <Layout>
       <div className="min-h-screen " style={{ backgroundColor: "#030915" }}>
@@ -40,20 +38,17 @@ const Contact = () => {
               animate={{ opacity: 1, y: 0 }}
               className="text-center"
             >
-              {/* <div className="inline-flex items-center justify-center w-20 h-20 bg-gold rounded-full mb-6">
-                <MessageSquare className="h-10 w-10 text-emerald-darker" />
-              </div> */}
               <h1 className="text-5xl font-serif font-bold text-white mb-10 mt-20" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                   color: "#F5F5F5",
                 }}>
-                Contact Our Legal Team
+                {t('contact.title')}
               </h1>
               <p className="text-cream max-w-2xl mx-auto text-2xl"style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                   color: "#f5c15c",
                 }}>
-                Get professional legal assistance. Send us your inquiry and our experienced attorneys will respond promptly.
+                {t('contact.description')}
               </p>
             </motion.div>
           </div>
@@ -62,7 +57,6 @@ const Contact = () => {
         {/* Contact Form Section */}
         <div className="container mx-auto px-4 py-16">
           <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -75,7 +69,7 @@ const Contact = () => {
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                   color: "#F5F5F5",
                 }}>
-                  Send Us a Message
+                  {t('contact.info.heading')}
                 </h2>
                 <div className="w-16 h-1 bg-gold"></div>
               </div>
@@ -90,14 +84,14 @@ const Contact = () => {
                       }}
                     >
                       <User className="inline h-4 w-4 mr-1" />
-                      Your Name
+                      {t('contact.form.nameLabel')}
                     </label>
                     <input
                       type="text"
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      placeholder="Enter your full name"
+                      placeholder={t('contact.form.namePlaceholder')}
                       className="w-full px-4 py-3  border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground "style={{ backgroundColor: "#030915" }}
                     />
                   </div>
@@ -109,14 +103,14 @@ const Contact = () => {
                       }}
                     >
                       <Mail className="inline h-4 w-4 mr-1" />
-                      Email Address
+                      {t('contact.form.emailLabel')}
                     </label>
                     <input
                       type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      placeholder="your.email@example.com"
+                      placeholder={t('contact.form.emailPlaceholder')}
                       className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"style={{ backgroundColor: "#030915" }}
                     />
                   </div>
@@ -131,14 +125,14 @@ const Contact = () => {
                       }}
                     >
                       <Phone className="inline h-4 w-4 mr-1" />
-                      Phone Number
+                      {t('contact.form.phoneLabel')}
                     </label>
                     <input
                       type="tel"
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      placeholder="+66 XX XXX XXXX"
+                      placeholder={t('contact.form.phonePlaceholder')}
                       className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"style={{ backgroundColor: "#030915" }}
                     />
                   </div>
@@ -150,14 +144,14 @@ const Contact = () => {
                       }}
                     >
                       <MessageCircle className="inline h-4 w-4 mr-1" />
-                      LINE ID
+                      {t('contact.form.lineLabel')}
                     </label>
                     <input
                       type="text"
                       name="lineId"
                       value={formData.lineId}
                       onChange={handleInputChange}
-                      placeholder="Your LINE ID"
+                      placeholder={t('contact.form.linePlaceholder')}
                       className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"style={{ backgroundColor: "#030915" }}
                     />
                   </div>
@@ -170,14 +164,14 @@ const Contact = () => {
                       color: "#f5c15c",
                     }}
                   >
-                    Subject
+                    {t('contact.form.subjectLabel')}
                   </label>
                   <input
                     type="text"
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    placeholder="Brief description of your legal matter"
+                    placeholder={t('contact.form.subjectPlaceholder')}
                     className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"style={{ backgroundColor: "#030915" }}
                   />
                 </div>
@@ -189,14 +183,14 @@ const Contact = () => {
                       color: "#f5c15c",
                     }}
                   >
-                    Message *
+                    {t('contact.form.messageLabel')}
                   </label>
                   <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={6}
-                    placeholder="Please describe your legal issue or question in detail..."
+                    placeholder={t('contact.form.messagePlaceholder')}
                     className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground resize-none"style={{ backgroundColor: "#030915" }}
                     required
                   />
@@ -210,12 +204,12 @@ const Contact = () => {
                   {isSubmitting ? (
                     <div className="flex items-center justify-center">
                       <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
-                      Sending Message...
+                      {t('contact.button.sending')}
                     </div>
                   ) : (
                     <div className="flex items-center justify-center">
                       <Send className="h-5 w-5 mr-2" />
-                      Send Message
+                      {t('contact.button.send')}
                     </div>
                   )}
                 </Button>
@@ -236,7 +230,7 @@ const Contact = () => {
                     color: "#F5F5F5",
                   }}
                 >
-                  Get in Touch
+                  {t('contact.info.heading')}
                 </h3>
                 
                 <div className="space-y-6">
@@ -250,15 +244,14 @@ const Contact = () => {
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                           color: "#F5F5F5",
                         }}
-                      >Office Address</h4>
+                      >{t('contact.info.addressLabel')}</h4>
                       <p className="text-cream leading-relaxed"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                           color: "#f5c15c",
                         }}
                       >
-                        123 Legal District, Bangkok<br />
-                        Thailand 10110
+                        {t('contact.info.addressValue')}
                       </p>
                     </div>
                   </div>
@@ -273,13 +266,15 @@ const Contact = () => {
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                           color: "#F5F5F5",
                         }}
-                      >Phone</h4>
+                      >{t('contact.info.phoneLabel')}</h4>
                       <p className="text-cream"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                           color: "#f5c15c",
                         }}
-                      >+66 2 XXX XXXX</p>
+                      >
+                        {t('contact.info.phoneValue')}
+                      </p>
                     </div>
                   </div>
 
@@ -293,13 +288,15 @@ const Contact = () => {
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                           color: "#F5F5F5",
                         }}
-                      >Email</h4>
+                      >{t('contact.info.emailLabel')}</h4>
                       <p className="text-cream"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                           color: "#f5c15c",
                         }}
-                      >info@bamroonglaw.com</p>
+                      >
+                        {t('contact.info.emailValue')}
+                      </p>
                     </div>
                   </div>
 
@@ -313,17 +310,35 @@ const Contact = () => {
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                           color: "#F5F5F5",
                         }}
-                      >Office Hours</h4>
+                      >{t('contact.info.hoursLabel')}</h4>
                       <p className="text-cream"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                           color: "#f5c15c",
                         }}
                       >
-                        Monday - Friday: 9:00 AM - 6:00 PM<br />
-                        Saturday: 9:00 AM - 1:00 PM<br />
-                        Sunday: Closed
+                        {t('contact.info.hoursValue')}
                       </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-emerald rounded-xl flex items-center justify-center flex-shrink-0">
+                      <MessageCircle className="h-6 w-6 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#F5F5F5",
+                        }}
+                      >{t('contact.info.lineLabel')}</h4>
+                      <p className="text-cream"
+                        style={{
+                          fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+                          color: "#f5c15c",
+                        }}
+                      >{t('contact.info.lineValue')}</p>
                     </div>
                   </div>
                 </div>
@@ -335,14 +350,14 @@ const Contact = () => {
                     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                     color: "#F5F5F5",
                   }}
-                >Free Consultation</h4>
+                >{t('contact.info.consultationHeading')}</h4>
                 <p className="text-cream leading-relaxed mb-4"
                   style={{
                     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                     color: "#f5c15c",
                   }}
                 >
-                  We offer free initial consultations to help you understand your legal options before making any commitments.
+                  {t('contact.info.consultationText')}
                 </p>
                 <div className="text-gold font-semibold"
                   style={{
@@ -350,7 +365,7 @@ const Contact = () => {
                     color: "#f5c15c",
                   }}
                 >
-                  No obligation • Confidential • Professional advice
+                  {t('contact.info.consultationNote')}
                 </div>
               </div>
             </motion.div>

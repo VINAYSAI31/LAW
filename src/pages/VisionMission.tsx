@@ -4,29 +4,30 @@ import { motion } from "framer-motion";
 import { Heart, Shield, Users, Scale, Target, Compass } from "lucide-react";
 import GetAnExpert from "@/components/GetAnExpert";
 import { useNavigate, Link } from "react-router-dom";
-
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const VisionMission = () => {
+  const { t } = useLanguage();
   const strengths = [
     {
-      title: "Genuine understanding",
+      title: t("missionVision.strength1.title") || "Genuine understanding",
       icon: Heart,
       description:
-        "We listen with heart, not just to find legal solutions, but to truly understand.",
+        t("missionVision.strength1.description") || "We listen with heart, not just to find legal solutions, but to truly understand.",
       color: "emerald",
     },
     {
-      title: "Honesty and integrity",
+      title: t("missionVision.strength2.title") || "Honesty and integrity",
       icon: Shield,
       description:
-        "We believe everyone deserves protection—whether they have a voice in society or not.",
+        t("missionVision.strength2.description") || "We believe everyone deserves protection—whether they have a voice in society or not.",
       color: "gold",
     },
     {
-      title: "Affordable and fair pricing",
+      title: t("missionVision.strength3.title") || "Affordable and fair pricing",
       icon: Users,
       description:
-        "We keep our services affordable, because hardship does not discriminate.",
+        t("missionVision.strength3.description") || "We keep our services affordable, because hardship does not discriminate.",
       color: "darkBrown",
     },
   ];
@@ -34,27 +35,27 @@ const VisionMission = () => {
   const values = [
     {
       icon: Scale,
-      title: "Equal Protection",
+      title: t("missionVision.value1.title") || "Equal Protection",
       description:
-        "We believe everyone deserves protection—whether they have a voice in society or not.",
+        t("missionVision.value1.description") || "We believe everyone deserves protection—whether they have a voice in society or not.",
     },
     {
       icon: Heart,
-      title: "Empathetic Service",
+      title: t("missionVision.value2.title") || "Empathetic Service",
       description:
-        "We listen with heart, not just to find legal solutions, but to truly understand.",
+        t("missionVision.value2.description") || "We listen with heart, not just to find legal solutions, but to truly understand.",
     },
     {
       icon: Users,
-      title: "Accessible Pricing",
+      title: t("missionVision.value3.title") || "Accessible Pricing",
       description:
-        "We keep our services affordable, because hardship does not discriminate.",
+        t("missionVision.value3.description") || "We keep our services affordable, because hardship does not discriminate.",
     },
     {
       icon: Target,
-      title: "Free Consultations",
+      title: t("missionVision.value4.title") || "Free Consultations",
       description:
-        "We offer free initial consultations—to help you see your options before committing.",
+        t("missionVision.value4.description") || "We offer free initial consultations—to help you see your options before committing.",
     },
   ];
 
@@ -78,12 +79,12 @@ const VisionMission = () => {
               className="text-left"
             >
               <h1 className="text-6xl md:text-6xl font-serif font-bold text-white mb-8">
-                Mission and Vision
+                {t("missionVision.title")}
               </h1>
               <div className="flex items-center space-x-2 mb-18">
-              <Link to="/" className="text-gold font-medium">Home</Link>
-              <span className="text-white/60">/</span>
-                <span className="text-white">Our Mission</span>
+                <Link to="/" className="text-gold font-medium">{t("about.breadcrumb.home")}</Link>
+                <span className="text-white/60">/</span>
+                <span className="text-white">{t("missionVision.missionHeading")}</span>
               </div>
             </motion.div>
           </div>
@@ -105,7 +106,7 @@ const VisionMission = () => {
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                   color: "#F5F5F5",
                 }}>
-              Because justice should not belong to only a few.
+              {t("missionVision.missionText")}
             </h2>
           </motion.div>
 
@@ -120,7 +121,7 @@ const VisionMission = () => {
               color: "#f5c15c",
             }}
           >
-            We make the law truly reliable.
+            {t("missionVision.missionSubText")}
           </motion.p>
 
           <motion.p
@@ -133,7 +134,7 @@ const VisionMission = () => {
               color: "#f5c15c",
             }}
           >
-            We do this job because we want to stand by those who have no voice.
+            {t("missionVision.visionText")}
           </motion.p>
         </div>
         <div className="container mx-auto px-8">
@@ -149,7 +150,7 @@ style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                   color: "#F5F5F5",
                 }}>
-              OUR STRENGHTS
+              {t("missionVision.strengthsHeading") || "OUR STRENGHTS"}
             </h2>
             <div className="w-60 h-1 bg-gold mx-auto "></div>
           </motion.div>
@@ -215,23 +216,13 @@ style={{
             className="max-w-6xl mx-auto"
           >
             <div className="bg-white/10 backdrop-blur-sm border border-gold/30  overflow-hidden shadow-2xl">
-              {/* Header */}
-              {/* <div className="bg-gradient-to-r from-gold to-gold-dark p-8 text-center">
-                <h3 className="text-4xl md:text-5xl font-serif font-bold text-emerald mb-4">
-                  Our Foundation
-                </h3>
-                <div className="w-16 h-1 bg-emerald mx-auto"></div>
-              </div> */}
-
-              {/* Content */}
               <div className="p-8 md:p-12 text-white">
                 <div className="text-center mb-12">
                   <p className="text-2xl md:text-3xl font-serif leading-relaxed mb-8 text-cream" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                   color: "#F5F5F5",
                 }}>
-                    The Law Office of Bamroong Rungruang was founded with a
-                    sincere mission:
+                    {t("missionVision.foundation") || "The Law Office of Bamroong Rungruang was founded with a sincere mission:"}
                   </p>
 
                   <div className="bg-white/10 backdrop-blur-sm border border-gold/30    p-8 mb-12">
@@ -239,8 +230,7 @@ style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                   color: "#f5c15c",
                 }}>
-                      To make the law an accessible support, not a barrier,
-                      especially for ordinary people.
+                      {t("missionVision.foundationGoal") || "To make the law an accessible support, not a barrier, especially for ordinary people."}
                     </p>
                   </div>
                 </div>
@@ -289,8 +279,7 @@ style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
                   color: "#f5c15c",
                 }}>
-                    Every case we take, we handle as if it were our own, because
-                    true justice starts from understanding others' pain.
+                    {t("missionVision.finalStatement") || "Every case we take, we handle as if it were our own, because true justice starts from understanding others' pain."}
                   </p>
                 </motion.div>
               </div>

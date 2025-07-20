@@ -152,7 +152,7 @@ const About = () => {
                     fontSize: "1.1rem",
                   }}
                 >
-                  Explore More
+                  {t("about.button.explore")}
                   <span className="ml-2 transition-transform group-hover:translate-x-1">
                     <ArrowRight className="h-5 w-5" style={{ color: "#f5c15c " }} />
                   </span>
