@@ -126,8 +126,8 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -6 }}
-              className="flex flex-col  shadow-[0_40px_60px_rgba(0,0,0,0.9)]  transition-transform duration-300 hover:-translate-y-2 bg-white/4"
-              style={{ borderRadius: 0 }}
+              className="flex flex-col  shadow-[0_40px_50px_rgba(0,0,0,10)]  transition-transform duration-300 hover:-translate-y-2 "
+              style={{ backgroundColor: "#071424"}}
             >
               <img
                 src={service.image}
