@@ -127,7 +127,7 @@ const Services = () => {
               viewport={{ once: true }}
               whileHover={{ y: -6 }}
               className="flex flex-col  shadow-[0_40px_50px_rgba(0,0,0,10)]  transition-transform duration-300 hover:-translate-y-2 "
-              style={{ backgroundColor: "#071424"}}
+              style={{ backgroundColor: "#030915"}}
             >
               <img
                 src={service.image}
@@ -155,7 +155,7 @@ const Services = () => {
 
                 <button
                   onClick={() => navigate(`/services`)}
-                  className="mt-6 flex items-center gap-2 font-semibold text-gold hover:text-[#140d07] transition-colors duration-300 relative group"
+                  className="mt-6 flex items-center gap-2 font-semibold text-gold  transition-colors duration-300 relative group"
                 >
                   <span className="relative">
                     Explore
