@@ -209,7 +209,7 @@ const ServicesPage = () => {
                         className="text-white text-lg font-medium mb-4"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                          color: "#e2b21f",
+                          color: "#f5c15c",
                         }}
                       >
                         {service.subtitle}
@@ -232,7 +232,7 @@ const ServicesPage = () => {
                         className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
                         style={{
                           fontFamily: "'Playfair Display', serif",
-                          color: "#e2b21f",
+                          color: "#f5c15c",
                           fontWeight: 700,
                           letterSpacing: "0.1em",
                           textTransform: "uppercase",
@@ -241,7 +241,7 @@ const ServicesPage = () => {
                       >
                         Explore More
                         <span className="ml-2 transition-transform group-hover:translate-x-1">
-                          <ArrowRight className="h-5 w-5" style={{ color: "#e2b21f" }} />
+                          <ArrowRight className="h-5 w-5" style={{ color: "#f5c15c" }} />
                         </span>
                       </Link>
 
@@ -301,7 +301,7 @@ const ServicesPage = () => {
                     </h2>
                     <p className="text-white text-xl"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#e2b21f",
+    color: "#f5c15c",
   }}>
                       {selectedService.subtitle}
                     </p>
@@ -332,14 +332,14 @@ const ServicesPage = () => {
                   </h3>
                   <div className="grid md:grid-cols-2 gap-4 mb-8"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#e2b21f",
+    color: "#f5c15c",
   }}>
                     {selectedService.features.map((feature, index) => (
                       <div key={index} className="flex items-center">
                         <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
                         <span className="text-xl"  style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#e2b21f",
+    color: "#f5c15c",
   }}>{feature}</span>
                       </div>
                     ))}
@@ -367,7 +367,7 @@ const ServicesPage = () => {
                       className="group inline-flex items-center gap-2 font-serif uppercase transition-colors text-lg border-none bg-transparent p-0 shadow-none"
                       style={{
                         fontFamily: "'Playfair Display', serif",
-                        color: "#e2b21f",
+                        color: "#f5c15c",
                         fontWeight: 700,
                         letterSpacing: "0.1em",
                         textTransform: "uppercase",
@@ -375,7 +375,7 @@ const ServicesPage = () => {
                     >
                       {t("services.btn2")}
                       <span className="ml-1 transition-transform group-hover:translate-x-1">
-                        <svg width="18" height="18" fill="none" stroke="#e2b21f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        <svg width="18" height="18" fill="none" stroke="#f5c15c" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                       </span>
                     </button>
                   </div>

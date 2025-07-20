@@ -35,7 +35,7 @@ const GetAnExpert = () => {
 
       {/* STATS SECTION (now at the top) */}
       <div className="relative z-10 pt-8"> {/* lower z-index so image can overlap */}
-        <div className="bg-white shadow-xl w-full py-3">
+        <div className="bg-white/3 shadow-xl w-full py-3">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <motion.div
@@ -46,12 +46,24 @@ const GetAnExpert = () => {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="text-gold mb-4 flex justify-center">{stat.icon}</div>
-                <div className="text-5xl font-bold text-emerald mb-2">
+                <div className="text-gold mb-4 flex justify-center" style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#f5c15c ",
+  }}>{stat.icon}</div>
+                <div className="text-5xl font-bold text-emerald mb-2"style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#f5c15c ",
+  }}>
                   {stat.number}
-                  <span className="text-gold">+</span>
+                  <span className="text-gold" style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#f5c15c ",
+  }}>+</span>
                 </div>
-                <div className="text-sm uppercase tracking-wide text-gray-600 font-medium">
+                <div className="text-sm uppercase tracking-wide text-gray-600 font-medium"style={{
+    fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
+    color: "#f5c15c ",
+  }} >
                   {stat.label}
                 </div>
               </motion.div>

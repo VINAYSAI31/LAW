@@ -26,7 +26,7 @@ const Footer = () => {
                 <span className="text-xl text-cream"
                   style={{
                     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                    color: "#e2b21f",
+                    color: "#f5c15c",
                   }}
                 >{t('footer.address')}</span>
               </div>
@@ -35,7 +35,7 @@ const Footer = () => {
                 <span className="text-white"
                   style={{
                     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                    color: "#e2b21f",
+                    color: "#f5c15c",
                   }}
                 >{t('footer.phone')}</span>
               </div>
@@ -44,7 +44,7 @@ const Footer = () => {
                 <span className="text-white"
                   style={{
                     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                    color: "#e2b21f",
+                    color: "#f5c15c",
                   }}
                 >{t('footer.email')}</span>
               </div>
@@ -53,7 +53,7 @@ const Footer = () => {
                 <span className="text-white"
                   style={{
                     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                    color: "#e2b21f",
+                    color: "#f5c15c",
                   }}
                 >LINE: {t('footer.line')}</span>
               </div>

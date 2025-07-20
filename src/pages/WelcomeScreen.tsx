@@ -81,7 +81,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                   className="text-xl sm:text-2xl md:text-3xl font-normal"
                   style={{
                     fontFamily: "'Playfair Display', serif",
-                    color: "#e2b21f",
+                    color: "#f5c15c",
                   }}
                 >
                   Justice. Integrity. Dedication.

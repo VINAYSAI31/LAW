@@ -89,7 +89,7 @@ const About = () => {
 
               <h2 className="text-4xl font-serif font-bold text-white mb-6" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#e2b21f",
+                color: "#f5c15c",
               }}>
                 {t("about.title")}
               </h2>
@@ -98,7 +98,7 @@ const About = () => {
 
               <p className="text-lg text-white mb-8 leading-relaxed"style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#e2b21f",
+                color: "#f5c15c",
               }}>
                 {t("about.description")}
               </p>
@@ -126,7 +126,7 @@ const About = () => {
                       </h4>
                       <p className="text-white/90" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#e2b21f",
+                color: "#f5c15c",
               }}>{value.description}</p>
                     </div>
                   </motion.div>
@@ -145,7 +145,7 @@ const About = () => {
                   className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
                   style={{
                     fontFamily: "'Playfair Display', serif",
-                    color: "#e2b21f",
+                    color: "#f5c15c",
                     fontWeight: 700,
                     letterSpacing: "0.1em",
                     textTransform: "uppercase",
@@ -154,7 +154,7 @@ const About = () => {
                 >
                   Explore More
                   <span className="ml-2 transition-transform group-hover:translate-x-1">
-                    <ArrowRight className="h-5 w-5" style={{ color: "#e2b21f" }} />
+                    <ArrowRight className="h-5 w-5" style={{ color: "#f5c15c" }} />
                   </span>
                 </Link>
               </motion.div>
@@ -166,7 +166,7 @@ const About = () => {
       </div>
 {/* Custom Horizontal Line */}
 <div className="w-full mt-20 flex justify-center" style={{ backgroundColor: "#071424" }}>
-        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#e2b21f", borderRadius: "2px", margin: "0 auto" }} />
+        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#f5c15c", borderRadius: "2px", margin: "0 auto" }} />
       </div>
     </div>
     

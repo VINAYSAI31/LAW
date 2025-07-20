@@ -51,7 +51,7 @@ const Contact = () => {
               </h1>
               <p className="text-cream max-w-2xl mx-auto text-2xl"style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#e2b21f",
+                  color: "#f5c15c",
                 }}>
                 Get professional legal assistance. Send us your inquiry and our experienced attorneys will respond promptly.
               </p>
@@ -86,7 +86,7 @@ const Contact = () => {
                     <label className="block text-xl font-medium text-cream mb-2"
                       style={{
                         fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                        color: "#e2b21f",
+                        color: "#f5c15c",
                       }}
                     >
                       <User className="inline h-4 w-4 mr-1" />
@@ -105,7 +105,7 @@ const Contact = () => {
                     <label className="block text-xl font-medium text-cream mb-2"
                       style={{
                         fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                        color: "#e2b21f",
+                        color: "#f5c15c",
                       }}
                     >
                       <Mail className="inline h-4 w-4 mr-1" />
@@ -127,7 +127,7 @@ const Contact = () => {
                     <label className="block text-xl font-medium text-cream mb-2"
                       style={{
                         fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                        color: "#e2b21f",
+                        color: "#f5c15c",
                       }}
                     >
                       <Phone className="inline h-4 w-4 mr-1" />
@@ -146,7 +146,7 @@ const Contact = () => {
                     <label className="block text-xl font-medium text-cream mb-2"
                       style={{
                         fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                        color: "#e2b21f",
+                        color: "#f5c15c",
                       }}
                     >
                       <MessageCircle className="inline h-4 w-4 mr-1" />
@@ -167,7 +167,7 @@ const Contact = () => {
                   <label className="block text-xl font-medium text-cream mb-2"
                     style={{
                       fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                      color: "#e2b21f",
+                      color: "#f5c15c",
                     }}
                   >
                     Subject
@@ -186,7 +186,7 @@ const Contact = () => {
                   <label className="block text-xl font-medium text-cream mb-2"
                     style={{
                       fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                      color: "#e2b21f",
+                      color: "#f5c15c",
                     }}
                   >
                     Message *
@@ -254,7 +254,7 @@ const Contact = () => {
                       <p className="text-cream leading-relaxed"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                          color: "#e2b21f",
+                          color: "#f5c15c",
                         }}
                       >
                         123 Legal District, Bangkok<br />
@@ -277,7 +277,7 @@ const Contact = () => {
                       <p className="text-cream"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                          color: "#e2b21f",
+                          color: "#f5c15c",
                         }}
                       >+66 2 XXX XXXX</p>
                     </div>
@@ -297,7 +297,7 @@ const Contact = () => {
                       <p className="text-cream"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                          color: "#e2b21f",
+                          color: "#f5c15c",
                         }}
                       >info@bamroonglaw.com</p>
                     </div>
@@ -317,7 +317,7 @@ const Contact = () => {
                       <p className="text-cream"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                          color: "#e2b21f",
+                          color: "#f5c15c",
                         }}
                       >
                         Monday - Friday: 9:00 AM - 6:00 PM<br />
@@ -339,7 +339,7 @@ const Contact = () => {
                 <p className="text-cream leading-relaxed mb-4"
                   style={{
                     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                    color: "#e2b21f",
+                    color: "#f5c15c",
                   }}
                 >
                   We offer free initial consultations to help you understand your legal options before making any commitments.
@@ -347,7 +347,7 @@ const Contact = () => {
                 <div className="text-gold font-semibold"
                   style={{
                     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                    color: "#e2b21f",
+                    color: "#f5c15c",
                   }}
                 >
                   No obligation • Confidential • Professional advice

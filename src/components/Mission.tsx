@@ -34,7 +34,7 @@ const Mission = () => {
 
             <h3 className="text-3xl md:text-4xl font-bold  mb-8"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#e2b21f",
+    color: "#f5c15c",
   }}>
               Because justice should not belong to{' '}
               only a few
@@ -43,7 +43,7 @@ const Mission = () => {
             
             <p className="text-2xl md:text-3xl text-emerald-800 font-medium mb-6"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#e2b21f",
+    color: "#f5c15c",
   }}>
               We make the law truly reliable.
             </p>
@@ -59,7 +59,7 @@ const Mission = () => {
           >
             <p className="text-xl md:text-3xl text-gray-700  leading-relaxed "   style={{
     fontFamily: "'Lato', serif", // or "'Cormorant Garamond', serif"
-    color: "#e2b21f",
+    color: "#f5c15c",
   }}>
               We do this job because we want to stand by those who have no voice.
             </p>
@@ -86,7 +86,7 @@ const Mission = () => {
             >
               Explore More
               <span className="ml-2 transition-transform group-hover:translate-x-1">
-                <ArrowRight className="h-5 w-5" style={{ color: "#e2b21f" }} />
+                <ArrowRight className="h-5 w-5" style={{ color: "#f5c15c" }} />
               </span>
             </Link>
           </motion.div>

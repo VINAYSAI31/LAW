@@ -117,7 +117,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="text-2xl md:text-3xl font-semibold text-darkBrown"style={{
               fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-              color: "#e2b21f",
+              color: "#f5c15c",
             }}
           >
             We make the law truly reliable.
@@ -130,7 +130,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="text-xl md:text-3xl font-light italic"style={{
               fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-              color: "#e2b21f",
+              color: "#f5c15c",
             }}
           >
             We do this job because we want to stand by those who have no voice.
@@ -189,7 +189,7 @@ style={{
 
                       <p className="text-darkBrown leading-relaxed text-lg" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#e2b21f",
+                  color: "#f5c15c",
                 }}>
                         {strength.description}
                       </p>
@@ -237,7 +237,7 @@ style={{
                   <div className="bg-white/10 backdrop-blur-sm border border-gold/30    p-8 mb-12">
                     <p className="text-3xl md:text-4xl font-serif font-bold text-gold leading-relaxed" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#e2b21f",
+                  color: "#f5c15c",
                 }}>
                       To make the law an accessible support, not a barrier,
                       especially for ordinary people.
@@ -268,7 +268,7 @@ style={{
                         </h4>
                         <p className="text-xl leading-relaxed" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#e2b21f",
+                  color: "#f5c15c",
                 }}>
                           {value.description}
                         </p>
@@ -287,7 +287,7 @@ style={{
                 >
                   <p className="text-2xl md:text-3xl text-gold  leading-relaxed" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#e2b21f",
+                  color: "#f5c15c",
                 }}>
                     Every case we take, we handle as if it were our own, because
                     true justice starts from understanding others' pain.

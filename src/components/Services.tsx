@@ -104,14 +104,14 @@ const Services = () => {
         >
           <h2 className="text-5xl lg:text-6xl font-serif font-bold text-white mb-6" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#e2b21f",
+                color: "#f5c15c",
               }}>
             OUR SERVICES
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-white/80 text-2xl" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#e2b21f",
+                color: "#f5c15c",
               }}>
             {t('services.subtitle')}
           </p>
@@ -146,7 +146,7 @@ const Services = () => {
   }}>{service.title}</h3>
                 <h4 className="text-md font-semibold mb-2 text-[#4D301B]"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#e2b21f",
+    color: "#f5c15c",
   }}>{service.subtitle}</h4>
                 <p className="text-gray-800 flex-grow"   style={{
     fontFamily: "'Open Sans', Lato", // or "'Cormorant Garamond', serif"
