@@ -110,7 +110,7 @@ const AboutPage = () => {
       {/* Mission Statement Section */}
       <div
         className="pt-[160px] pb-24  "
-        style={{ backgroundColor: "#071424" }}
+        style={{ backgroundColor: "#030915" }}
       >
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -162,14 +162,14 @@ const AboutPage = () => {
       </div>
 
       {/* Custom Horizontal Line */}
-      <div className="w-full flex justify-center" style={{ backgroundColor: "#071424" }}>
+      <div className="w-full flex justify-center" style={{ backgroundColor: "#030915" }}>
         <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
       </div>
 
       {/* Core Values Section - Completely Redesigned */}
       <div
         className="py-24  relative overflow-hidden"
-        style={{ backgroundColor: "#071424" }}
+        style={{ backgroundColor: "#030915" }}
       >
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
@@ -216,7 +216,7 @@ const AboutPage = () => {
                 transition={{ duration: 0.6, delay: index * 0.15 }}
                 viewport={{ once: true }}
                 className="group relative "
-                style={{ backgroundColor: "#071424" }}
+                style={{ backgroundColor: "#030915" }}
               >
                 <div
                   className="relative bg-white/4 shadow-[0_40px_60px_rgba(0,0,0,0.9)]  transition-transform duration-300 hover:-translate-y-2 backdrop-blur-sm border border-white/20  p-8 h-full 

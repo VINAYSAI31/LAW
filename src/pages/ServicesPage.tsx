@@ -170,7 +170,7 @@ const ServicesPage = () => {
       </div>
 
       {/* Services Grid */}
-      <div className="py-24 text-xl" style={{ backgroundColor: "#071424" }}>
+      <div className="py-24 text-xl" style={{ backgroundColor: "#030915" }}>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -180,8 +180,8 @@ const ServicesPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 onClick={() => handleServiceClick(service)}
-                className="   p-0 h-90 shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2 bg-white/4"
-                
+                className="   p-0 h-90 shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2"
+                style={{ backgroundColor: "#030915"}}
               >
                 <div className="relative h-full">
                   {/* Background Image */}
@@ -273,7 +273,7 @@ const ServicesPage = () => {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.8, opacity: 0, y: 50 }}
               onClick={(e) => e.stopPropagation()}
-              className=" max-w-4xl w-full max-h-[90vh] overflow-y-auto"style={{ backgroundColor: "#071424" }}
+              className=" max-w-4xl w-full max-h-[90vh] overflow-y-auto"style={{ backgroundColor: "#030915" }}
             >
               <div className="relative">
                 {/* Header with image */}

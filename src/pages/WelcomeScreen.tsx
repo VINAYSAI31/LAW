@@ -48,7 +48,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
       {isLoading && (
         <motion.div
           className="fixed inset-0 z-50"
-          style={{ backgroundColor: "#071424" }}
+          style={{ backgroundColor: "#030915" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

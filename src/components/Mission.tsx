@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Mission = () => {
   return (
-    <section className="p-0 m-0 border-none md-10 relative overflow-hidden" style={{ backgroundColor: "#071424" }}>
+    <section className="p-0 m-0 border-none md-10 relative overflow-hidden" style={{ backgroundColor: "#030915" }}>
    
 
       <div className="container mx-auto px-4 relative z-10">

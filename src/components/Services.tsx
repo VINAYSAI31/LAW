@@ -93,7 +93,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="" style={{ backgroundColor: "#071424" }}>
+    <div className="" style={{ backgroundColor: "#030915" }}>
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -194,7 +194,7 @@ const Services = () => {
           </span>
         </Link>
       </motion.div>
-      <div className="w-full flex justify-center mt-20" style={{ backgroundColor: "#071424" }}>
+      <div className="w-full flex justify-center mt-20" style={{ backgroundColor: "#030915" }}>
         <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
       </div>
     </div>

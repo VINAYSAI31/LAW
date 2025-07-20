@@ -91,7 +91,7 @@ const VisionMission = () => {
       </div>
 
       {/* Our Strengths Section */}
-      <div className="py-24 " style={{ backgroundColor: "#071424" }}>
+      <div className="py-24 " style={{ backgroundColor: "#030915" }}>
         <div className="max-w-5xl mx-auto space-y-8">
           {/* Heading block with yellow border line */}
           <motion.div
@@ -203,7 +203,7 @@ style={{
       </div>
 
       {/* Mission Statement Section */}
-      <div className="py-24 relative overflow-hidden" style={{ backgroundColor: "#071424" }}>
+      <div className="py-24 relative overflow-hidden" style={{ backgroundColor: "#030915" }}>
         <div className="absolute inset-0 thai-pattern opacity-5"></div>
 
         <div className="container mx-auto px-4 relative z-10">
