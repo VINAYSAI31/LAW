@@ -31,7 +31,7 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-gray-900">
+      <div className="min-h-screen " style={{ backgroundColor: "#030915" }}>
         {/* Header Section */}
         <div className="bg-emerald-darker/50 backdrop-blur-sm border-b border-gold/20 py-16">
           <div className="container mx-auto px-4">
@@ -98,7 +98,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       placeholder="Enter your full name"
-                      className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                      className="w-full px-4 py-3  border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground "style={{ backgroundColor: "#030915" }}
                     />
                   </div>
                   <div>
@@ -117,7 +117,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       placeholder="your.email@example.com"
-                      className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                      className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"style={{ backgroundColor: "#030915" }}
                     />
                   </div>
                 </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       placeholder="+66 XX XXX XXXX"
-                      className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                      className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"style={{ backgroundColor: "#030915" }}
                     />
                   </div>
                   <div>
@@ -158,7 +158,7 @@ const Contact = () => {
                       value={formData.lineId}
                       onChange={handleInputChange}
                       placeholder="Your LINE ID"
-                      className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                      className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"style={{ backgroundColor: "#030915" }}
                     />
                   </div>
                 </div>
@@ -178,7 +178,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     placeholder="Brief description of your legal matter"
-                    className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"
+                    className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground"style={{ backgroundColor: "#030915" }}
                   />
                 </div>
 
@@ -197,7 +197,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     rows={6}
                     placeholder="Please describe your legal issue or question in detail..."
-                    className="w-full px-4 py-3 bg-gradient-to-br from-gray-1000 via-gray-1000 to-gray-1000 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground resize-none"
+                    className="w-full px-4 py-3   border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald focus:border-transparent text-white placeholder-muted-foreground resize-none"style={{ backgroundColor: "#030915" }}
                     required
                   />
                 </div>

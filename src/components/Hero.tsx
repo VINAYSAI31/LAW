@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(true);
@@ -59,7 +61,9 @@ const Hero = () => {
           <button className="border border-gold text-gold px-6 py-3 text-lg font-semibold rounded hover:bg-gold/40 hover:text-black transition"  style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
     color: "#f5c15c",
-  }} >
+  }} 
+    onClick={() => navigate('/contact')}
+  >
             GET STARTED
           </button>
         </div>

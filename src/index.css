@@ -52,9 +52,11 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply text-foreground font-sans;
+    background-color: #030915;
     scroll-behavior: smooth;
   }
+  
 
   html {
     font-family: 'Inter', system-ui, sans-serif;
