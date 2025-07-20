@@ -48,7 +48,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
       {isLoading && (
         <motion.div
           className="fixed inset-0 z-50"
-          style={{ backgroundColor: "#0B1F3A" }}
+          style={{ backgroundColor: "#071424" }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -81,7 +81,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
                   className="text-xl sm:text-2xl md:text-3xl font-normal"
                   style={{
                     fontFamily: "'Playfair Display', serif",
-                    color: "#BFA75C",
+                    color: "#e2b21f",
                   }}
                 >
                   Justice. Integrity. Dedication.

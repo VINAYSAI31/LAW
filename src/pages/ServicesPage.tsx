@@ -170,7 +170,7 @@ const ServicesPage = () => {
       </div>
 
       {/* Services Grid */}
-      <div className="py-24 text-xl" style={{ backgroundColor: "#0B1F3A" }}>
+      <div className="py-24 text-xl" style={{ backgroundColor: "#071424" }}>
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -180,7 +180,7 @@ const ServicesPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 onClick={() => handleServiceClick(service)}
-                className="   p-0 h-90 shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2 bg-white/10"
+                className="   p-0 h-90 shadow-[0_10px_30px_rgba(0,0,0,0.9)] hover:shadow-[0_12px_24px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:-translate-y-2 bg-white/4"
                 
               >
                 <div className="relative h-full">
@@ -209,7 +209,7 @@ const ServicesPage = () => {
                         className="text-white text-lg font-medium mb-4"
                         style={{
                           fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                          color: "#BFA75C",
+                          color: "#e2b21f",
                         }}
                       >
                         {service.subtitle}
@@ -232,7 +232,7 @@ const ServicesPage = () => {
                         className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
                         style={{
                           fontFamily: "'Playfair Display', serif",
-                          color: "#BFA75C",
+                          color: "#e2b21f",
                           fontWeight: 700,
                           letterSpacing: "0.1em",
                           textTransform: "uppercase",
@@ -241,7 +241,7 @@ const ServicesPage = () => {
                       >
                         Explore More
                         <span className="ml-2 transition-transform group-hover:translate-x-1">
-                          <ArrowRight className="h-5 w-5" style={{ color: "#BFA75C" }} />
+                          <ArrowRight className="h-5 w-5" style={{ color: "#e2b21f" }} />
                         </span>
                       </Link>
 
@@ -273,7 +273,7 @@ const ServicesPage = () => {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.8, opacity: 0, y: 50 }}
               onClick={(e) => e.stopPropagation()}
-              className=" max-w-4xl w-full max-h-[90vh] overflow-y-auto"style={{ backgroundColor: "#0B1F3A" }}
+              className=" max-w-4xl w-full max-h-[90vh] overflow-y-auto"style={{ backgroundColor: "#071424" }}
             >
               <div className="relative">
                 {/* Header with image */}
@@ -301,15 +301,15 @@ const ServicesPage = () => {
                     </h2>
                     <p className="text-white text-xl"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#BFA75C",
+    color: "#e2b21f",
   }}>
                       {selectedService.subtitle}
                     </p>
                   </div>
                   <button
                     onClick={closeModal}
-                    className="absolute top-6 right-6 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full 
-                               flex items-center justify-center text-white hover:bg-white/30 transition-colors"
+                    className="absolute top-6 right-6 w-10 h-10 bg-white/4 backdrop-blur-sm rounded-full 
+                               flex items-center justify-center text-white hover:bg-white/3 transition-colors"
                   >
                     ×
                   </button>
@@ -332,14 +332,14 @@ const ServicesPage = () => {
                   </h3>
                   <div className="grid md:grid-cols-2 gap-4 mb-8"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#BFA75C",
+    color: "#e2b21f",
   }}>
                     {selectedService.features.map((feature, index) => (
                       <div key={index} className="flex items-center">
                         <div className="w-2 h-2 bg-gold rounded-full mr-3"></div>
                         <span className="text-xl"  style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#BFA75C",
+    color: "#e2b21f",
   }}>{feature}</span>
                       </div>
                     ))}
@@ -367,7 +367,7 @@ const ServicesPage = () => {
                       className="group inline-flex items-center gap-2 font-serif uppercase transition-colors text-lg border-none bg-transparent p-0 shadow-none"
                       style={{
                         fontFamily: "'Playfair Display', serif",
-                        color: "#BFA75C",
+                        color: "#e2b21f",
                         fontWeight: 700,
                         letterSpacing: "0.1em",
                         textTransform: "uppercase",
@@ -375,7 +375,7 @@ const ServicesPage = () => {
                     >
                       {t("services.btn2")}
                       <span className="ml-1 transition-transform group-hover:translate-x-1">
-                        <svg width="18" height="18" fill="none" stroke="#BFA75C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        <svg width="18" height="18" fill="none" stroke="#e2b21f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                       </span>
                     </button>
                   </div>

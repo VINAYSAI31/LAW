@@ -91,7 +91,7 @@ const VisionMission = () => {
       </div>
 
       {/* Our Strengths Section */}
-      <div className="py-24 " style={{ backgroundColor: "#0B1F3A" }}>
+      <div className="py-24 " style={{ backgroundColor: "#071424" }}>
         <div className="max-w-5xl mx-auto space-y-8">
           {/* Heading block with yellow border line */}
           <motion.div
@@ -117,7 +117,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="text-2xl md:text-3xl font-semibold text-darkBrown"style={{
               fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-              color: "#BFA75C",
+              color: "#e2b21f",
             }}
           >
             We make the law truly reliable.
@@ -130,7 +130,7 @@ const VisionMission = () => {
             viewport={{ once: true }}
             className="text-xl md:text-3xl font-light italic"style={{
               fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-              color: "#BFA75C",
+              color: "#e2b21f",
             }}
           >
             We do this job because we want to stand by those who have no voice.
@@ -189,7 +189,7 @@ style={{
 
                       <p className="text-darkBrown leading-relaxed text-lg" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#BFA75C",
+                  color: "#e2b21f",
                 }}>
                         {strength.description}
                       </p>
@@ -203,7 +203,7 @@ style={{
       </div>
 
       {/* Mission Statement Section */}
-      <div className="py-24 relative overflow-hidden" style={{ backgroundColor: "#0B1F3A" }}>
+      <div className="py-24 relative overflow-hidden" style={{ backgroundColor: "#071424" }}>
         <div className="absolute inset-0 thai-pattern opacity-5"></div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -237,7 +237,7 @@ style={{
                   <div className="bg-white/10 backdrop-blur-sm border border-gold/30    p-8 mb-12">
                     <p className="text-3xl md:text-4xl font-serif font-bold text-gold leading-relaxed" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#BFA75C",
+                  color: "#e2b21f",
                 }}>
                       To make the law an accessible support, not a barrier,
                       especially for ordinary people.
@@ -268,7 +268,7 @@ style={{
                         </h4>
                         <p className="text-xl leading-relaxed" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#BFA75C",
+                  color: "#e2b21f",
                 }}>
                           {value.description}
                         </p>
@@ -287,7 +287,7 @@ style={{
                 >
                   <p className="text-2xl md:text-3xl text-gold  leading-relaxed" style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#BFA75C",
+                  color: "#e2b21f",
                 }}>
                     Every case we take, we handle as if it were our own, because
                     true justice starts from understanding others' pain.

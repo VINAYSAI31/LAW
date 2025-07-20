@@ -5,14 +5,8 @@ import { Link } from 'react-router-dom';
 
 const Mission = () => {
   return (
-    <section className="py-2  md-10 relative overflow-hidden" style={{ backgroundColor: "#0B1F3A" }}>
-      {/* Background Pattern */}
-      
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-32 h-32 border border-emerald-200 rounded-full"></div>
-        <div className="absolute bottom-20 right-20 w-24 h-24 border border-gold rounded-full"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 border border-emerald-300 rotate-45"></div>
-      </div>
+    <section className="p-0 m-0 border-none md-10 relative overflow-hidden" style={{ backgroundColor: "#071424" }}>
+   
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -30,9 +24,9 @@ const Mission = () => {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-5xl lg:text-6xl font-serif font-bold text-white mb-6" style={{
+            <h2 className="text-5xl lg:text-6xl font-serif py-6 font-bold text-white mb-6" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#F5F5F5",
+                color: "#daac24",
               }}>
             OUR MISSON
           </h2>
@@ -40,7 +34,7 @@ const Mission = () => {
 
             <h3 className="text-3xl md:text-4xl font-bold  mb-8"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#F5F5F5",
+    color: "#e2b21f",
   }}>
               Because justice should not belong to{' '}
               only a few
@@ -49,7 +43,7 @@ const Mission = () => {
             
             <p className="text-2xl md:text-3xl text-emerald-800 font-medium mb-6"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#BFA75C",
+    color: "#e2b21f",
   }}>
               We make the law truly reliable.
             </p>
@@ -61,11 +55,11 @@ const Mission = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-white/10 backdrop-blur-sm p-8 md:p-12 shadow-2xl border border-emerald-100 mb-12"
+            className="bg-white/5 backdrop-blur-sm p-8 md:p-12 shadow-2xl border border-emerald-100 mb-12"
           >
             <p className="text-xl md:text-3xl text-gray-700  leading-relaxed "   style={{
     fontFamily: "'Lato', serif", // or "'Cormorant Garamond', serif"
-    color: "#CCCCCC",
+    color: "#e2b21f",
   }}>
               We do this job because we want to stand by those who have no voice.
             </p>
@@ -92,7 +86,7 @@ const Mission = () => {
             >
               Explore More
               <span className="ml-2 transition-transform group-hover:translate-x-1">
-                <ArrowRight className="h-5 w-5" style={{ color: "#BFA75C" }} />
+                <ArrowRight className="h-5 w-5" style={{ color: "#e2b21f" }} />
               </span>
             </Link>
           </motion.div>

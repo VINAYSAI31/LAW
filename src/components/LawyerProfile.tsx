@@ -4,7 +4,7 @@ import { GraduationCap, Briefcase, Scale, Award } from "lucide-react";
 
 const LawyerProfile = () => {
   return (
-    <section className="py-20  text-white relative overflow-hidden "style={{ backgroundColor: "#0B1F3A" }}>
+    <section className="py-20  text-white relative overflow-hidden "style={{ backgroundColor: "#071424" }}>
       {/* Decorative elements */}
 
       <div className="container mx-auto px-4 relative z-10">
@@ -35,20 +35,20 @@ const LawyerProfile = () => {
               <motion.h2
                 className="text-4xl lg:text-5xl font-serif font-bold text-gold"style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#F5F5F5",
+                  color: "#e2b21f",
                 }}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
               >
-                Lawyer Bamrung Rungruang
+                 BAMRUNG RUNGREUANG
               </motion.h2>
 
               <motion.div
                 className="h-1 w-24 bg-gold "style={{
                   fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                  color: "#BFA75C",
+                  color: "#e2b21f",
                 }}
                 initial={{ opacity: 0, scaleX: 0 }}
                 whileInView={{ opacity: 1, scaleX: 1 }}
@@ -69,7 +69,7 @@ const LawyerProfile = () => {
               <Award className="h-6 w-6 text-gold" />
               <span className="text-xl font-semibold" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
+                color: "#e2b21f",
               }}>
                 More than 30 years of experience in law and litigation
               </span>
@@ -95,7 +95,7 @@ const LawyerProfile = () => {
               </div>
               <p className="text-gray-300 ml-9 text-xl" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
+                color: "#e2b21f",
               }}>
                 Lawyer, Lawyers Council of Thailand
               </p>
@@ -129,7 +129,7 @@ const LawyerProfile = () => {
                   </h4>
                   <p className="text-gray-300" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
+                color: "#e2b21f",
               }}>
                     Bachelor of Law, Sukhothai Thammathirat Open University
                   </p>
@@ -142,7 +142,7 @@ const LawyerProfile = () => {
               }}>Master's Degree</h4>
                   <p className="text-gray-300" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
+                color: "#e2b21f",
               }}>
                     Political Science, Major in Political Communication, Krirk
                     University
@@ -156,7 +156,7 @@ const LawyerProfile = () => {
               }}>Ph.D.</h4>
                   <p className="text-gray-300" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
+                color: "#e2b21f",
               }}>
                     Honorary Doctorate in Political Science, Politics and
                     Governance, LADC Institute
@@ -194,8 +194,8 @@ const LawyerProfile = () => {
         </div>
       </div>
         {/* Custom Horizontal Line */}
-        <div className="w-full mt-20 flex justify-center" style={{ backgroundColor: "#0B1F3A" }}>
-        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
+        <div className="w-full mt-20 flex justify-center" style={{ backgroundColor: "#071424" }}>
+        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#e2b21f", borderRadius: "2px", margin: "0 auto" }} />
       </div>
     </section>
     

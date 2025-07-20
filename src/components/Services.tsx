@@ -93,7 +93,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="py-24 px-6" style={{ backgroundColor: "#0B1F3A" }}>
+    <div className="" style={{ backgroundColor: "#071424" }}>
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -104,14 +104,14 @@ const Services = () => {
         >
           <h2 className="text-5xl lg:text-6xl font-serif font-bold text-white mb-6" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#F5F5F5",
+                color: "#e2b21f",
               }}>
             OUR SERVICES
           </h2>
           <div className="w-24 h-1 bg-gold mx-auto mb-6"></div>
           <p className="max-w-3xl mx-auto text-white/80 text-2xl" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
+                color: "#e2b21f",
               }}>
             {t('services.subtitle')}
           </p>
@@ -126,7 +126,7 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -6 }}
-              className="flex flex-col bg-[#fdf7ee] shadow-xl border border-black/10 transition-all duration-300 bg-white/10"
+              className="flex flex-col  shadow-[0_40px_60px_rgba(0,0,0,0.9)]  transition-transform duration-300 hover:-translate-y-2 bg-white/4"
               style={{ borderRadius: 0 }}
             >
               <img
@@ -146,7 +146,7 @@ const Services = () => {
   }}>{service.title}</h3>
                 <h4 className="text-md font-semibold mb-2 text-[#4D301B]"   style={{
     fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-    color: "#BFA75C",
+    color: "#e2b21f",
   }}>{service.subtitle}</h4>
                 <p className="text-gray-800 flex-grow"   style={{
     fontFamily: "'Open Sans', Lato", // or "'Cormorant Garamond', serif"
@@ -194,7 +194,7 @@ const Services = () => {
           </span>
         </Link>
       </motion.div>
-      <div className="w-full flex justify-center mt-20" style={{ backgroundColor: "#0B1F3A" }}>
+      <div className="w-full flex justify-center mt-20" style={{ backgroundColor: "#071424" }}>
         <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
       </div>
     </div>

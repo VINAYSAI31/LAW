@@ -17,7 +17,7 @@ const GetAnExpert = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="relative  overflow-visible pb-0" style={{ backgroundColor: "#0B1F3A" }}> {/* even further reduced bottom padding for compactness */}
+    <div className="relative  overflow-visible pb-0" style={{ backgroundColor: "#071424" }}> {/* even further reduced bottom padding for compactness */}
       {/* Background Pattern */}
       <div
         className="absolute inset-0 opacity-100"
@@ -92,7 +92,7 @@ const GetAnExpert = () => {
                 className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
                 style={{
                   fontFamily: "'Playfair Display', serif",
-                  color: "#BFA75C",
+                  color: "#e2b21f",
                   fontWeight: 700,
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
@@ -101,7 +101,7 @@ const GetAnExpert = () => {
               >
                 Contact Now
                 <span className="ml-2 transition-transform group-hover:translate-x-1">
-                  <ArrowRight className="h-5 w-5" style={{ color: "#BFA75C" }} />
+                  <ArrowRight className="h-5 w-5" style={{ color: "#e2b21f" }} />
                 </span>
               </Link>
             </div>

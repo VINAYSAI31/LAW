@@ -1,11 +1,10 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 158 100% 8%;
+    --background: #081628;
     --foreground: 222.2 84% 4.9%;
 
     --card: 158 100% 12%;
@@ -34,7 +33,7 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-    
+
     /* Custom colors */
     --navy: 220 70% 18%;
     --navy-dark: 220 70% 13%;
@@ -44,14 +43,10 @@
     --emerald: 158 100% 25%;
     --emerald-dark: 157 66% 30%;
     --emerald-light: 3 96% 48%;
-    --gold: 45 90% 60%;
-    --gold-dark: 45 80% 50%;
     --dark-brown: 25 70% 25%;
     --cream: 57, 91%, 91%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -59,18 +54,69 @@
   body {
     @apply bg-background text-foreground font-sans;
     scroll-behavior: smooth;
-        
-
   }
+
   html {
     font-family: 'Inter', system-ui, sans-serif;
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: Georgia, 'Times New Roman', serif;
   }
 
-  /* Custom classes */
+  /* Header styles */
+  .header {
+    @apply flex justify-between items-center px-6 py-4 text-[20px] font-bold text-[hsl(var(--gold))];
+  }
+
+  .header-logo {
+    @apply flex items-center text-[28px] font-bold;
+  }
+
+  .header-logo img {
+    height: 32px;
+    margin-right: 8px;
+  }
+
+  /* Hero section */
+  .hero {
+    @apply px-6 pt-12 pb-8 text-center text-[hsl(var(--gold))];
+  }
+
+  .hero h1 {
+    @apply text-[38px] font-semibold mb-2;
+  }
+
+  .hero h2 {
+    @apply text-[16px] font-normal tracking-wider mb-6;
+  }
+
+  .hero button {
+    @apply bg-[hsl(var(--gold))] text-[hsl(var(--background))] font-semibold text-sm py-3 px-6 rounded cursor-pointer;
+  }
+
+  /* Section styling */
+  .section {
+    @apply px-6 py-8;
+  }
+
+  .section h3 {
+    @apply text-[hsl(var(--gold))] text-xl font-semibold mb-3 flex items-center;
+  }
+
+  .section h3 svg {
+    margin-right: 8px;
+  }
+
+  .section .label {
+    @apply text-[hsl(var(--white))] font-bold mt-4 text-base;
+  }
+
+  .section .value {
+    @apply text-[hsl(var(--gold))] mt-1 text-sm leading-relaxed;
+  }
+
+  /* Custom backgrounds & patterns */
   .thai-pattern {
     background-image: url('/thai-pattern.png');
     background-repeat: repeat;
@@ -78,7 +124,7 @@
     opacity: 0.05;
     animation: subtle-float 60s linear infinite;
   }
-  
+
   @keyframes subtle-float {
     0% {
       background-position: 0 0;
@@ -87,67 +133,64 @@
       background-position: 200px 200px;
     }
   }
-  
-  /* Luxury animations and effects */
+
+  /* Luxury utility classes */
   .hover-golden {
     @apply transition-all duration-300;
   }
+
   .hover-golden:hover {
     @apply text-gold;
     text-shadow: 0 0 5px rgba(255, 215, 0, 0.2);
   }
-  
+
   .luxury-card {
     @apply bg-white rounded-lg shadow-md p-6 border border-gray-100 transition-all duration-300;
   }
+
   .luxury-card:hover {
     @apply shadow-xl border-gold/20;
     transform: translateY(-2px);
   }
-  
+
   .gold-divider {
     @apply w-24 h-1 bg-gold mx-auto my-6;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    background: linear-gradient(90deg, transparent, hsl(var(--gold)), transparent);
   }
-  
+
   .text-shadow-gold {
     text-shadow: 0 0 1px gold, 0 0 2px rgba(255, 215, 0, 0.5);
   }
-    /* .bg-darker-emerald {
-    background-color: hsl(157, 84%, 12%);
-  } */
+
+  .shine-text {
+    position: relative;
+    color: #d4af37;
+    background: linear-gradient(90deg, #d4af37 0%, #f2e285 25%, #d4af37 50%, #f2e285 75%, #d4af37 100%);
+    background-size: 400px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: -100px;
+    }
+    40%, 100% {
+      background-position: 300px;
+    }
+  }
+
+  /* Language-specific fonts */
+  html[lang="th"] body {
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+
+  html[lang="zh"] body {
+    font-family: 'Noto Sans SC', sans-serif;
+  }
 }
 
-/* Import Google Fonts for multilingual support and professional look */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-
-/* Set font family based on language */
-html[lang="th"] body {
-  font-family: 'Noto Sans Thai', sans-serif;
-}
-
-html[lang="zh"] body {
-  font-family: 'Noto Sans SC', sans-serif;
-}
-
-/* Luxury animations */
-@keyframes shine {
-  0% {
-    background-position: -100px;
-  }
-  40%, 100% {
-    background-position: 300px;
-  }
-}
-
-.shine-text {
-  position: relative;
-  color: #d4af37;
-  background: linear-gradient(90deg, #d4af37 0%, #f2e285 25%, #d4af37 50%, #f2e285 75%, #d4af37 100%);
-  background-size: 400px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-  animation: shine 5s infinite linear;
-}

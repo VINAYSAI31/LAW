@@ -50,7 +50,7 @@ const About = () => {
   ];
 
   return (
-    <div className="relative py-10 overflow-visible text-xl" style={{ backgroundColor: "#0B1F3A" }}>
+    <div className="relative py-10 overflow-visible text-xl" style={{ backgroundColor: "#071424" }}>
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
@@ -89,7 +89,7 @@ const About = () => {
 
               <h2 className="text-4xl font-serif font-bold text-white mb-6" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#F5F5F5",
+                color: "#e2b21f",
               }}>
                 {t("about.title")}
               </h2>
@@ -98,7 +98,7 @@ const About = () => {
 
               <p className="text-lg text-white mb-8 leading-relaxed"style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
+                color: "#e2b21f",
               }}>
                 {t("about.description")}
               </p>
@@ -126,7 +126,7 @@ const About = () => {
                       </h4>
                       <p className="text-white/90" style={{
                 fontFamily: "'Playfair Display', serif", // or "'Cormorant Garamond', serif"
-                color: "#BFA75C",
+                color: "#e2b21f",
               }}>{value.description}</p>
                     </div>
                   </motion.div>
@@ -145,7 +145,7 @@ const About = () => {
                   className="group inline-flex items-center font-serif uppercase text-gold hover:text-gold-dark transition-colors text-lg border-none bg-transparent p-0 shadow-none"
                   style={{
                     fontFamily: "'Playfair Display', serif",
-                    color: "#BFA75C",
+                    color: "#e2b21f",
                     fontWeight: 700,
                     letterSpacing: "0.1em",
                     textTransform: "uppercase",
@@ -154,7 +154,7 @@ const About = () => {
                 >
                   Explore More
                   <span className="ml-2 transition-transform group-hover:translate-x-1">
-                    <ArrowRight className="h-5 w-5" style={{ color: "#BFA75C" }} />
+                    <ArrowRight className="h-5 w-5" style={{ color: "#e2b21f" }} />
                   </span>
                 </Link>
               </motion.div>
@@ -165,8 +165,8 @@ const About = () => {
         </div>
       </div>
 {/* Custom Horizontal Line */}
-<div className="w-full mt-20 flex justify-center" style={{ backgroundColor: "#0B1F3A" }}>
-        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#BFA75C", borderRadius: "2px", margin: "0 auto" }} />
+<div className="w-full mt-20 flex justify-center" style={{ backgroundColor: "#071424" }}>
+        <hr style={{ border: 0, height: "3px", width: "1390px", backgroundColor: "#e2b21f", borderRadius: "2px", margin: "0 auto" }} />
       </div>
     </div>
     
