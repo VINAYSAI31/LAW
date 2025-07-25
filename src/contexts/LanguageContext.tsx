@@ -93,6 +93,12 @@ export const translations = {
     "footer.email": "bamroonglaw@gmail.com",
     "footer.line": "@bamroonglaw",
     "footer.copyright": "Copyright 2025 © www.bamroonglaw.com",
+    // Footer (custom keys for Thai section in Footer component)
+    "footer.contactCase": "Contact for Legal Case",
+    "footer.freeConsultation": "Free Initial Consultation",
+    "footer.assistantName": "Khun Kantera Tenglee (Namtan)",
+    "footer.assistantTitle": "Lawyer Assistant",
+    "footer.lawyerName": "Lawyer Bamrung Rungruang",
     // --------------------------------------------------------------------------------------------------------------------
 
     // Office strengths
@@ -830,6 +836,12 @@ export const translations = {
     "footer.email": "sugar.kantera@gmail.com",
     "footer.line": "kantera22phuket",
     "footer.copyright": "ลิขสิทธิ์ 2025 © www.bamroonglaw.com",
+    // Footer (custom keys for Thai section in Footer component)
+    "footer.contactCase": "ติดต่อคดีความ",
+    "footer.freeConsultation": "ปรึกษาเบื้องต้นฟรี",
+    "footer.assistantName": "คุณ กานต์ธีรา เต็งหลี (น้ำตาล) ",
+    "footer.assistantTitle": "ผู้ช่วย ทนายความ (Lawyer Assistant)",
+    "footer.lawyerName": "ทนาย บำรุง รุ่งเรือง",
   },
 
   // ===============================
